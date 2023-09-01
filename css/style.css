@@ -77,6 +77,7 @@ button{
     border: none;
 }
 
+
 img{
     max-width: 100%;
 }
@@ -84,6 +85,13 @@ img{
 *:focus{
     opacity: 0.5;
     outline: none;
+}
+
+.object-top{
+    object-position: top;
+}
+.object-center{
+    object-position: center;
 }
 
 .wraper{
