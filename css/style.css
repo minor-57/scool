@@ -539,6 +539,10 @@ img{
 ._modal-wraper.active{
     display: initial;
 }
+.call-back__text-input._error,
+.number-input._error{
+    box-shadow: 0 0 15px red;
+}
 .call-back {
     width: 530px;
     min-height: 600px;
@@ -615,6 +619,7 @@ img{
 
 .number-input {
     display: flex;
+    border-radius: 8px;
 }
 .number-input__country-sign {
     flex: 0 0 15%;
