@@ -1601,6 +1601,10 @@ background-size: contain;
     .clients__item:last-child{
         margin: 0;
     }
+
+    .hero__logo{
+        right: 2%;
+    }
 }
 
 @media (max-width: 1309px){
@@ -1636,6 +1640,10 @@ background-size: contain;
 
     .about__description{
         max-width: 90%;
+    }
+
+    .hero__logo{
+        display: none;
     }
 }
 
