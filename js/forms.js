@@ -66,7 +66,7 @@ window.addEventListener('DOMContentLoaded', function(){
         input.classList.remove('_error');
     }
 
-    function emailTest(imput){
+    function emailTest(input){
         return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
     }
 })
