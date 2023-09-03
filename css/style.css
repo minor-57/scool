@@ -539,6 +539,10 @@ img{
     font-weight: 700;
 }
 
+.catalog-link{
+    display: none;
+}
+
 .left-menu-active{
     transform: none;
 }
@@ -1682,7 +1686,14 @@ background-size: contain;
         margin: 0 0 35px 0;
     }
 }
-
+@media (max-width: 1040px){
+    .left-menu__catalog-item{
+        display: none;
+    }
+    .catalog-link{
+        display: initial;
+    }
+}
 @media (max-width: 1020px){
     .hero__text{
         max-width: 80%;
