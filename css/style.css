@@ -316,7 +316,7 @@ img{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 7;
 
     display: none;
 
@@ -364,24 +364,48 @@ img{
 
 .catalog-menu{
     position: absolute;
-    top: 25px;
-    left: 0;
-    z-index: 5;
-
-
     display: none;
-    overflow: hidden;
 
     width: 800px;
-    /* max-height: 150px; */
     padding: 15px 20px 15px 0;
 
     background-color: #fff;
     border-radius: 10px;
+    filter: drop-shadow(0 0 80px #858585);
 }
 
 .catalog-menu.catalog-menu-active{
     display: flex;
+    top: 40px;
+    left: 0;
+    z-index: 5;
+}
+
+.catalog-menu__rectangle{
+    position: absolute;
+    top: -2px;
+    left: 35px;
+    z-index: -1;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 4px;
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+
+
+.catalog-menu.catalog-left-active{
+    display: flex;
+    left: 115%;
+    top: -20px;
+    z-index: 20;
+}
+
+.catalog-menu.catalog-left-active .catalog-menu__rectangle{
+    left: -2px;
+    top: 15px;
 }
 
 .catalog-menu__sections {
@@ -400,6 +424,12 @@ img{
     cursor: pointer;
     color: #fff;
     background-color: #197f7fb0;
+}
+.catalog-menu__sections-item:first-child{
+    border-top-left-radius: 10px;
+}
+.catalog-menu__sections-item:last-child{
+    border-bottom-left-radius: 10px;
 }
 .catalog-menu__sections-item.active{
     background-color: #fff;
@@ -452,7 +482,7 @@ img{
 
     height: 100vh;
     max-width: 720px;
-    padding: 30px 20px;
+    padding: 10px 20px;
 
     background-color: #fff;
 
@@ -470,8 +500,8 @@ img{
 
 .left-menu__btn{
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 
     background: url('/img/X.svg') left top no-repeat transparent;
     background-size: 95%;
@@ -493,6 +523,10 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.left-menu__item{
+    position: relative;
 }
 
 .left-menu__item:not(:last-child){

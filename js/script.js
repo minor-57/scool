@@ -19,10 +19,16 @@ window.addEventListener('DOMContentLoaded', function(){
     });
 
     document.querySelectorAll('.left-menu__link').forEach(function(link){
+        if (!link.classList.contains('catalog-btn')){
         link.addEventListener('click', function(){
             document.querySelector('.left-menu').classList.remove('left-menu-active');
             document.querySelector('.menu-overlay').classList.remove('menu-overlay-active');
-        })
+        })}
+    });
+    document.querySelector('.left-menu__catalog-btn').addEventListener('click', function(){
+        document.querySelector('.left-menu__catalog-btn').classList.toggle('catalog-btn-active');
+        document.querySelector('.left-menu__catalog-menu').classList.toggle('catalog-left-active');
+        document.querySelector('.click-close').classList.toggle('active');
     });
     // catalog
     
@@ -33,8 +39,13 @@ window.addEventListener('DOMContentLoaded', function(){
     });
 
     document.querySelector('.click-close').addEventListener('click', function(){
-        document.querySelector('.catalog-btn').classList.remove('catalog-btn-active');
-        document.querySelector('.catalog-menu').classList.remove('catalog-menu-active');
+        document.querySelectorAll('.catalog-btn').forEach(function(el){
+            el.classList.remove('catalog-btn-active');
+        });
+        document.querySelectorAll('.catalog-menu').forEach(function(el){
+            el.classList.remove('catalog-left-active');
+            el.classList.remove('catalog-menu-active');
+        });
         document.querySelector('.click-close').classList.remove('active');
     })
 
