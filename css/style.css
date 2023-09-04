@@ -254,7 +254,34 @@ img{
 }
 
 .header__number{
+    position: relative;
     opacity: 0.6;
+    padding-left: 30px;
+    color: #53bdee;
+}
+
+.header__number:hover{
+    opacity: 0.8;
+}
+
+.header__number::before{
+    position: absolute;
+    top: -4px;
+    left: 0;
+
+    content: '';
+    display: inline-block;
+
+    width: 24px;
+    height: 24px;
+    
+    background: url('/img/telegram-icon.png') center no-repeat transparent;
+    background-size: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header__number:hover::before{
+    transform: rotate(360deg);
 }
 
 .header__order-call{
