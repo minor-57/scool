@@ -16,6 +16,7 @@ window.addEventListener('DOMContentLoaded', function(){
         document.querySelector('.left-menu').classList.remove('left-menu-active');
         document.querySelector('.menu-overlay').classList.remove('menu-overlay-active');
         document.querySelector('._modal-wraper').classList.remove('active');
+        document.querySelector('body').classList.remove('no-scrol')
     });
 
     document.querySelectorAll('.left-menu__link').forEach(function(link){
@@ -78,14 +79,17 @@ window.addEventListener('DOMContentLoaded', function(){
     document.querySelector('.header__order-call').addEventListener('click', function(){
         document.querySelector('._modal-wraper').classList.add('active');
         document.querySelector('.menu-overlay').classList.add('menu-overlay-active')
+        document.querySelector('body').classList.add('no-scrol')
     });
     document.querySelector('.header__call-btn').addEventListener('click', function(){
         document.querySelector('._modal-wraper').classList.add('active');
         document.querySelector('.menu-overlay').classList.add('menu-overlay-active')
+        document.querySelector('body').classList.add('no-scrol')
     });
     document.querySelector('.modal-close').addEventListener('click', function(){
         document.querySelector('._modal-wraper').classList.remove('active');
         document.querySelector('.menu-overlay').classList.remove('menu-overlay-active');
+        document.querySelector('body').classList.remove('no-scrol')
     });
     // form mask
 

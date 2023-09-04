@@ -54,7 +54,9 @@ body{
 
     background-color: #e5e5e5;
 }
-
+body.no-scrol{
+    overflow: hidden;
+}
 p,
 h2{
     margin: 0;
@@ -218,7 +220,6 @@ img{
 
 .menu__link{
     padding: 5px;
-    
     font-size: 18px;
     font-weight: 700;
 }
@@ -332,6 +333,14 @@ img{
     z-index: 5;
     cursor: pointer;
     padding-right: 30px;
+
+    font-size: 1.125rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.catalog-btn:hover{
+    color: #FF9900b2;
 }
 
 .catalog-btn::after{
@@ -378,7 +387,7 @@ img{
     display: flex;
     top: 40px;
     left: 0;
-    z-index: 5;
+    z-index: 20;
 }
 
 .catalog-menu__rectangle{
@@ -1942,7 +1951,7 @@ background-size: contain;
         font-size: 1rem;
     }
 }
-@media (max-width: 335px){
+@media (max-width: 460px){
     .tutors-more__vk-ikon, 
     .tutors-more__youtube-ikon, 
     .tutors-more__telegram-ikon{
