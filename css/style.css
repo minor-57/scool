@@ -101,12 +101,12 @@ img{
     height: 60px;
 
     border-radius: 10px;
-    background: url('img/burger-menu-black.svg') center center no-repeat transparent;
+    background: url('../img/burger-menu-black.svg') center center no-repeat transparent;
     background-size: cover;
 }
 
 .burger:hover{
-    background-image: url('img/burger-menu-white.svg');
+    background-image: url('../img/burger-menu-white.svg');
     background-color: #FF9900;
 }
 
@@ -262,7 +262,7 @@ img{
     width: 60px;
 
     border-radius: 10px;
-    background: url('img/phone-icon.svg') center center no-repeat #FF9900;
+    background: url('../img/phone-icon.svg') center center no-repeat #FF9900;
     background-size: 70%;
 }
 
@@ -292,7 +292,7 @@ img{
     left: 10px;
     
 
-    content: url('img/login-icon.svg');
+    content: url('../img/login-icon.svg');
     display: block;
 
     height: 40px;
@@ -336,13 +336,13 @@ img{
 
     width: 28px;
     height: 100%;
-    background: url('img/catalog-btn-icon.svg') center 4px no-repeat transparent;
+    background: url('../img/catalog-btn-icon.svg') center 4px no-repeat transparent;
     background-size: contain;
     transition: transform 0.3s ease;
 }
 
 .catalog-btn:hover::after{
-    background-image: url('img/catalog-btn-icon-bright.svg');
+    background-image: url('../img/catalog-btn-icon-bright.svg');
 }
 
 .catalog-btn.catalog-btn-active{
@@ -351,7 +351,7 @@ img{
 
 .catalog-btn.catalog-btn-active::after{
     transform: rotate(90deg);
-    background-image: url('img/catalog-btn-icon-bright.svg');
+    background-image: url('../img/catalog-btn-icon-bright.svg');
 }
 
 .catalog-menu{
@@ -465,7 +465,7 @@ img{
     width: 60px;
     height: 60px;
 
-    background: url('img/X.svg') left top no-repeat transparent;
+    background: url('../img/X.svg') left top no-repeat transparent;
     background-size: 95%;
 }
 
@@ -661,7 +661,7 @@ img{
     width: 60px;
     height: 60px;
 
-    background: url('img/X-white.svg') center no-repeat transparent;
+    background: url('../img/X-white.svg') center no-repeat transparent;
     background-position: contain;
 }
 
@@ -680,7 +680,7 @@ img{
     border-bottom-right-radius: 40px 40px;
 
     color: #fff;
-    background: url('img/hero-alternative.jpg') center center no-repeat transparent;
+    background: url('../img/hero-alternative.jpg') center center no-repeat transparent;
     /* background: url('/img/mountains') center center no-repeat transparent; */
     background-size: cover;
 }
@@ -1124,7 +1124,7 @@ img{
     width: 30px;
     margin-left: 7px;
 
-    background: url('img/user-icon-profiru.png') center center no-repeat transparent;
+    background: url('../img/user-icon-profiru.png') center center no-repeat transparent;
     background-size: cover;
 
     transform: translateY(1px);
@@ -1137,7 +1137,7 @@ img{
     width: 30px;
     margin-left: 7px;
 
-    background: url('img/vk-icon.svg') center center no-repeat transparent;
+    background: url('../img/vk-icon.svg') center center no-repeat transparent;
     background-size: cover;
 
     transform: translateY(1px);
@@ -1227,17 +1227,17 @@ img{
 }
 
 .vk-link{
-    background: url('img/footer-vk.svg') center center no-repeat transparent;
+    background: url('../img/footer-vk.svg') center center no-repeat transparent;
     background-size: 70%;
 }
 
 .youtube-link{
-    background: url('img/footer-youtube.svg') center center no-repeat transparent;
+    background: url('../img/footer-youtube.svg') center center no-repeat transparent;
     background-size: cover;
 }
 
 .telegram-link{
-    background: url('img/footer-telegram.svg') center center no-repeat transparent;
+    background: url('../img/footer-telegram.svg') center center no-repeat transparent;
     background-size: 68%;
 }
 
@@ -1246,7 +1246,7 @@ img{
 /* ------------------------------------------------- */
 
 ._tutors-wraper{
-    background: url('img/tutors-more-bg.jpg') center center no-repeat;
+    background: url('../img/tutors-more-bg.jpg') center center no-repeat;
     background-size: cover;
     padding: 25px 0;
 }
@@ -1380,20 +1380,20 @@ img{
 }
 
 .tutors-more__vk-ikon {
-    background: url('img/tutors-more-vk-icon.png') center center no-repeat transparent;
+    background: url('../img/tutors-more-vk-icon.png') center center no-repeat transparent;
     background-size: contain;
 }
 .tutors-more__telegram-link {
 
 }
 .tutors-more__telegram-ikon {
-    background: url('img/tutors-more-telegram-icon.png') center center no-repeat transparent;
+    background: url('../img/tutors-more-telegram-icon.png') center center no-repeat transparent;
     background-size: contain;
 }
 
 
 .tutors-more__youtube-ikon{
-background: url('img/tutors-more-youtube-play.svg') center center no-repeat transparent;
+background: url('../img/tutors-more-youtube-play.svg') center center no-repeat transparent;
 background-size: contain;
 }
 
