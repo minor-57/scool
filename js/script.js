@@ -21,7 +21,9 @@ window.addEventListener('DOMContentLoaded', function(){
         });
         document.querySelector('.account__login').classList.add('active');
 
-        document.querySelector('._modal-wraper').classList.remove('active');
+        document.querySelectorAll('._modal-wraper').forEach(function(el){
+            el.classList.remove('active');
+        })
         document.querySelector('body').classList.remove('no-scrol')
     });
 
@@ -84,7 +86,7 @@ window.addEventListener('DOMContentLoaded', function(){
 
     document.querySelector('.header__order-call').addEventListener('click', function(){
         document.querySelector('.call-back-wraper').classList.add('active');
-        document.querySelector('.menu-overlay').classList.add('menu-overlay-active')
+        document.querySelector('.menu-overlay').classList.add('menu-overlay-active');
         document.querySelector('body').classList.add('no-scrol')
     });
     document.querySelector('.header__call-btn').addEventListener('click', function(){
@@ -96,19 +98,23 @@ window.addEventListener('DOMContentLoaded', function(){
     document.querySelectorAll('.modal-close').forEach(function(el){
         el.addEventListener('click', function(){
             document.querySelector('body').classList.remove('no-scrol')
-            document.querySelector('._modal-wraper').classList.remove('active');
+            document.querySelectorAll('._modal-wraper').forEach(function(el){
+                el.classList.remove('active');
+            })
             document.querySelector('.menu-overlay').classList.remove('menu-overlay-active');
 
             document.querySelectorAll('.account-tab').forEach(function(el){
                 el.classList.remove('active');
             });
             document.querySelector('.account__login').classList.add('active');
+            document.querySelector('body').classList.rmove('no-scrol')
     })
 
     });
     document.querySelector('.login-btn').addEventListener('click', function(){
         document.querySelector('.account-wraper').classList.add('active');
-        document.querySelector('.menu-overlay').classList.add('menu-overlay-active')
+        document.querySelector('.menu-overlay').classList.add('menu-overlay-active');
+        document.querySelector('body').classList.add('no-scrol')
     })
 
     document.querySelectorAll('.account-tab-btn').forEach(function(item){
