@@ -122,20 +122,20 @@
         <div class="menu-overlay"></div>
         <div class="click-close"></div>
 
-        <div class="_modal-wraper">
+        <div class="_modal-wraper call-back-wraper">
             <div class="call-back">
                 <div class="call-back__content modal-content">
-                    <img src="img/3d-call.webp" alt="call-img" class="call-back__img">
+                    <img src="./img/3d-call.webp" alt="call-img" class="call-back__img modal-img">
                     <strong class="call-back__heading modal-heading">получить коснсультацию</strong>
                     <p class="call-back__description">оставьте свой номер телефона и мы свжемся с вами в течение 5 минут
                         (с 10:00 до 19:00)</p>
-                    <form action="php/sendmail.php" method="post" id="call-back-form" class="call-back__form">
-                        <input type="text" name="name" placeholder="Ваше имя" class="call-back__text-input _req ">
+                    <form action="php/sendmail.php" method="post" id="call-back-form" class="call-back__form modal-form">
+                        <input type="text" name="name" placeholder="Ваше имя" class="call-back__text-input modal-input _req ">
                         <div class="call-back__number-input number-input">
                             <div class="number-input__country-sign">+7</div>
-                            <input type="tel" name="number" id="phone" placeholder="Номер телефона" class="number-input__feald _req">
+                            <input type="tel" name="number" id="phone" placeholder="Номер телефона" class="number-input__feald modal-input _req">
                         </div>
-                        <button type="submit" class="call-back__submit-btn">отправить</button>
+                        <button type="submit" class="call-back__submit-btn modal-btn">отправить</button>
                     </form>
                     <div class="call-back__agreements">
                         <span>Нажимая «отправить», даете свое соглашение на </span><a href="#" target="_blank"
@@ -144,6 +144,54 @@
                 </div>
             </div>
             <div class="modal-close"></div>
+        </div>
+
+        <div class="_modal-wraper account-wraper">
+            <div class="modal-close"></div>
+            <div class="account">
+                <div class="account__content modal-content">
+                    <img src="./img/logo-rus-short.png" alt="icon" class="account__img modal-img">
+
+                    <div class="account__login login account-tab active" data-target_modal="login">
+                        <strong class="login__heading modal-heading">Войти в учетную запись</strong>
+                        <form action="#" class="login__form modal-form">
+                            <input type="email" placeholder="Почта" class="login__email-input  modal-input">
+                            <input type="password" placeholder="Пароль" class="login__pasword-input  modal-input">
+                            <div class="login__recover-link-container"><span href="#" class="login__recover-link account-tab-btn" data-path_modal="recovery">Забыли пароль?</span></div>
+                            <button type="submit" class="login__submit-btn modal-btn">Войти</button>
+                        </form>
+                        <div class="login__alternative">
+                            <span class="login__alternative-text">Нет аккаунта?</span><span class="login__reg-btn account-tab-btn" data-path_modal="registration">Зарегистрироваться</span>
+                        </div>
+                    </div>
+                    <div class="account__registration registration account-tab" data-target_modal="registration">
+                        <strong class="registration__heading modal-heading">Создать аккаунт</strong>
+                        <span class="registration__warning">Все поля обязательны к заполнению</span>
+                        <form action="#" class="registration__form modal-form">
+                            <input type="text" name="" id="" placeholder="Имя" class="registration__name modal-input">
+                            <input type="text" name="" id="" placeholder="Фамилия" class="registration__surname modal-input">
+                            <input type="email" name="" id="" placeholder="Почта" class="registration__email modal-input">
+                            <input type="password" name="" id="" class="registration__password modal-input" placeholder="Пароль">
+                            <label for="personal-check" class="registration__personal-check">
+                                <input type="checkbox" name="" id="personal-check" class="registration__checkbox"><span></span>Согласен на обработку персональных данных
+                            </label>
+                            <button type="submit" class="registration__submit-btn modal-btn">Зарегистрироваться</button>
+                        </form>
+                        <div class="registration__alternative">
+                            <span class="registration__alternative-text">Есть аккаунт?</span><span class="registration__log-btn account-tab-btn" data-path_modal="login">Войти</span>
+                        </div>
+                    </div>
+                    <div class="account__recovery recovery account-tab" data-target_modal="recovery">
+                        <span class="recovery__back account-tab-btn" data-path_modal="login">Назад</span>
+                        <strong class="recovery__heading modal-heading">Восстановление пароля</strong>
+                        <p class="recovrey__info">Введите почту и мы вышлем вам письмо для сброса пароля</p>
+                        <form action="#" class="recovrey__form modal-form">
+                            <input type="email" name="" id="" placeholder="Ваша почта" class="recovery__email  modal-input">
+                            <button type="submit" class="recovrey__submit-btn modal-btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <main class="main">

@@ -28,7 +28,7 @@ try {
     $mail->addAddress('agapovdanya@yandex.ru', 'Test User');     //Add a recipient
 
     //Тело письма
-    $body = '<h1> Форма:</h1>';
+    $body = '<h1> Заказ звонка:</h1>';
     $body .= '<p><strong>Имя:</strong> '.$_POST['name'].'</p>';
     $body .= '<p><strong>Телефон:</strong> '.$_POST['number'].'</p>';
 

@@ -15,7 +15,13 @@ window.addEventListener('DOMContentLoaded', function(){
     document.querySelector('.menu-overlay').addEventListener('click', function(){
         document.querySelector('.left-menu').classList.remove('left-menu-active');
         document.querySelector('.menu-overlay').classList.remove('menu-overlay-active');
-        document.querySelector('._modal-wraper').classList.remove('active');
+        document.querySelector('.call-back-wraper').classList.remove('active');
+        document.querySelector('.account-wraper').classList.remove('active');
+
+        document.querySelectorAll('.account-tab').forEach(function(el){
+            el.classList.remove('active');
+        });
+        document.querySelector('.account__login').classList.add('active');
     });
 
     document.querySelectorAll('.left-menu__link').forEach(function(link){
@@ -62,20 +68,43 @@ window.addEventListener('DOMContentLoaded', function(){
             item.style.display = 'block';
         })
     })
-    // modal window
+    // modal windows
 
     document.querySelector('.header__order-call').addEventListener('click', function(){
-        document.querySelector('._modal-wraper').classList.add('active');
+        document.querySelector('.call-back-wraper').classList.add('active');
         document.querySelector('.menu-overlay').classList.add('menu-overlay-active')
     });
     document.querySelector('.header__call-btn').addEventListener('click', function(){
-        document.querySelector('._modal-wraper').classList.add('active');
+        document.querySelector('.call-back-wraper').classList.add('active');
         document.querySelector('.menu-overlay').classList.add('menu-overlay-active')
     });
-    document.querySelector('.modal-close').addEventListener('click', function(){
-        document.querySelector('._modal-wraper').classList.remove('active');
-        document.querySelector('.menu-overlay').classList.remove('menu-overlay-active');
+    document.querySelectorAll('.modal-close').forEach(function(el){
+        el.addEventListener('click', function(){
+            document.querySelector('.call-back-wraper').classList.remove('active');
+            document.querySelector('.menu-overlay').classList.remove('menu-overlay-active');
+            document.querySelector('.account-wraper').classList.remove('active');
+
+            document.querySelectorAll('.account-tab').forEach(function(el){
+                el.classList.remove('active');
+            });
+            document.querySelector('.account__login').classList.add('active');
+    })
     });
+    document.querySelector('.login-btn').addEventListener('click', function(){
+        document.querySelector('.account-wraper').classList.add('active');
+        document.querySelector('.menu-overlay').classList.add('menu-overlay-active')
+    })
+
+    document.querySelectorAll('.account-tab-btn').forEach(function(item){
+        item.addEventListener('click', function(event){
+            const path = event.currentTarget.dataset.path_modal;
+            document.querySelectorAll('.account-tab').forEach(function(el){
+                el.classList.remove('active');
+            });
+
+            document.querySelector(`[data-target_modal="${path}"]`).classList.add('active');
+        })
+    })
     // form mask
 
     document.getElementById('phone').addEventListener('input', function (e) {
