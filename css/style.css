@@ -54,7 +54,9 @@ body{
 
     background-color: #e5e5e5;
 }
-
+body.no-scrol{
+    overflow: hidden;
+}
 p,
 h2{
     margin: 0;
@@ -77,6 +79,7 @@ button{
     border: none;
 }
 
+
 img{
     max-width: 100%;
 }
@@ -84,6 +87,13 @@ img{
 *:focus{
     opacity: 0.5;
     outline: none;
+}
+
+.object-top{
+    object-position: top;
+}
+.object-center{
+    object-position: center;
 }
 
 .wraper{
@@ -210,7 +220,6 @@ img{
 
 .menu__link{
     padding: 5px;
-    
     font-size: 18px;
     font-weight: 700;
 }
@@ -245,7 +254,34 @@ img{
 }
 
 .header__number{
+    position: relative;
     opacity: 0.6;
+    padding-left: 30px;
+    color: #53bdee;
+}
+
+.header__number:hover{
+    opacity: 0.8;
+}
+
+.header__number::before{
+    position: absolute;
+    top: -4px;
+    left: 0;
+
+    content: '';
+    display: inline-block;
+
+    width: 24px;
+    height: 24px;
+    
+    background: url('/img/telegram-icon.png') center no-repeat transparent;
+    background-size: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header__number:hover::before{
+    transform: rotate(360deg);
 }
 
 .header__order-call{
@@ -308,7 +344,7 @@ img{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 7;
 
     display: none;
 
@@ -324,6 +360,14 @@ img{
     z-index: 5;
     cursor: pointer;
     padding-right: 30px;
+
+    font-size: 1.125rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.catalog-btn:hover{
+    color: #FF9900b2;
 }
 
 .catalog-btn::after{
@@ -356,24 +400,48 @@ img{
 
 .catalog-menu{
     position: absolute;
-    top: 25px;
-    left: 0;
-    z-index: 5;
-
-
     display: none;
-    overflow: hidden;
 
     width: 800px;
-    /* max-height: 150px; */
     padding: 15px 20px 15px 0;
 
     background-color: #fff;
     border-radius: 10px;
+    filter: drop-shadow(0 0 80px #858585);
 }
 
 .catalog-menu.catalog-menu-active{
     display: flex;
+    top: 40px;
+    left: 0;
+    z-index: 20;
+}
+
+.catalog-menu__rectangle{
+    position: absolute;
+    top: -2px;
+    left: 35px;
+    z-index: -1;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 4px;
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+
+
+.catalog-menu.catalog-left-active{
+    display: flex;
+    left: 115%;
+    top: -20px;
+    z-index: 20;
+}
+
+.catalog-menu.catalog-left-active .catalog-menu__rectangle{
+    left: -2px;
+    top: 15px;
 }
 
 .catalog-menu__sections {
@@ -392,6 +460,12 @@ img{
     cursor: pointer;
     color: #fff;
     background-color: #197f7fb0;
+}
+.catalog-menu__sections-item:first-child{
+    border-top-left-radius: 10px;
+}
+.catalog-menu__sections-item:last-child{
+    border-bottom-left-radius: 10px;
 }
 .catalog-menu__sections-item.active{
     background-color: #fff;
@@ -444,7 +518,7 @@ img{
 
     height: 100vh;
     max-width: 720px;
-    padding: 30px 20px;
+    padding: 10px 20px;
 
     background-color: #fff;
 
@@ -462,8 +536,8 @@ img{
 
 .left-menu__btn{
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 
     background: url('../img/X.svg') left top no-repeat transparent;
     background-size: 95%;
@@ -487,6 +561,10 @@ img{
     align-items: center;
 }
 
+.left-menu__item{
+    position: relative;
+}
+
 .left-menu__item:not(:last-child){
     margin-bottom: 60px;
 }
@@ -495,6 +573,10 @@ img{
     font-size: 24px;
     line-height: 1;
     font-weight: 700;
+}
+
+.catalog-link{
+    display: none;
 }
 
 .left-menu-active{
@@ -889,6 +971,7 @@ img{
 
 
 .hero__container{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -901,10 +984,18 @@ img{
 
     color: #fff;
     background: url('../img/hero-alternative.jpg') center center no-repeat transparent;
-    /* background: url('/img/mountains') center center no-repeat transparent; */
     background-size: cover;
 }
 
+.hero__logo{
+    position: absolute;
+    right: 15%;
+    top: 100px;
+
+    height: 300px;
+    width: auto;
+    opacity: 0.8;
+}
 
 .hero__text{
     max-width: 50%;
@@ -1095,9 +1186,21 @@ img{
 
     font-size: 24px;
     line-height: 1;
-    font-weight: 400;
+    font-weight: 600;
 
     border-radius: 5px;
+    border: 3px solid #484bf2;
+}
+
+.course-card__btn:hover{
+    background-color: #484bf2;
+    color: #fff;
+}
+.course-card__btn:active,
+.course-card__btn:focus{
+    background-color: #e9605a;
+    border: 3px solid #e9605a;
+    opacity: 1;
 }
 
 /* ------------------- TUTORS ------------- */
@@ -1138,7 +1241,7 @@ img{
     width: 100%;
     height: 100%;
     object-fit: contain;
-    filter: drop-shadow(0 0 5px #000);
+    filter: drop-shadow(0 0 5px #345e90);
 }
 
 .tutor-card__content{
@@ -1149,7 +1252,8 @@ img{
 
     min-height: 520px;
     height: calc(100% - 250px);
-    border: 3px solid #007c7d;
+    border: 3px solid #345e90;
+    box-shadow: 0 0 5px #345e90;
     border-radius: 20px;
     background-color: #fff;
 }
@@ -1216,12 +1320,15 @@ img{
 
     padding: 15px 0;
 
-    background-color: #007c7d;
+    font-size: 16px;
+    font-weight: 600;
+
+    background-color: #345e90;
     color: #fff;
 }
 
 .tutor-card__btn-more:hover{
-   opacity: 0.7;
+   opacity: 0.8;
 }
 
 /* -------EXUMPLES ----------- */
@@ -1303,7 +1410,7 @@ img{
 .user-card{
     display: flex;
     flex-direction: column;
-    /* border: 2px solid #345e90; */
+    border: 2px solid #345e90;
     filter: drop-shadow(0 0 5px #345e90);
 }
 
@@ -1809,6 +1916,10 @@ background-size: contain;
     .clients__item:last-child{
         margin: 0;
     }
+
+    .hero__logo{
+        right: 2%;
+    }
 }
 
 @media (max-width: 1309px){
@@ -1836,7 +1947,14 @@ background-size: contain;
         margin: 0 0 35px 0;
     }
 }
-
+@media (max-width: 1040px){
+    .left-menu__catalog-item{
+        display: none;
+    }
+    .catalog-link{
+        display: initial;
+    }
+}
 @media (max-width: 1020px){
     .hero__text{
         max-width: 80%;
@@ -1844,6 +1962,10 @@ background-size: contain;
 
     .about__description{
         max-width: 90%;
+    }
+
+    .hero__logo{
+        display: none;
     }
 }
 
@@ -2081,7 +2203,7 @@ background-size: contain;
         font-size: 1rem;
     }
 }
-@media (max-width: 335px){
+@media (max-width: 460px){
     .tutors-more__vk-ikon, 
     .tutors-more__youtube-ikon, 
     .tutors-more__telegram-ikon{

@@ -19,8 +19,9 @@
                 <nav class="header__menu menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <span href="" class="menu__link catalog-btn">Каталог</span>
+                            <span class="catalog-btn">Каталог</span>
                             <div class="menu__catalog-menu catalog-menu">
+                                <div class="catalog-menu__rectangle"></div>
                                 <ul class="catalog-menu__sections">
                                     <li class="catalog-menu__sections-item active" data-path="p1">ОГЭ</li>
                                     <li class="catalog-menu__sections-item" data-path="p2">ЕГЭ</li>
@@ -95,7 +96,7 @@
                 </nav>
                 <div class="header__right">
                     <div class="header__contact">
-                        <a href="tel:" class="header__number">8 (800) 555-35-35</a>
+                        <a href="https://web.telegram.org/k/#@FAU_Teach" target="_blank" class="header__number">Задать вопрос</a>
                         <span class="header__order-call">Заказать обратный звонок</span>
                     </div>
                     <button class="header__call-btn call-btn"></button>
@@ -112,7 +113,69 @@
             </div>
             <strong class="left-menu__heading">Выберите раздел</strong>
             <ul class="left-menu__list">
-                <li class="left-menu__item"><a href="" class="left-menu__link">Каталог</a></li>
+                <li class="left-menu__item left-menu__catalog-item">
+                    <span class="left-menu__link left-menu__catalog-btn catalog-btn">Каталог</span>
+                            <div class="left-menu__catalog-menu catalog-menu">
+                                <div class="catalog-menu__rectangle"></div>
+                                <ul class="catalog-menu__sections">
+                                    <li class="catalog-menu__sections-item active" data-path="g1">ОГЭ</li>
+                                    <li class="catalog-menu__sections-item" data-path="g2">ЕГЭ</li>
+                                    <li class="catalog-menu__sections-item" data-path="g3">ДВИ</li>
+                                    <li class="catalog-menu__sections-item" data-path="g4">Другое</li>
+                                </ul>
+                                <div class="catalog-menu__content active" data-target="g1">
+                                    <ul class="catalog-menu__subjecst-list">
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Математика</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Физика</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Химия</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Информатика</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Английский</a></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-menu__content" data-target="g2">
+                                    <ul class="catalog-menu__subjecst-list">
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Математика</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Физика</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Информатика</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Английский</a></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-menu__content" data-target="g3">
+                                    <ul class="catalog-menu__subjecst-list">
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Физика</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Информатика</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Английский</a></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-menu__content" data-target="g4">
+                                    <ul class="catalog-menu__subjecst-list">
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Математикаl</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Физика</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Английский</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Информатика</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Русский</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                </li>
+                <li class="left-menu__item"><a href="#" class="left-menu__link catlog-link">Каталог</a></li>
                 <li class="left-menu__item"><a href="#about" class="left-menu__link">О нас</a></li>
                 <li class="left-menu__item"><a href="#tutors" class="left-menu__link">Наши преподаватели</a></li>
                 <li class="left-menu__item"><a href="#courses" class="left-menu__link">Приобрести курс</a></li>
@@ -208,6 +271,7 @@
                         <a href="" class="hero__start btn btn-bright">Начать обучение</a>
                         <a href="" class="hero__consult btn btn-border">Получить консультацию</a>
                     </div>
+                    <img src="/img/logo-icon.png" alt="logo" class="hero__logo">
                 </div>
             </section>
 
@@ -220,7 +284,6 @@
                             в подготоке к экзаменам и олимпиадам как онлайн, так и офлайн, а также успешные результаты
                             свох учеников, которые ответсвенно подходят ко всему процессу вашего образования.</p>
                     </div>
-                    <!-- <div class="about__bg"><img src="/img/about-bg" alt="bg" class="about__bg-img"></div> -->
                 </div>
             </section>
 
@@ -230,7 +293,7 @@
                     <ul class="courses__list">
                         <li class="courses__item course-card">
                             <div class="course-card__img-container">
-                                <img src="img/base-img.jpg" alt="img" class="course-card__img">
+                                <img src="./img/base-img.jpg" alt="img" class="course-card__img">
                             </div>
                             <div class="course-card__content">
                                 <div class="course-card__text">
@@ -246,14 +309,13 @@
                                     </ul>
                                 </div>
                                 <div class="course-card__btn-container">
-                                    <a href="#" class="course-card__btn btn-bright">Католог курсов</a>
-                                    <!-- <a href="#" class="course-card__btn btn-border">Подробнее</a> -->
+                                    <a href="#" class="course-card__btn">Взять курс</a>
                                 </div>
                             </div>
                         </li>
                         <li class="courses__item course-card">
                             <div class="course-card__img-container">
-                                <img src="img/base-img.jpg" alt="img" class="course-card__img">
+                                <img src="./img/advansed-course.jpg" alt="img" class="course-card__img object-top">
                             </div>
                             <div class="course-card__content">
                                 <div class="course-card__text">
@@ -269,14 +331,15 @@
                                     </ul>
                                 </div>
                                 <div class="course-card__btn-container">
-                                    <a href="#" class="course-card__btn btn-bright">Взять курс</a>
-                                    <!-- <a href="#" class="course-card__btn btn-border">Подробнее</a> -->
+                                    <a href="#" class="course-card__btn">Взять курс</a>
                                 </div>
                             </div>
                         </li>
                         <li class="courses__item course-card">
                             <div class="course-card__img-container">
-                                <img src="img/base-img.jpg" alt="img" class="course-card__img">
+
+                                <img src="./img/individ-course.avif" alt="img" class="course-card__img object-center">
+
                             </div>
                             <div class="course-card__content">
                                 <div class="course-card__text">
@@ -291,8 +354,7 @@
                                     </ul>
                                 </div>
                                 <div class="course-card__btn-container">
-                                    <a href="#" class="course-card__btn btn-bright">Взять курс</a>
-                                    <!-- <a href="#" class="course-card__btn btn-border">Подробнее</a> -->
+                                    <a href="#" class="course-card__btn">Взять курс</a>
                                 </div>
                             </div>
                         </li>
@@ -532,7 +594,7 @@
         <footer class="footer">
             <div class="footer__container _container">
                 <a href="" class="footer__logo">
-                    <img src="img/logo-rus.png" alt="" class="footer__logo-img">
+                    <img src="./img/logo-rus-short.png" alt="" class="footer__logo-img">
                 </a>
                 <nav class="footer__nav">
                     <ul class="footer__nav-list">
@@ -564,5 +626,5 @@
     <script src="js/script.js"></script>
     <script src="js/forms.js"></script>
 </body>
-<!-- test branch -->
 </html>
+

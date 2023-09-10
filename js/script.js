@@ -15,20 +15,27 @@ window.addEventListener('DOMContentLoaded', function(){
     document.querySelector('.menu-overlay').addEventListener('click', function(){
         document.querySelector('.left-menu').classList.remove('left-menu-active');
         document.querySelector('.menu-overlay').classList.remove('menu-overlay-active');
-        document.querySelector('.call-back-wraper').classList.remove('active');
-        document.querySelector('.account-wraper').classList.remove('active');
 
         document.querySelectorAll('.account-tab').forEach(function(el){
             el.classList.remove('active');
         });
         document.querySelector('.account__login').classList.add('active');
+
+        document.querySelector('._modal-wraper').classList.remove('active');
+        document.querySelector('body').classList.remove('no-scrol')
     });
 
     document.querySelectorAll('.left-menu__link').forEach(function(link){
+        if (!link.classList.contains('catalog-btn')){
         link.addEventListener('click', function(){
             document.querySelector('.left-menu').classList.remove('left-menu-active');
             document.querySelector('.menu-overlay').classList.remove('menu-overlay-active');
-        })
+        })}
+    });
+    document.querySelector('.left-menu__catalog-btn').addEventListener('click', function(){
+        document.querySelector('.left-menu__catalog-btn').classList.toggle('catalog-btn-active');
+        document.querySelector('.left-menu__catalog-menu').classList.toggle('catalog-left-active');
+        document.querySelector('.click-close').classList.toggle('active');
     });
     // catalog
     
@@ -39,8 +46,13 @@ window.addEventListener('DOMContentLoaded', function(){
     });
 
     document.querySelector('.click-close').addEventListener('click', function(){
-        document.querySelector('.catalog-btn').classList.remove('catalog-btn-active');
-        document.querySelector('.catalog-menu').classList.remove('catalog-menu-active');
+        document.querySelectorAll('.catalog-btn').forEach(function(el){
+            el.classList.remove('catalog-btn-active');
+        });
+        document.querySelectorAll('.catalog-menu').forEach(function(el){
+            el.classList.remove('catalog-left-active');
+            el.classList.remove('catalog-menu-active');
+        });
         document.querySelector('.click-close').classList.remove('active');
     })
 
@@ -73,22 +85,26 @@ window.addEventListener('DOMContentLoaded', function(){
     document.querySelector('.header__order-call').addEventListener('click', function(){
         document.querySelector('.call-back-wraper').classList.add('active');
         document.querySelector('.menu-overlay').classList.add('menu-overlay-active')
+        document.querySelector('body').classList.add('no-scrol')
     });
     document.querySelector('.header__call-btn').addEventListener('click', function(){
         document.querySelector('.call-back-wraper').classList.add('active');
         document.querySelector('.menu-overlay').classList.add('menu-overlay-active')
+        document.querySelector('body').classList.add('no-scrol')
     });
+
     document.querySelectorAll('.modal-close').forEach(function(el){
         el.addEventListener('click', function(){
-            document.querySelector('.call-back-wraper').classList.remove('active');
+            document.querySelector('body').classList.remove('no-scrol')
+            document.querySelector('._modal-wraper').classList.remove('active');
             document.querySelector('.menu-overlay').classList.remove('menu-overlay-active');
-            document.querySelector('.account-wraper').classList.remove('active');
 
             document.querySelectorAll('.account-tab').forEach(function(el){
                 el.classList.remove('active');
             });
             document.querySelector('.account__login').classList.add('active');
     })
+
     });
     document.querySelector('.login-btn').addEventListener('click', function(){
         document.querySelector('.account-wraper').classList.add('active');
