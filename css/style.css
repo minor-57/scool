@@ -95,7 +95,9 @@ img{
 .object-center{
     object-position: center;
 }
-
+.hidden{
+    display: none !important; 
+}
 .wraper{
     display: flex;
     flex-direction: column;

@@ -77,10 +77,11 @@ window.addEventListener('DOMContentLoaded', function(){
 
     // section clients
 
-    document.querySelector('.clients__btn-more').addEventListener('click', function(){
+    document.querySelector('.clients__btn-more').addEventListener('click', function(el){
         document.querySelectorAll('.clients__item').forEach(function(item){
             item.style.display = 'block';
         })
+        document.querySelector('.clients__btn-more').classList.add('hidden');
     })
     // modal windows
 
