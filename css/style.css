@@ -380,13 +380,17 @@ img{
 
     width: 28px;
     height: 100%;
+
     background: url('../img/catalog-btn-icon.svg') center 4px no-repeat transparent;
+
     background-size: contain;
     transition: transform 0.3s ease;
 }
 
 .catalog-btn:hover::after{
+
     background-image: url('../img/catalog-btn-icon-bright.svg');
+
 }
 
 .catalog-btn.catalog-btn-active{
@@ -395,7 +399,9 @@ img{
 
 .catalog-btn.catalog-btn-active::after{
     transform: rotate(90deg);
+
     background-image: url('../img/catalog-btn-icon-bright.svg');
+
 }
 
 .catalog-menu{
@@ -748,7 +754,9 @@ img{
     width: 60px;
     height: 60px;
 
+
     cursor: pointer;
+
     background: url('../img/X-white.svg') center no-repeat transparent;
     background-position: contain;
 }
