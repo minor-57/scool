@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', function(){
         const formData = new FormData(form);
 
         if (error === 0){
-            let response = await fetch('sendmail.php', {
+            let response = await fetch('php/sendmail.php', {
                 method: 'POST',
                 body: formData,
                 mode: 'no-cors'

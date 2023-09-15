@@ -108,7 +108,7 @@ window.addEventListener('DOMContentLoaded', function(){
                 el.classList.remove('active');
             });
             document.querySelector('.account__login').classList.add('active');
-            document.querySelector('body').classList.rmove('no-scrol')
+            document.querySelector('body').classList.remove('no-scrol')
     })
 
     });
