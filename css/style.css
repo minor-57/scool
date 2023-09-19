@@ -628,8 +628,12 @@ img{
     display: initial;
 }
 .call-back__text-input._error,
-.number-input._error{
+.number-input._error,
+.modal-input.just-validate-error-field{
     box-shadow: 0 0 15px red;
+}
+.modal-input.just-validate-error-field{
+    margin-bottom: 10px;
 }
 .call-back {
     width: 530px;
@@ -800,7 +804,7 @@ img{
     flex-direction: column;
     width: 300px;
 }
-.login__email-input {
+.login__email{
     margin-bottom: 16px;
 }
 .login__pasword-input {
@@ -867,6 +871,9 @@ img{
     gap: 16px;
     margin-bottom: 20px;
 }
+.registration__form > .just-validate-error-label{
+    display: none;
+}
 .registration__name {
 }
 .registration__surname {
@@ -874,6 +881,10 @@ img{
 .registration__email {
 }
 .registration__password {
+}
+.registration__agreement{
+    display: flex;
+    flex-direction: column;
 }
 .registration__personal-check {
     position: relative;
@@ -898,6 +909,10 @@ img{
     width: 12px;
     height: 12px;
     border: 1px solid #585858;
+}
+.registration__checkbox.just-validate-error-field + span{
+    border-color: red;
+    box-shadow: 0 0 5px red;
 }
 .registration__checkbox + span::before{
     content: '';
