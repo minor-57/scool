@@ -119,6 +119,9 @@ window.addEventListener('DOMContentLoaded', function(){
             });
 
             document.querySelector(`[data-target_modal="${path}"]`).classList.add('active');
+            document.querySelectorAll('form').forEach(function(form){
+                form.reset();
+            })
         })
     })
     // form mask

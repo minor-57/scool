@@ -233,12 +233,12 @@
                         <strong class="registration__heading modal-heading">Создать аккаунт</strong>
                         <span class="registration__warning">Все поля обязательны к заполнению</span>
                         <form action="#" id="registration-form" class="registration__form modal-form">
-                            <label for="registrtion__name"><input type="text" name="" id="registrtion__name" placeholder="Имя" class="registration__name modal-input"></label>
-                            <label for="registrtion__surname"><input type="text" name="" id="registrtion__surname" placeholder="Фамилия" class="registration__surname modal-input"></label>
-                            <label for="registrtion__emai"><input type="email" name="" id="registrtion__email" placeholder="Почта" class="registration__email modal-input"></label>
-                            <label for="registrtion__pass"><input type="password" name="" id="registrtion__pass" class="registration__password modal-input" placeholder="Пароль"></label>
+                            <label for="registrtion__name"><input type="text" name="name" id="registrtion__name" placeholder="Имя" class="registration__name modal-input"></label>
+                            <label for="registrtion__surname"><input type="text" name="surname" id="registrtion__surname" placeholder="Фамилия" class="registration__surname modal-input"></label>
+                            <label for="registrtion__emai"><input type="email" name="email" id="registrtion__email" placeholder="Почта" class="registration__email modal-input"></label>
+                            <label for="registrtion__pass"><input type="password" name="pass" id="registrtion__pass" class="registration__password modal-input" placeholder="Пароль"></label>
                             <label for="personal-check" class="registration__personal-check">
-                                <input type="checkbox" name="" id="personal-check" class="registration__checkbox"><span></span>Согласен на обработку персональных данных
+                                <input type="checkbox" id="personal-check" class="registration__checkbox"><span></span>Согласен на обработку персональных данных
                             </label>
                             <button type="submit" class="registration__submit-btn modal-btn">Зарегистрироваться</button>
                         </form>
@@ -634,9 +634,8 @@
         </footer>
     </div>
     <script src="js/script.js"></script>
-    <script src="js/forms.js"></script>
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
-    <script src="js/just-validate-settings.js"></script>
+    <script src="js/forms.js"></script>
 </body>
 </html>
 
