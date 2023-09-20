@@ -194,8 +194,8 @@ window.addEventListener('DOMContentLoaded', function(){
         const formData = new FormData(reg_form);
 
 
-        
-            if(!registration_validator.revalidate()){
+            const test = await registration_validator.revalidate()
+            if(test){
                 let response = await fetch('php/reg.php', {
                 method: 'POST',
                 body: formData,
@@ -208,7 +208,9 @@ window.addEventListener('DOMContentLoaded', function(){
                 }
             } else {
                 alert('errrrrooorrr');
+
             }
+
     };
 
     
