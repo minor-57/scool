@@ -1,0 +1,200 @@
+body{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    color: black;
+}
+.content-section{
+display: flex;
+}
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+.contour-1{
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+.column-3{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+}
+.content-main{
+    background-color: aliceblue;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.09), 0 4px 7px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    margin: 16px 0px 0px;
+    padding: 32px 48px;
+    }
+.contour-2{
+    padding-left: 0;
+    padding-right: 0;
+}
+.content-header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    margin-right: 1rem;
+}
+.logo-olympus{
+    object-fit: contain;
+    width: 150px;
+    height: 150px;
+}
+.main-logo{
+    object-fit: contain;
+    width: 200px;
+    height: 150px;    
+}
+.stages-container{
+    margin-top: 30px;
+}
+.stages{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px 0 20px;
+}
+.stage{
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+}
+.stage.stage-selected .stage-icon {
+background-color: #1b6060c2;
+color: white;
+}
+.stage .stage-icon{
+    margin-right: 10px;
+}
+.stage-icon{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 33px;
+    border-radius: 50%;
+    text-align: center;
+    width: 33px;
+    height: 33px;
+}
+.stage.stage-selected .stage-text{
+    color: black;
+}
+.stage-strip:first-of-type{
+    min-width: 150px;
+    max-width: 150px;
+}
+.stage-strip{
+    flex: 1;
+    height: 3px;
+    background-color: #0e2020c2;  
+    margin: 0 10px;
+}
+.stage .stage-icon{
+    margin-right: 0 8px;    
+}
+.stage-icon{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 33px;
+    border-radius: 50%;
+    text-align: center;
+    width: 33px;
+    height: 33px;
+}
+.stage-strip:nth-of-type(2){
+    min-width: 150px;
+    max-width: 150px;
+}
+.cotent-basic{
+    margin-top: 30px;
+}
+.subject{
+    display: flex;
+}
+.subject-text{
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: black;
+    font-size: 30px;
+}
+.text{
+    font-size: 25px;
+    line-height: 3.95;
+    text-align: start;
+    font-weight: 700;
+}
+.number-class{
+margin-left: 3rem;
+}
+.subject-main{
+    margin-top: 1.5rem;
+}
+.p-relative{
+    position: relative;
+}
+.subject-row{
+    width: 97%;
+    background: #c1d1d1c2;
+    border-radius: 8px;
+    padding: 22px 24px 16px;
+    margin-bottom: 20px;
+}
+.subject-image{
+    align-items: center;
+}
+
+.subject-name{
+    display: flex;
+}
+.subject-icon{
+    object-fit: contain;
+    width: 80px;
+    height: 80px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.subject-title{
+flex: 1 1 0%;
+font-size: 2.5rem;
+font-weight: 500;
+}
+.btn-choose:hover{
+background-color:  #1c6153c2 ;
+}
+.btn-text{
+    border: 0;
+    color: rgb(0, 0, 0);
+}
+.button{
+    padding: 30px 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 24px;
+    border: 2px solid black;
+    border-radius: 30px;
+    transition: all 0.4s;
+    cursor: pointer;
+    background-color: #c1d1d1c2;
+}
+
+
