@@ -163,14 +163,18 @@ img{
 
 .main{
     flex: 1 1 auto;
+    padding-top: 100px;
 }
 
 /*--------- HEADER -----------*/
 
 .header{
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    position: relative;
-    /* z-index: 1; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
 
     background-color: #fff;
     /* margin-bottom: 50px; */
@@ -184,6 +188,7 @@ img{
 }
 
 .header__container{
+    
     display: flex;
     justify-content: space-between;
     align-items: center;

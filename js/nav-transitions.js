@@ -1,14 +1,8 @@
 window.addEventListener('DOMContentLoaded', function(){
-    const navLinks = document.querySelectorAll('.menu__link');
-    const leftNavLinks = document.querySelectorAll('.left-menu__link');
+    const navLinks = document.querySelectorAll('.nav-link');
+  
 
     navLinks.forEach(function(link){
-        link.addEventListener('click', navLinkClick);
-    })
-
-    
-
-    leftNavLinks.forEach(function(link){
         link.addEventListener('click', navLinkClick);
     })
 
@@ -23,8 +17,8 @@ function SmothScroll(event){
     ? "header"
     : event.currentTarget.getAttribute("href");
     const targetPosition = document.querySelector(targetId).offsetTop;
-    const startPosition = window.pageYOffset;
-    const distance = targetPosition - startPosition;
+    const startPosition = window.scrollY;
+    const distance = targetPosition - startPosition - 110;
     const duration = 1000;
     let start = null;
 
