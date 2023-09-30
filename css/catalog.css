@@ -56,7 +56,9 @@ body{
     background-color: rgb(231, 231, 231);
 }
 .wrapper{
-    padding-left: 300px
+    padding-left: 340px;
+    padding-top: 50px;
+    
 }
 .container-limit{
     max-width: 1800px;
@@ -96,6 +98,11 @@ img{
     outline: none;
 }
 
+._container {
+    max-width: 1800px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 
 .side-section{
     height: 100vh;
@@ -201,6 +208,14 @@ img{
     background-color: #2fc8b46c;
 }
 
+.catalog-info{
+    position: relative;
+    min-height: 100px;
+    padding: 15px 25px 10px 25px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
 .w-100{
     display: none;
 }
@@ -210,9 +225,9 @@ img{
     padding-bottom: 25px;
 }
 
-.folder-col{
+/* .folder-col{
     padding: 30px;
-}
+} */
 
 .folder-card{
     display: flex;
@@ -243,8 +258,37 @@ img{
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.2;
+    text-align: center;
 }
 
+.subject-name{
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    font-size: 0.75rem;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.catalog-heading{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 600;
+
+}
+
+.catalog-info__heding{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.catalog-info__description{
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 400;
+}
 
 @media (max-width: 669px) {
     .wrapper{
