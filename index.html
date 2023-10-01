@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>unknown</title>
+    <meta name="description" content="Подготовка к ЕГЭ, ОГЭ и Олимпиадам. Онлайн курсы и индивидуальные занятия.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="./img/main-icon.png">
+    <title>Olimpus - школа репетиторов</title>
 </head>
 
 <body>
@@ -14,13 +16,14 @@
         <header class="header">
             <div class="header__container _container">
                 <a href="" class="header__logo logo">
-                    <img src="/img/logo-rus-short.png" alt="Logo" class="header__logo-img">
+                    <img src="img/logo-rus-short.png" alt="Logo" class="header__logo-img">
                 </a>
                 <nav class="header__menu menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <span href="" class="menu__link catalog-btn">Каталог</span>
+                            <span class="catalog-btn">Каталог</span>
                             <div class="menu__catalog-menu catalog-menu">
+                                <div class="catalog-menu__rectangle"></div>
                                 <ul class="catalog-menu__sections">
                                     <li class="catalog-menu__sections-item active" data-path="p1">ОГЭ</li>
                                     <li class="catalog-menu__sections-item" data-path="p2">ЕГЭ</li>
@@ -71,22 +74,22 @@
                             </div>
                         </li>
                         <li class="menu__item">
-                            <a href="#about" class="menu__link">О нас</a>
+                            <a href="#about" class="menu__link nav-link">О нас</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#tutors" class="menu__link">Наши преподаватели</a>
+                            <a href="#tutors" class="menu__link nav-link">Наши преподаватели</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#courses" class="menu__link">Приобрести курс</a>
+                            <a href="#courses" class="menu__link nav-link">Приобрести курс</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#exumples" class="menu__link">Как проходит обучение</a>
+                            <a href="#exumples" class="menu__link nav-link">Как проходит обучение</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="header__right">
                     <div class="header__contact">
-                        <a href="tel:" class="header__number">8 (800) 555-35-35</a>
+                        <a href="https://web.telegram.org/k/#@FAU_Teach" target="_blank" class="header__number">Задать вопрос</a>
                         <span class="header__order-call">Заказать обратный звонок</span>
                     </div>
                     <button class="header__call-btn call-btn"></button>
@@ -103,31 +106,93 @@
             </div>
             <strong class="left-menu__heading">Выберите раздел</strong>
             <ul class="left-menu__list">
-                <li class="left-menu__item"><a href="" class="left-menu__link catalog-btn">Каталог</a></li>
-                <li class="left-menu__item"><a href="#about" class="left-menu__link">О нас</a></li>
-                <li class="left-menu__item"><a href="#tutors" class="left-menu__link">Наши преподаватели</a></li>
-                <li class="left-menu__item"><a href="#courses" class="left-menu__link">Приобрести курс</a></li>
-                <li class="left-menu__item"><a href="#exumples" class="left-menu__link">Как проходит обучение</a></li>
+
+                <li class="left-menu__item left-menu__catalog-item">
+                    <span class="left-menu__link left-menu__catalog-btn catalog-btn">Каталог</span>
+                            <div class="left-menu__catalog-menu catalog-menu">
+                                <div class="catalog-menu__rectangle"></div>
+                                <ul class="catalog-menu__sections">
+                                    <li class="catalog-menu__sections-item active" data-path="g1">ОГЭ</li>
+                                    <li class="catalog-menu__sections-item" data-path="g2">ЕГЭ</li>
+                                    <li class="catalog-menu__sections-item" data-path="g3">ДВИ</li>
+                                    <li class="catalog-menu__sections-item" data-path="g4">Другое</li>
+                                </ul>
+                                <div class="catalog-menu__content active" data-target="g1">
+                                    <ul class="catalog-menu__subjecst-list">
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Математика</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Физика</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Химия</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Информатика</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Английский</a></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-menu__content" data-target="g2">
+                                    <ul class="catalog-menu__subjecst-list">
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Математика</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Физика</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Информатика</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Английский</a></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-menu__content" data-target="g3">
+                                    <ul class="catalog-menu__subjecst-list">
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Физика</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Информатика</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Английский</a></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-menu__content" data-target="g4">
+                                    <ul class="catalog-menu__subjecst-list">
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Математикаl</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Физика</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Английский</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Информатика</a></li>
+                                        <li class="catalog-menu__subject"><a href="#"
+                                                class="catalog-menu__subject-link">Русский</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                </li>
+                <li class="left-menu__item"><a href="#about" class="left-menu__link nav-link">О нас</a></li>
+                <li class="left-menu__item"><a href="#tutors" class="left-menu__link nav-link">Наши преподаватели</a></li>
+                <li class="left-menu__item"><a href="#courses" class="left-menu__link nav-link">Приобрести курс</a></li>
+                <li class="left-menu__item"><a href="#exumples" class="left-menu__link nav-link">Как проходит обучение</a></li>
+
             </ul>
         </nav>
         <div class="menu-overlay"></div>
         <div class="click-close"></div>
 
-        <div class="_modal-wraper">
+        <div class="_modal-wraper call-back-wraper">
             <div class="call-back">
                 <div class="call-back__content modal-content">
-                    <img src="/img/3d-call.webp" alt="call-img" class="call-back__img">
+                    <img src="./img/3d-call.webp" alt="call-img" class="call-back__img modal-img">
                     <strong class="call-back__heading modal-heading">получить коснсультацию</strong>
                     <p class="call-back__description">оставьте свой номер телефона и мы свжемся с вами в течение 5 минут
                         (с 10:00 до 19:00)</p>
-                    <form action="" class="call-back__form">
-                        <input type="text" placeholder="Ваше имя" class="call-back__text-input">
+                    <form action="php/sendmail.php" method="post" id="call-back-form" class="call-back__form modal-form">
+                        <input type="text" name="name" placeholder="Ваше имя" class="call-back__text-input modal-input _req ">
                         <div class="call-back__number-input number-input">
                             <div class="number-input__country-sign">+7</div>
-                            <input type="tel" name="" id="phone" placeholder="Номер телефона"
-                                class="number-input__feald">
+                            <input type="tel" name="number" id="phone" placeholder="Номер телефона" class="number-input__feald modal-input _req">
                         </div>
-                        <button type="submit" class="call-back__submit-btn">отправить</button>
+                        <button type="submit" class="call-back__submit-btn modal-btn">отправить</button>
                     </form>
                     <div class="call-back__agreements">
                         <span>Нажимая «отправить», даете свое соглашение на </span><a href="#" target="_blank"
@@ -138,20 +203,66 @@
             <div class="modal-close"></div>
         </div>
 
+        <div class="_modal-wraper account-wraper">
+            <div class="modal-close"></div>
+            <div class="account">
+                <div class="account__content modal-content">
+                    <img src="./img/logo-rus-short.png" alt="icon" class="account__img modal-img">
+
+                    <div class="account__login login account-tab active" data-target_modal="login">
+                        <strong class="login__heading modal-heading">Войти в учетную запись</strong>
+                        <form action="#" class="login__form modal-form">
+                            <input type="email" placeholder="Почта" class="login__email-input  modal-input">
+                            <input type="password" placeholder="Пароль" class="login__pasword-input  modal-input">
+                            <div class="login__recover-link-container"><span href="#" class="login__recover-link account-tab-btn" data-path_modal="recovery">Забыли пароль?</span></div>
+                            <button type="submit" class="login__submit-btn modal-btn">Войти</button>
+                        </form>
+                        <div class="login__alternative">
+                            <span class="login__alternative-text">Нет аккаунта?</span><span class="login__reg-btn account-tab-btn" data-path_modal="registration">Зарегистрироваться</span>
+                        </div>
+                    </div>
+                    <div class="account__registration registration account-tab" data-target_modal="registration">
+                        <strong class="registration__heading modal-heading">Создать аккаунт</strong>
+                        <span class="registration__warning">Все поля обязательны к заполнению</span>
+                        <form action="#" class="registration__form modal-form">
+                            <input type="text" name="" id="" placeholder="Имя" class="registration__name modal-input">
+                            <input type="text" name="" id="" placeholder="Фамилия" class="registration__surname modal-input">
+                            <input type="email" name="" id="" placeholder="Почта" class="registration__email modal-input">
+                            <input type="password" name="" id="" class="registration__password modal-input" placeholder="Пароль">
+                            <label for="personal-check" class="registration__personal-check">
+                                <input type="checkbox" name="" id="personal-check" class="registration__checkbox"><span></span>Согласен на обработку персональных данных
+                            </label>
+                            <button type="submit" class="registration__submit-btn modal-btn">Зарегистрироваться</button>
+                        </form>
+                        <div class="registration__alternative">
+                            <span class="registration__alternative-text">Есть аккаунт?</span><span class="registration__log-btn account-tab-btn" data-path_modal="login">Войти</span>
+                        </div>
+                    </div>
+                    <div class="account__recovery recovery account-tab" data-target_modal="recovery">
+                        <span class="recovery__back account-tab-btn" data-path_modal="login">Назад</span>
+                        <strong class="recovery__heading modal-heading">Восстановление пароля</strong>
+                        <p class="recovrey__info">Введите почту и мы вышлем вам письмо для сброса пароля</p>
+                        <form action="#" class="recovrey__form modal-form">
+                            <input type="email" name="" id="" placeholder="Ваша почта" class="recovery__email  modal-input">
+                            <button type="submit" class="recovrey__submit-btn modal-btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <main class="main">
             <section class="hero">
                 <div class="_container hero__container">
                     <div class="hero__text">
                         <h2 class="hero__heading">Начинай обучаться с нами</h2>
-                        <p class="hero__description">Мы молодая онлайн школа по подготовке к ЕГЭ, ОГЭ и олимпиадам,
-                            которая только начинает свой путь. Несмотря на это, мы собрали преподавателей, имеющие опыт
-                            в подготоке к экзаменам и олимпиадам как онлайн, так и офлайн, а также успешные результаты
-                            свох учеников, которые ответсвенно подходят ко всему процессу вашего образования.</p>
+                        <p class="hero__description">Подготовим вас на желаемый балл и оценку в кротчайшие сроки в удобном для вас формате обучения.</p>
                     </div>
                     <div class="hero__buttons">
                         <a href="" class="hero__start btn btn-bright">Начать обучение</a>
                         <a href="" class="hero__consult btn btn-border">Получить консультацию</a>
                     </div>
+                    <img src="/img/logo-icon.png" alt="logo" class="hero__logo">
                 </div>
             </section>
 
@@ -164,7 +275,6 @@
                             в подготоке к экзаменам и олимпиадам как онлайн, так и офлайн, а также успешные результаты
                             свох учеников, которые ответсвенно подходят ко всему процессу вашего образования.</p>
                     </div>
-                    <!-- <div class="about__bg"><img src="/img/about-bg" alt="bg" class="about__bg-img"></div> -->
                 </div>
             </section>
 
@@ -174,7 +284,7 @@
                     <ul class="courses__list">
                         <li class="courses__item course-card">
                             <div class="course-card__img-container">
-                                <img src="/img/base-img.jpg" alt="img" class="course-card__img">
+                                <img src="./img/base-course.jpg" alt="img" class="course-card__img">
                             </div>
                             <div class="course-card__content">
                                 <div class="course-card__text">
@@ -190,14 +300,13 @@
                                     </ul>
                                 </div>
                                 <div class="course-card__btn-container">
-                                    <a href="#" class="course-card__btn btn-bright">Католог курсов</a>
-                                    <!-- <a href="#" class="course-card__btn btn-border">Подробнее</a> -->
+                                    <a href="#" class="course-card__btn">Взять курс</a>
                                 </div>
                             </div>
                         </li>
                         <li class="courses__item course-card">
                             <div class="course-card__img-container">
-                                <img src="/img/base-img.jpg" alt="img" class="course-card__img">
+                                <img src="./img/advansed-course.jpg" alt="img" class="course-card__img object-top">
                             </div>
                             <div class="course-card__content">
                                 <div class="course-card__text">
@@ -213,14 +322,15 @@
                                     </ul>
                                 </div>
                                 <div class="course-card__btn-container">
-                                    <a href="#" class="course-card__btn btn-bright">Взять курс</a>
-                                    <!-- <a href="#" class="course-card__btn btn-border">Подробнее</a> -->
+                                    <a href="#" class="course-card__btn">Взять курс</a>
                                 </div>
                             </div>
                         </li>
                         <li class="courses__item course-card">
                             <div class="course-card__img-container">
-                                <img src="/img/base-img.jpg" alt="img" class="course-card__img">
+
+                                <img src="./img/individ-course.avif" alt="img" class="course-card__img object-center">
+
                             </div>
                             <div class="course-card__content">
                                 <div class="course-card__text">
@@ -235,8 +345,7 @@
                                     </ul>
                                 </div>
                                 <div class="course-card__btn-container">
-                                    <a href="#" class="course-card__btn btn-bright">Взять курс</a>
-                                    <!-- <a href="#" class="course-card__btn btn-border">Подробнее</a> -->
+                                    <a href="#" class="course-card__btn">Взять курс</a>
                                 </div>
                             </div>
                         </li>
@@ -250,7 +359,7 @@
                     <div class="tutors__cards-container">
                         <div class="tutor-card tutors__card">
                             <div class="tutor-card__img-wraper">
-                                <img src="/img/fedor.png" alt="avatar" class="tutor-card__img">
+                                <img src="img/fedor.png" alt="avatar" class="tutor-card__img">
                             </div>
                             <div class="tutor-card__content">
                                 <div class="tutor-card__text">
@@ -270,7 +379,7 @@
                         </div>
                         <div class="tutor-card tutors__card">
                             <div class="tutor-card__img-wraper">
-                                <img src="/img/Maxim.png" alt="avatar" class="tutor-card__img">
+                                <img src="img/Maxim.png" alt="avatar" class="tutor-card__img">
                             </div>
                             <div class="tutor-card__content">
                                 <div class="tutor-card__text">
@@ -284,7 +393,7 @@
                                             олимпиад и первенств по химии(ВсОш, Высшая проба, Газпром)</li>
                                     </ul>
                                 </div>
-                                <a href="/pages/tutor-1.html" class="tutor-card__btn-more">Подробнее</a>
+                                <a href="pages/tutor-1.html" class="tutor-card__btn-more">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -319,7 +428,7 @@
                     <ul class="clients__list">
                         <li class="clients__item user-card">
                             <div class="user-card__profile">
-                                <img src="/img/user-icon.svg" alt="avatar" class="user-card__avatar">
+                                <img src="img/user-icon.svg" alt="avatar" class="user-card__avatar">
                                 <div class="user-card__user-info">
                                     <strong class="user-card__user-name">Елена<a
                                             href="https://orel.profi.ru/profile/UshkovFA"
@@ -329,11 +438,11 @@
                                 </div>
                             </div>
                             <p class="user-card__testimonial-text">Спасибо большое Федору за подготовку к экзамену!
-                                Результат хороший. <img src="/img/EGE-profil-86.jpg" alt=""></p>
+                                Результат хороший. <img src="img/EGE-profil-86.jpg" alt=""></p>
                         </li>
                         <li class="clients__item user-card">
                             <div class="user-card__profile">
-                                <img src="/img/user-icon.svg" alt="avatar" class="user-card__avatar">
+                                <img src="img/user-icon.svg" alt="avatar" class="user-card__avatar">
                                 <div class="user-card__user-info">
                                     <strong class="user-card__user-name">Светлана<a
                                             href="https://orel.profi.ru/profile/UshkovFA"
@@ -349,7 +458,7 @@
                         </li>
                         <li class="clients__item user-card">
                             <div class="user-card__profile">
-                                <img src="/img/user-icon.svg" alt="avatar" class="user-card__avatar">
+                                <img src="img/user-icon.svg" alt="avatar" class="user-card__avatar">
                                 <div class="user-card__user-info">
                                     <strong class="user-card__user-name">Дадаш<a
                                             href="https://orel.profi.ru/profile/UshkovFA"
@@ -366,7 +475,7 @@
                         </li>
                         <li class="clients__item user-card">
                             <div class="user-card__profile">
-                                <img src="/img/user-icon.svg" alt="avatar" class="user-card__avatar">
+                                <img src="img/user-icon.svg" alt="avatar" class="user-card__avatar">
                                 <div class="user-card__user-info">
                                     <strong class="user-card__user-name">Евдокия<a
                                             href="https://orel.profi.ru/profile/UshkovFA"
@@ -384,7 +493,7 @@
                         </li>
                         <li class="clients__item user-card">
                             <div class="user-card__profile">
-                                <img src="/img/user-icon.svg" alt="avatar" class="user-card__avatar">
+                                <img src="img/user-icon.svg" alt="avatar" class="user-card__avatar">
                                 <div class="user-card__user-info">
                                     <strong class="user-card__user-name">Леонид<a
                                             href="https://orel.profi.ru/profile/UshkovFA"
@@ -403,7 +512,7 @@
                         </li>
                         <li class="clients__item user-card">
                             <div class="user-card__profile">
-                                <img src="/img/user-icon.svg" alt="avatar" class="user-card__avatar">
+                                <img src="img/user-icon.svg" alt="avatar" class="user-card__avatar">
                                 <div class="user-card__user-info">
                                     <strong class="user-card__user-name">Лена<a
                                             href="https://orel.profi.ru/profile/UshkovFA"
@@ -420,7 +529,7 @@
                         </li>
                         <li class="clients__item user-card">
                             <div class="user-card__profile">
-                                <img src="/img/user-icon.svg" alt="avatar" class="user-card__avatar">
+                                <img src="img/user-icon.svg" alt="avatar" class="user-card__avatar">
                                 <div class="user-card__user-info">
                                     <strong class="user-card__user-name">Вика Литвинова<a
                                             href="https://vk.com/topic-218744262_50197831"
@@ -437,7 +546,7 @@
                         </li>
                         <li class="clients__item user-card">
                             <div class="user-card__profile">
-                                <img src="/img/user-icon.svg" alt="avatar" class="user-card__avatar">
+                                <img src="img/user-icon.svg" alt="avatar" class="user-card__avatar">
                                 <div class="user-card__user-info">
                                     <strong class="user-card__user-name">Светлана Козлова<a
                                             href="https://vk.com/topic-218744262_50197831"
@@ -455,7 +564,7 @@
                         </li>
                         <li class="clients__item user-card">
                             <div class="user-card__profile">
-                                <img src="/img/user-icon.svg" alt="avatar" class="user-card__avatar">
+                                <img src="img/user-icon.svg" alt="avatar" class="user-card__avatar">
                                 <div class="user-card__user-info">
                                     <strong class="user-card__user-name">Аня Фролова<a
                                             href="https://vk.com/topic-218744262_50197831"
@@ -476,21 +585,21 @@
         <footer class="footer">
             <div class="footer__container _container">
                 <a href="" class="footer__logo">
-                    <img src="/img/logo-rus.png" alt="" class="footer__logo-img">
+                    <img src="./img/logo-rus-short.png" alt="" class="footer__logo-img">
                 </a>
                 <nav class="footer__nav">
                     <ul class="footer__nav-list">
                         <li class="footer__nav-item">
-                            <a href="#about" class="footer__nav-link">О нас</a>
+                            <a href="#about" class="footer__nav-link nav-link">О нас</a>
                         </li>
                         <li class="footer__nav-item">
-                            <a href="#tutors" class="footer__nav-link">Наши преподаватели</a>
+                            <a href="#tutors" class="footer__nav-link nav-link">Наши преподаватели</a>
                         </li>
                         <li class="footer__nav-item">
-                            <a href="#courses" class="footer__nav-link">Приобрести курс</a>
+                            <a href="#courses" class="footer__nav-link nav-link">Приобрести курс</a>
                         </li>
                         <li class="footer__nav-item">
-                            <a href="#exumples" class="footer__nav-link">Как проходит обучение</a>
+                            <a href="#exumples" class="footer__nav-link nav-link">Как проходит обучение</a>
                         </li>
                     </ul>
                 </nav>
@@ -505,7 +614,9 @@
             </div>
         </footer>
     </div>
-    <script src="/js/script.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/forms.js"></script>
+    <script src="./js/nav-transitions.js"></script>
 </body>
-<!-- test branch -->
 </html>
+
