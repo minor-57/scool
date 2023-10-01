@@ -22,6 +22,7 @@
                     <ul class="menu__list">
                         <li class="menu__item">
                             <span class="catalog-btn">Каталог</span>
+                            <div class="click-close"></div>
                             <div class="menu__catalog-menu catalog-menu">
                                 <div class="catalog-menu__rectangle"></div>
                                 <ul class="catalog-menu__sections">
@@ -107,67 +108,47 @@
             <strong class="left-menu__heading">Выберите раздел</strong>
             <ul class="left-menu__list">
 
-                <li class="left-menu__item left-menu__catalog-item">
-                    <span class="left-menu__link left-menu__catalog-btn catalog-btn">Каталог</span>
-                            <div class="left-menu__catalog-menu catalog-menu">
-                                <div class="catalog-menu__rectangle"></div>
-                                <ul class="catalog-menu__sections">
-                                    <li class="catalog-menu__sections-item active" data-path="g1">ОГЭ</li>
-                                    <li class="catalog-menu__sections-item" data-path="g2">ЕГЭ</li>
-                                    <li class="catalog-menu__sections-item" data-path="g3">ДВИ</li>
-                                    <li class="catalog-menu__sections-item" data-path="g4">Другое</li>
-                                </ul>
-                                <div class="catalog-menu__content active" data-target="g1">
-                                    <ul class="catalog-menu__subjecst-list">
-                                        <li class="catalog-menu__subject"><a href="#"
-                                                class="catalog-menu__subject-link">Математика</a></li>
-                                        <li class="catalog-menu__subject"><a href="#"
-                                                class="catalog-menu__subject-link">Физика</a></li>
-                                        <li class="catalog-menu__subject"><a href="#"
-                                                class="catalog-menu__subject-link">Химия</a></li>
-                                        <li class="catalog-menu__subject"><a href="#"
-                                                class="catalog-menu__subject-link">Информатика</a></li>
-                                        <li class="catalog-menu__subject"><a href="#"
-                                                class="catalog-menu__subject-link">Английский</a></li>
-                                    </ul>
-                                </div>
-                                <div class="catalog-menu__content" data-target="g2">
-                                    <ul class="catalog-menu__subjecst-list">
-                                        <li class="catalog-menu__subject"><a href="#"
-                                                class="catalog-menu__subject-link">Математика</a></li>
-                                        <li class="catalog-menu__subject"><a href="#"
-                                                class="catalog-menu__subject-link">Физика</a></li>
-                                        <li class="catalog-menu__subject"><a href="#"
-                                                class="catalog-menu__subject-link">Информатика</a></li>
-                                        <li class="catalog-menu__subject"><a href="#"
-                                                class="catalog-menu__subject-link">Английский</a></li>
-                                    </ul>
-                                </div>
-                                <div class="catalog-menu__content" data-target="g3">
-                                    <ul class="catalog-menu__subjecst-list">
-                                        <li class="catalog-menu__subject"><a href="#"
-                                                class="catalog-menu__subject-link">Физика</a></li>
-                                        <li class="catalog-menu__subject"><a href="#"
-                                                class="catalog-menu__subject-link">Информатика</a></li>
-                                        <li class="catalog-menu__subject"><a href="#"
-                                                class="catalog-menu__subject-link">Английский</a></li>
-                                    </ul>
-                                </div>
-                                <div class="catalog-menu__content" data-target="g4">
-                                    <ul class="catalog-menu__subjecst-list">
-                                        <li class="catalog-menu__subject"><a href="#"
-                                                class="catalog-menu__subject-link">Математикаl</a></li>
-                                        <li class="catalog-menu__subject"><a href="#"
-                                                class="catalog-menu__subject-link">Физика</a></li>
-                                        <li class="catalog-menu__subject"><a href="#"
-                                                class="catalog-menu__subject-link">Английский</a></li>
-                                        <li class="catalog-menu__subject"><a href="#"
-                                                class="catalog-menu__subject-link">Информатика</a></li>
-                                        <li class="catalog-menu__subject"><a href="#"
-                                                class="catalog-menu__subject-link">Русский</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                <li class="left-menu__item">
+                    <div class="left-menu__catalog catalog-acordion">
+                        <div data-tab="acord-ege" class="catalog-acordion__title">
+                            <strong  class="catalog-acordion__title-text">ЕГЭ</strong><span class="catalog-acordion__title-icon"></span>
+                        </div>
+                        <div id="acord-ege" class="catalog-acordion__content acordion-content">
+                            <ul class="acordion-content__list">
+                                <li class="acordion-content__item"><a href="./pages/catalog-ege.html" class="acordion-content__link">Математика</a></li>
+                                <li class="acordion-content__item"><a href="" class="acordion-content__link">Физика</a></li>
+                                <li class="acordion-content__item"><a href="" class="acordion-content__link">Химия</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="left-menu__item">
+                    <div class="left-menu__catalog catalog-acordion">
+                        <div data-tab="acord-oge" class="catalog-acordion__title">
+                            <strong class="catalog-acordion__title-text">ОГЭ</strong><span class="catalog-acordion__title-icon"></span>
+                        </div>
+                        <div id="acord-oge" class="catalog-acordion__content acordion-content">
+                            <ul class="acordion-content__list">
+                                <li class="acordion-content__item"><a href="" class="acordion-content__link">Математика</a></li>
+                                <li class="acordion-content__item"><a href="" class="acordion-content__link">Физика</a></li>
+                                <li class="acordion-content__item"><a href="" class="acordion-content__link">Химия</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="left-menu__item">
+                    <div class="left-menu__catalog catalog-acordion">
+                        <div data-tab="acord-dvi" class="catalog-acordion__title">
+                            <strong class="catalog-acordion__title-text">ДВИ</strong><span class="catalog-acordion__title-icon"></span>
+                        </div>
+                        <div id="acord-dvi" class="catalog-acordion__content acordion-content">
+                            <ul class="acordion-content__list">
+                                <li class="acordion-content__item"><a href="" class="acordion-content__link">Математика</a></li>
+                                <li class="acordion-content__item"><a href="" class="acordion-content__link">Физика</a></li>
+                                <li class="acordion-content__item"><a href="" class="acordion-content__link">Химия</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
                 <li class="left-menu__item"><a href="#about" class="left-menu__link nav-link">О нас</a></li>
                 <li class="left-menu__item"><a href="#tutors" class="left-menu__link nav-link">Наши преподаватели</a></li>
@@ -177,7 +158,7 @@
             </ul>
         </nav>
         <div class="menu-overlay"></div>
-        <div class="click-close"></div>
+        
 
         <div class="_modal-wraper call-back-wraper">
             <div class="call-back">

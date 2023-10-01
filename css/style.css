@@ -217,6 +217,7 @@ img{
 
 .menu__item{
     position: relative;
+    z-index: 50;
     display: block;
 }
 
@@ -362,9 +363,10 @@ img{
     display: initial;
 }
 
+
 .catalog-btn{
     position: relative;
-    z-index: 5;
+    z-index: 50;
     cursor: pointer;
     padding-right: 30px;
 
@@ -407,6 +409,9 @@ img{
 
 .catalog-menu{
     position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 100;
     display: none;
 
     width: 800px;
@@ -419,9 +424,8 @@ img{
 
 .catalog-menu.catalog-menu-active{
     display: flex;
-    top: 40px;
-    left: 0;
-    z-index: 20;
+    
+
 }
 
 .catalog-menu__rectangle{
@@ -522,10 +526,14 @@ img{
     z-index: 10;
 
     display: block;
+    overflow: scroll;
 
     height: 100vh;
     max-width: 720px;
-    padding: 10px 20px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     background-color: #fff;
 
@@ -570,6 +578,9 @@ img{
 
 .left-menu__item{
     position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .left-menu__item:not(:last-child){
@@ -612,6 +623,87 @@ img{
 
 .menu-overlay-active{
     display: block;
+}
+/* --acordion-- */
+.left-menu__catalog {
+    width: 100%;
+    margin-bottom: -40px;
+}
+.catalog-acordion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.catalog-acordion__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    min-height: 30px;
+    padding-right: 10px;
+    padding-left: 70px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    
+    background-color: #ff990065;
+    border-radius: 5px;
+}
+.catalog-acordion__title.active{
+    opacity: 0.5;
+}
+.catalog-acordion__title.active > span{
+    transform: rotate(180deg);
+}
+.catalog-acordion__title:hover{
+    opacity: 0.9;
+}
+.catalog-acordion__title-text {
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 600;
+}
+.catalog-acordion__title-icon {
+    width: 30px;
+    height: 30px;
+    background: url('../img/down-arrow.png') center no-repeat transparent;
+    background-size: contain;
+}
+.catalog-acordion__content {
+    width: 100%;
+}
+.acordion-content {
+    padding: 5px;
+    max-height: 0;
+    border-bottom: 1px solid #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.1s ease-out, visibility 0.1s ease-out;
+    
+}
+.acordion-content.active{
+    visibility: visible;
+    opacity: 1;
+    max-height:fit-content;
+}
+.acordion-content__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.acordion-content__item:not(:last-child) {
+    margin-bottom: 8px;
+}
+.acordion-content__link {
+    display: inline-block;
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 600;
+    border-radius: 8px;
+}
+.acordion-content__link:hover{
+    background-color: #396fdb;
 }
 /* --------- MODAL =========== */
 /* call-modal */
