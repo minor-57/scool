@@ -43,6 +43,10 @@ html{
     font-family: 'Open Sans', sans-serif;
 }
 
+._hidden{
+    display: none !important;
+}
+
 html,
 body{
     width: 100%;
@@ -264,7 +268,7 @@ img{
 .subject-name{
     display: inline-block;
     margin-bottom: 0.75rem;
-    font-size: 0.75rem;
+    font-size: 1rem;
     line-height: 1;
     font-weight: 400;
 }
@@ -291,8 +295,12 @@ img{
 }
 
 @media (max-width: 669px) {
+    html{
+        font-size: 14px;
+    }
+
     .wrapper{
-        padding: 0;
+        padding-left: 20px;
     }
     
     .side-section{
@@ -300,5 +308,12 @@ img{
     }
     .side-section__button-back{
         transform: none;
+    }
+    .catalog-heading{
+        text-align: center;
+    }
+    .subject-name{
+        display: block;
+        text-align: center;
     }
 }
