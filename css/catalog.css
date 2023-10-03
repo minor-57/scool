@@ -229,9 +229,16 @@ img{
     padding-bottom: 25px;
 }
 
-/* .folder-col{
-    padding: 30px;
-} */
+.player{
+    min-height: 320px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.folder-cols{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 
 .folder-card{
     display: flex;
@@ -271,6 +278,7 @@ img{
     font-size: 1rem;
     line-height: 1;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 .catalog-heading{
