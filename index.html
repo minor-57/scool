@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <meta name="description" content="Подготовка к ЕГЭ, ОГЭ и Олимпиадам. Онлайн курсы и индивидуальные занятия.">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="./img/main-icon.png">
     <title>Olimpus - школа репетиторов</title>
+
 </head>
 
 <body>
@@ -22,7 +25,9 @@
                     <ul class="menu__list">
                         <li class="menu__item">
                             <span class="catalog-btn">Каталог</span>
+
                             <div class="click-close"></div>
+
                             <div class="menu__catalog-menu catalog-menu">
                                 <div class="catalog-menu__rectangle"></div>
                                 <ul class="catalog-menu__sections">
@@ -90,6 +95,7 @@
                 </nav>
                 <div class="header__right">
                     <div class="header__contact">
+
                         <a href="https://web.telegram.org/k/#@FAU_Teach" target="_blank" class="header__number">Задать вопрос</a>
                         <span class="header__order-call">Заказать обратный звонок</span>
                     </div>
@@ -147,14 +153,17 @@
                                 <li class="acordion-content__item"><a href="" class="acordion-content__link">Математика</a></li>
                                 <li class="acordion-content__item"><a href="" class="acordion-content__link">Физика</a></li>
                                 <li class="acordion-content__item"><a href="" class="acordion-content__link">Химия</a></li>
+
                             </ul>
                         </div>
                     </div>
                 </li>
+
                 <li class="left-menu__item"><a href="#about" class="left-menu__link nav-link text-center">О нас</a></li>
                 <li class="left-menu__item"><a href="#tutors" class="left-menu__link nav-link text-center">Наши преподаватели</a></li>
                 <li class="left-menu__item"><a href="#courses" class="left-menu__link nav-link text-center">Приобрести курс</a></li>
                 <li class="left-menu__item"><a href="#exumples" class="left-menu__link nav-link text-center">Как проходит обучение</a></li>
+
 
             </ul>
         </nav>
@@ -168,11 +177,13 @@
                     <strong class="call-back__heading modal-heading">получить коснсультацию</strong>
                     <p class="call-back__description">оставьте свой номер телефона и мы свжемся с вами в течение 5 минут
                         (с 10:00 до 19:00)</p>
+
                     <form action="php/sendmail.php" method="post" id="call-back-form" class="call-back__form modal-form">
                         <input type="text" name="name" placeholder="Ваше имя" class="call-back__text-input modal-input _req ">
                         <div class="call-back__number-input number-input">
                             <div class="number-input__country-sign">+7</div>
                             <input type="tel" name="number" id="phone" placeholder="Номер телефона" class="number-input__feald modal-input _req">
+
                         </div>
                         <button type="submit" class="call-back__submit-btn modal-btn">отправить</button>
                     </form>
@@ -196,11 +207,13 @@
                         <form action="#" class="login__form modal-form">
                             <input type="email" placeholder="Почта" class="login__email-input  modal-input">
                             <input type="password" placeholder="Пароль" class="login__pasword-input  modal-input">
+
                             <div class="login__recover-link-container"><span href="#" class="login__recover-link account-tab-btn" data-path_modal="recovery">Забыли пароль?</span></div>
                             <button type="submit" class="login__submit-btn modal-btn">Войти</button>
                         </form>
                         <div class="login__alternative">
                             <span class="login__alternative-text">Нет аккаунта?</span><span class="login__reg-btn account-tab-btn" data-path_modal="registration">Зарегистрироваться</span>
+
                         </div>
                     </div>
                     <div class="account__registration registration account-tab" data-target_modal="registration">
@@ -208,16 +221,20 @@
                         <span class="registration__warning">Все поля обязательны к заполнению</span>
                         <form action="#" class="registration__form modal-form">
                             <input type="text" name="" id="" placeholder="Имя" class="registration__name modal-input">
+
                             <input type="text" name="" id="" placeholder="Фамилия" class="registration__surname modal-input">
                             <input type="email" name="" id="" placeholder="Почта" class="registration__email modal-input">
                             <input type="password" name="" id="" class="registration__password modal-input" placeholder="Пароль">
                             <label for="personal-check" class="registration__personal-check">
                                 <input type="checkbox" name="" id="personal-check" class="registration__checkbox"><span></span>Согласен на обработку персональных данных
+
                             </label>
                             <button type="submit" class="registration__submit-btn modal-btn">Зарегистрироваться</button>
                         </form>
                         <div class="registration__alternative">
+
                             <span class="registration__alternative-text">Есть аккаунт?</span><span class="registration__log-btn account-tab-btn" data-path_modal="login">Войти</span>
+
                         </div>
                     </div>
                     <div class="account__recovery recovery account-tab" data-target_modal="recovery">
@@ -225,7 +242,9 @@
                         <strong class="recovery__heading modal-heading">Восстановление пароля</strong>
                         <p class="recovrey__info">Введите почту и мы вышлем вам письмо для сброса пароля</p>
                         <form action="#" class="recovrey__form modal-form">
+
                             <input type="email" name="" id="" placeholder="Ваша почта" class="recovery__email  modal-input">
+
                             <button type="submit" class="recovrey__submit-btn modal-btn">Отправить</button>
                         </form>
                     </div>
@@ -282,7 +301,9 @@
                                     </ul>
                                 </div>
                                 <div class="course-card__btn-container">
-                                    <a href="#" class="course-card__btn">Взять курс</a>
+
+                                    <a href="./pages/base-course-1.html" class="course-card__btn">Взять курс</a>
+
                                 </div>
                             </div>
                         </li>
@@ -304,8 +325,9 @@
                                     </ul>
                                 </div>
                                 <div class="course-card__btn-container">
-                                    <a href="#" class="course-card__btn">Взять курс</a>
-                                </div>
+
+                                    <a href="./pages/advansed-course-2.html" class="course-card__btn">Взять курс</a>
+                 </div>
                             </div>
                         </li>
                         <li class="courses__item course-card">
@@ -327,7 +349,9 @@
                                     </ul>
                                 </div>
                                 <div class="course-card__btn-container">
-                                    <a href="#" class="course-card__btn">Взять курс</a>
+
+                                    <a href="./pages/personal-lessons-3.html" class="course-card__btn">Взять курс</a>
+
                                 </div>
                             </div>
                         </li>
@@ -596,9 +620,11 @@
             </div>
         </footer>
     </div>
+
     <script src="./js/script.js"></script>
     <script src="./js/forms.js"></script>
     <script src="./js/nav-transitions.js"></script>
 </body>
 </html>
+
 
