@@ -33,13 +33,45 @@ window.addEventListener('DOMContentLoaded', function(){
             document.querySelector('.left-menu').classList.remove('left-menu-active');
             document.querySelector('.menu-overlay').classList.remove('menu-overlay-active');
         })}
+
     });
     document.querySelector('.left-menu__catalog-btn').addEventListener('click', function(){
         document.querySelector('.left-menu__catalog-btn').classList.toggle('catalog-btn-active');
         document.querySelector('.left-menu__catalog-menu').classList.toggle('catalog-left-active');
         document.querySelector('.click-close').classList.toggle('active');
+
     });
+    
+    //left menu acordion
+    const acordionTitle = document.querySelectorAll('.catalog-acordion__title');
+    const acordionContent  = document.querySelectorAll('.acordion-content');
+    acordionTitle.forEach(function(el){
+        el.addEventListener('click', function(event){
+            const target = event.currentTarget.dataset.tab;
+
+            if(event.currentTarget.classList.contains('active')){
+                event.currentTarget.classList.remove('active');
+                document.getElementById(target).classList.remove('active');
+            } else {
+                acordionContent.forEach(function(content){
+                content.classList.remove('active')
+                });
+                acordionTitle.forEach(function(title){
+                    title.classList.remove('active')
+                });
+                event.currentTarget.classList.add('active');
+                document.getElementById(target).classList.add('active');
+            }
+        })
+    })
     // catalog
+
+    document.querySelectorAll('.nav-link').forEach(function(el){
+        el.addEventListener('click', function(){
+            document.querySelector('.click-close').classList.remove('active');
+            document.querySelector('.catalog-menu').classList.remove('catalog-menu-active');
+        })
+    })
     
     document.querySelector('.catalog-btn').addEventListener('click', function(){
         document.querySelector('.catalog-btn').classList.toggle('catalog-btn-active');
