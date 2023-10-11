@@ -57,7 +57,7 @@ body{
     line-height: 1;
     font-weight: 400;
 
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(255, 255, 255);
 }
 .wrapper{
     padding-left: 340px;
@@ -114,7 +114,7 @@ img{
     position: fixed;
     top: 0;
     left: 0;
-    background: #dad6d6;
+    background:  rgba(255, 153, 0, 0.5);
     transition: transform 1s ease-in-out;
     z-index: 100;
     border-right: 1px solid #e5e5e5;
@@ -170,7 +170,7 @@ img{
     border-radius: 50%;
 
     cursor: pointer;
-    background: url('../img/arrow-in-circle.png') center no-repeat #dad6d6;
+    background: url('../img/arrow-in-circle.png') center no-repeat rgb(255, 153, 0);
     background-size: contain;
     transform: rotate(180deg);
     transition: transform 0.2s ease-in-out;    
@@ -206,18 +206,18 @@ img{
     text-align: center;
 }
 .side-section__link.active{
-    background-color: #e7e7e7;
+    background-color: #ffffff;
 }
 .side-section__link:hover{
-    background-color: #2fc8b46c;
+    background-color: rgba(64, 233, 140, 0.8);
 }
 
 .catalog-info{
     position: relative;
     min-height: 100px;
     padding: 15px 25px 10px 25px;
-    background-color: #fff;
-    border-radius: 8px;
+    border: 3px #000 solid;
+    border-radius: 20px;
 }
 
 .w-100{
@@ -252,8 +252,8 @@ img{
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 12px;
-
-    background-color: rgb(174, 171, 171);
+    
+    background-color: rgba(255, 153, 0, 0.5);
     border-radius: 8px;
 }
 .folder-card:hover{

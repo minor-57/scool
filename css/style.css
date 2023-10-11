@@ -289,7 +289,7 @@ img{
     width: 24px;
     height: 24px;
     
-    background: url('/img/telegram-icon.png') center no-repeat transparent;
+    background: url('../img/telegram-icon.png') center no-repeat transparent;
     background-size: contain;
     transition: transform 0.3s ease-in-out;
 }
@@ -1979,7 +1979,7 @@ background-size: contain;
 }
 /* ------------- MEDIA ---------- */
 
-@media (max-width: 1630px) {
+@media (max-width: 1647px) {
     .header__contact{
         display: none;
     }
@@ -1989,7 +1989,7 @@ background-size: contain;
     }
 }
 
-@media (max-width: 1430px){
+@media (max-width: 1448px){
     .header__menu{
         display: none;
     }
