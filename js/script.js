@@ -27,12 +27,11 @@ window.addEventListener('DOMContentLoaded', function(){
         document.querySelector('body').classList.remove('no-scrol')
     });
 
-    // document.querySelectorAll('.left-menu__link').forEach(function(link){
-    //     if (!link.classList.contains('catalog-btn')){
-    //     link.addEventListener('click', function(){
-    //         document.querySelector('.left-menu').classList.remove('left-menu-active');
-    //         document.querySelector('.menu-overlay').classList.remove('menu-overlay-active');
-    //     })}
+    document.querySelectorAll('.left-menu__link').forEach(function(link){
+        link.addEventListener('click', function(){
+            document.querySelector('.left-menu').classList.remove('left-menu-active');
+            document.querySelector('.menu-overlay').classList.remove('menu-overlay-active');
+        })
 
     // });
     // document.querySelector('.left-menu__catalog-btn').addEventListener('click', function(){
@@ -40,7 +39,7 @@ window.addEventListener('DOMContentLoaded', function(){
     //     document.querySelector('.left-menu__catalog-menu').classList.toggle('catalog-left-active');
     //     document.querySelector('.click-close').classList.toggle('active');
 
-    // });
+     });
     
     //left menu acordion
     const acordionTitle = document.querySelectorAll('.catalog-acordion__title');
