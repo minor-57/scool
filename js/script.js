@@ -115,6 +115,11 @@ window.addEventListener('DOMContentLoaded', function(){
         document.querySelector('.clients__btn-more').classList.add('hidden');
     })
     // modal windows
+    document.querySelector('.hero__consult').addEventListener('click', function(){
+        document.querySelector('.call-back-wraper').classList.add('active');
+        document.querySelector('.menu-overlay').classList.add('menu-overlay-active');
+        document.querySelector('body').classList.add('no-scrol')
+    })
 
     document.querySelector('.header__order-call').addEventListener('click', function(){
         document.querySelector('.call-back-wraper').classList.add('active');

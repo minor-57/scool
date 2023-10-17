@@ -745,7 +745,8 @@ img{
     display: initial;
 }
 .call-back__text-input._error,
-.number-input._error{
+.number-input._error,
+.submit__text-input._error {
     box-shadow: 0 0 15px red;
 }
 .call-back {
@@ -783,12 +784,14 @@ img{
     font-weight: 600;
     line-height: 1;
     text-transform: uppercase;
+    text-align: center;
 }
 .call-back__description {
     margin-bottom: 35px;
 }
 .call-back__description,
-.call-back__agreements{
+.call-back__agreements,
+.submit__agreements{
     width: 380px;
 
     font-size: 0.875rem;
@@ -1091,6 +1094,119 @@ img{
 .recovrey__submit-btn {
     background-color: #006364;
 }
+
+/* submit */
+.submit-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+
+    background: url('../../img/Meteor.svg') center no-repeat transparent;
+    background-size: cover;
+}
+.submit{
+    width: 800px;
+    min-height: 600px;
+ }
+.submit__content{
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+    background-color: #fff;
+    border-radius: 12px;
+}
+.submit.disabled{
+    display: none;
+}
+.submit__img{
+    width: 200px;
+    height: 200px;
+}
+.submit__heading{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.submit__p{
+    font-size: 1.25rem; 
+    text-align: center;
+    margin-bottom: 15px;
+}
+.submit__submit-btn{
+    padding: 12px 20px;
+}
+.submit__text{
+    margin-bottom: 25px;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5;
+}
+.submit__choise{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.choise{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.choise__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.choise__name{
+    margin-right: 10px;
+    font-size: 1.3rem;
+    line-height: 1;
+    font-weight: 600;
+}
+.choise__field{
+    text-wrap: nowrap;
+}
+
+.submit__form{
+    gap: 30px;
+    margin-bottom: 35px;
+    width: 500px;
+}
+.modal-input{
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.number-input__country-sign.submit-country-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.success {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.success.active{
+    display: flex;
+}
+.success__h {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 600;
+}
+.success__p {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
 /*--------- HERO -----------*/
 
 
@@ -2152,20 +2268,27 @@ background-size: contain;
         width: 100%;
         transform: none;
     }
-    .account{
+    .account,
+    .call-back,
+    .submit{
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
+        height: auto;
     }
     .modal-close{
-        top: 40px;
-        right: 40px;
+        top: 12px;
+        right: 12px;
         z-index: 200;
 
         background-image: url('../img/X.svg');
     }
-    .call-back{
+    .call-back__agreements,
+    .call-back__description,
+    .submit__agreements{
         width: 100%;
-        height: 100vh;
+    }
+    .submit__content{
+        padding: 0.5rem 0.5rem 2rem 0.5rem;
     }
 }
 
@@ -2190,6 +2313,9 @@ background-size: contain;
 
     .footer__logo{
         display: none;
+    }
+    .submit__form{
+        width: 300px;
     }
 }
 
