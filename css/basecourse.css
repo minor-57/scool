@@ -295,6 +295,11 @@ background-color:  #1c6153c2 ;
     margin-right: 40px;
     margin-left: 40px;
 }
+.subject-title-chemestry{
+    display: block;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
 .subject-text-chemestry{
     flex: 1 1 0%;
     font-size: 1.5rem;
