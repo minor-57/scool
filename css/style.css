@@ -374,7 +374,7 @@ img{
 
 .login-btn{
     position: relative;
-    display: none;
+    /* display: none; */
 
     padding: 18px 13px 18px 60px;
 
@@ -385,6 +385,9 @@ img{
     border-radius: 10px;
     color: #fff;
     background-color: #1b6060;
+}
+.login-btn.disabled{
+    display: none;
 }
 
 .login-btn::before{
@@ -402,6 +405,22 @@ img{
 
 .login-btn:hover{
     background-color: #1b6060c2;
+}
+
+.logout-btn{
+    display: none;
+    padding: 18px 13px 18px 60px;
+
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 600;
+
+    border-radius: 10px;
+    color: #fff;
+    background-color: #b70f36;
+}
+.logout-btn.active{
+    display: inline-block;
 }
 
 /*--------- CATALOG -------*/
@@ -861,6 +880,10 @@ img{
 }
 /* --------- MODAL =========== */
 /* call-modal */
+.just-validate-error-label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 ._modal-wraper {
     position: fixed;
@@ -1081,6 +1104,12 @@ img{
             flex-direction: column;
     width: 300px;
 }
+/* .login__input-label{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+} */
 .login__email-input {
     margin-bottom: 16px;
 }

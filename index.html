@@ -7,6 +7,7 @@
 
 
     <meta name="description" content="Подготовка к ЕГЭ, ОГЭ и Олимпиадам. Онлайн курсы и индивидуальные занятия.">
+    <meta name="keywords" content="olimpus, онлайн школа, репетитор, егэ, репетитор по математике">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="./img/main-icon.png">
@@ -108,6 +109,7 @@
                     </div>
                     <button class="header__call-btn call-btn"></button>
                     <button class="header__login-btn login-btn">Войти</button>
+                    <button class="header__login-btn logout-btn">Выйти</button>
                     <button class="header__burger burger"></button>
                 </div>
             </div>
@@ -237,9 +239,9 @@
 
                     <div class="account__login login account-tab active" data-target_modal="login">
                         <strong class="login__heading modal-heading">Войти в учетную запись</strong>
-                        <form action="#" class="login__form modal-form">
-                            <input type="email" placeholder="Почта" class="login__email-input  modal-input">
-                            <input type="password" placeholder="Пароль" class="login__pasword-input  modal-input">
+                        <form action="#" class="login__form modal-form" id="login-form">
+                            <label for="login-email" class="login__input-label"><input type="email" placeholder="Почта" id="login-email" name="username" class="login__email-input  modal-input"></label>
+                            <label for="login-pass" class="login__input-label"><input type="password" placeholder="Пароль" id="login-pass" name="password" class="login__pasword-input  modal-input"></label>
 
                             <div class="login__recover-link-container"><span href="#"
                                     class="login__recover-link account-tab-btn" data-path_modal="recovery">Забыли
@@ -256,14 +258,14 @@
                     <div class="account__registration registration account-tab" data-target_modal="registration">
                         <strong class="registration__heading modal-heading">Создать аккаунт</strong>
                         <span class="registration__warning">Все поля обязательны к заполнению</span>
-                        <form action="#" class="registration__form modal-form">
-                            <input type="text" name="" id="" placeholder="Имя" class="registration__name modal-input">
+                        <form action="#" class="registration__form modal-form" id="registration-form">
+                            <input type="text" name="name" id="registrtion__name" placeholder="Имя" class="registration__name modal-input">
 
-                            <input type="text" name="" id="" placeholder="Фамилия"
+                            <input type="text" name="surname" id="registrtion__surname" placeholder="Фамилия"
                                 class="registration__surname modal-input">
-                            <input type="email" name="" id="" placeholder="Почта"
+                            <input type="email" name="username" id="registrtion__email" placeholder="Почта"
                                 class="registration__email modal-input">
-                            <input type="password" name="" id="" class="registration__password modal-input"
+                            <input type="password" name="password" id="registrtion__pass" class="registration__password modal-input"
                                 placeholder="Пароль">
                             <label for="personal-check" class="registration__personal-check">
                                 <input type="checkbox" name="" id="personal-check"
@@ -284,9 +286,9 @@
                         <span class="recovery__back account-tab-btn" data-path_modal="login">Назад</span>
                         <strong class="recovery__heading modal-heading">Восстановление пароля</strong>
                         <p class="recovrey__info">Введите почту и мы вышлем вам письмо для сброса пароля</p>
-                        <form action="#" class="recovrey__form modal-form">
+                        <form action="#" class="recovrey__form modal-form" id="recovery-form">
 
-                            <input type="email" name="" id="" placeholder="Ваша почта"
+                            <input type="email" name="" id="recovery__email" placeholder="Ваша почта"
                                 class="recovery__email  modal-input">
 
                             <button type="submit" class="recovrey__submit-btn modal-btn">Отправить</button>
@@ -690,8 +692,23 @@
     </div>
 
     <script src="./js/script.js"></script>
-    <script src="./js/forms.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="./js/forms.js" defer></script>
     <script src="./js/nav-transitions.js"></script>
+    <script>
+        if(sessionStorage.token){
+            document.querySelectorAll('.login-btn').forEach((el) =>{
+                    el.classList.add('disabled');
+                })
+                document.querySelectorAll('.logout-btn').forEach((el) =>{
+                    el.classList.add('active');
+                    el.addEventListener('click', () => {
+                        sessionStorage.clear();
+                        window.location.reload();
+                    })
+                }) 
+            }        
+    </script>
 </body>
 
 </html>
