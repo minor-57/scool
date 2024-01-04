@@ -25,7 +25,7 @@ try {
 
     //Recipients
     $mail->setFrom('daniilagapov822@gmail.com', 'Olimpus');
-    $mail->addAddress('agapovdanya@yandex.ru', 'Test User');     //Add a recipient
+    $mail->addAddress('all_data_olimpus@olimpus-tutor.ru', 'Olimpus');     //Add a recipient
 
     //Тело письма
     $body = '<h1> Запись на курс:</h1>';
