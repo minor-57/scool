@@ -541,7 +541,7 @@ img{
 
     cursor: pointer;
     color: #fff;
-    background-color: #197f7fb0;
+    background-color: #214aa9d1;
 }
 .catalog-menu__sections-item:first-child{
     border-top-left-radius: 10px;
@@ -1440,7 +1440,7 @@ img{
     border-bottom-right-radius: 40px 40px;
 
     color: #fff;
-    background: url('../img/hero-alternative.jpg') center center no-repeat transparent;
+    background: url('../img/snow-bg-2.gif') center center no-repeat transparent;
     background-size: cover;
 }
 
@@ -2059,7 +2059,7 @@ img{
 
 /* ---------- FOOTER ------------ */
 .footer{
-    background-color: #197f7f;
+    background-color: #18579b;
 }
 
 .footer__container{
