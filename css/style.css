@@ -446,17 +446,19 @@ img{
 
     width: 28px;
     height: 100%;
-    background: url('../img/catalog-btn-icon.svg') center 4px no-repeat transparent;
+    background: url('../img/arrow-narrow-circle-broken-down-svgrepo-com.svg') center no-repeat transparent;
     background-size: contain;
     -webkit-transition: -webkit-transform 0.3s ease;
     transition: -webkit-transform 0.3s ease;
     -o-transition: transform 0.3s ease;
     transition: transform 0.3s ease;
     transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+    transform: rotate(90deg);
 }
 
 .catalog-btn:hover::after{
-    background-image: url('../img/catalog-btn-icon-bright.svg');
+    /* background-image: url('../img/catalog-btn-icon-bright.svg'); */
+    transform: translateY(2px) rotate(90deg);
 }
 
 .catalog-btn.catalog-btn-active{
@@ -464,10 +466,10 @@ img{
 }
 
 .catalog-btn.catalog-btn-active::after{
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
-    background-image: url('../img/catalog-btn-icon-bright.svg');
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    background-image: url('../img/arrow-narrow-circle-broken-down-svgrepo-com.svg');
 }
 
 .catalog-menu{
@@ -1435,7 +1437,7 @@ img{
 
     min-height: 720px;
     padding: 100px 0 100px 80px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     border-bottom-left-radius: 40px 40px;
     border-bottom-right-radius: 40px 40px;
 
@@ -1492,7 +1494,7 @@ img{
     position: relative;
     overflow: hidden;
 
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     padding: 50px 15px;
 
     text-align: center;
@@ -1555,7 +1557,7 @@ img{
 /*--------- COURSES -----------*/
 
 .courses__container{
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .courses__heading{
@@ -1699,7 +1701,7 @@ img{
 
 /* ------------------- TUTORS ------------- */
 .tutors__container{
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .tutors__heading{
@@ -1860,7 +1862,7 @@ img{
 /* -------EXUMPLES ----------- */
 
 .exumples__container{
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .exumples__heading{
@@ -1904,7 +1906,7 @@ img{
 /* -------------- CLIENTS ----------- */
 
 .clients__container{
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2136,8 +2138,8 @@ img{
 }
 
 .vk-link{
-    background: url('../img/footer-vk.svg') center center no-repeat transparent;
-    background-size: 70%;
+    background: url('../img/vk-svgrepo-com.svg') center center no-repeat transparent;
+    background-size: 66%;
 }
 
 .youtube-link{
