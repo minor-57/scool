@@ -1899,8 +1899,27 @@ img{
     opacity: 0.7;
 }
 
-.exumples__video-left{
-    margin-right: 80px;
+.swiper {
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+  }
+
+.swiper-slide{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 15px;
+
+    /* padding-right: 45px;
+    padding-left: 45px; */
+    padding-bottom: 40px;
+}
+
+.exumples__video{
+    flex-basis: 40%;
+    height: 100%;
 }
 
 /* -------------- CLIENTS ----------- */
@@ -2582,17 +2601,7 @@ background-size: contain;
     }
 }
 
-@media (max-width: 1309px){
-    .exumples__video-container{
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    }
-    .exumples__video-left{
-        margin: 0 0 80px 0;
-    }    
-}
+
 
 @media (max-width: 1266px){
     .footer__nav{
@@ -2669,6 +2678,19 @@ background-size: contain;
     .tutors__cards-container > *:not(:last-child){
         margin: 0 0 45px 0;
     }
+
+    .swiper-slide{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .exumples__video{
+        flex-basis: 50%;
+        width: auto;
+    }
+    
 }
 
 @media (max-width: 814px){
@@ -2794,6 +2816,11 @@ background-size: contain;
 
     .clients__btn-more{
         padding: 10px 15px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next{
+        display: none;
     }
 }
 
