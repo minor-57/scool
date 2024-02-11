@@ -8,6 +8,7 @@
     <meta name="keywords" content="репетитор, егэ, репетитор по математике, олимпус, репетитор онлайн">
     <meta name="description" content="Подготовка к ЕГЭ, ОГЭ и Олимпиадам. Онлайн курсы и индивидуальные занятия.">
     <link rel="stylesheet" href="css/normalize.css">
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="./img/main-icon.png">
     <title>Olimpus - школа репетиторов</title>
@@ -483,16 +484,73 @@
                             канала</a>, на котором мы размещаем некоторые
                         актуальные уроки из наших курсов.
                     </p>
-                    <div class="exumples__video-container">
-                        <iframe width="600" height="400" src="https://www.youtube.com/embed/ErawsEXg5uY"
-                            class="exumples__video-left" title="YouTube video player" frameborder="1"
+
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide">
+                            <iframe src="https://www.youtube.com/embed/ErawsEXg5uY"
+                            class="exumples__video" title="YouTube video player" frameborder="1"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
-                        <iframe width="600" height="400" src="https://www.youtube.com/embed/e8o4g8bGRhQ"
-                            class="exumples__video-right" title="YouTube video player" frameborder="1"
+                            <iframe src="https://www.youtube.com/embed/e8o4g8bGRhQ"
+                            class="exumples__video" title="YouTube video player" frameborder="1"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
+                          </div>
+                          <div class="swiper-slide">
+                            <iframe src="https://www.youtube.com/embed/ErawsEXg5uY"
+                            class="exumples__video" title="YouTube video player" frameborder="1"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/e8o4g8bGRhQ"
+                            class="exumples__video" title="YouTube video player" frameborder="1"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                          </div>
+                          <div class="swiper-slide">
+                            <iframe src="https://www.youtube.com/embed/ErawsEXg5uY"
+                            class="exumples__video" title="YouTube video player" frameborder="1"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/e8o4g8bGRhQ"
+                            class="exumples__video" title="YouTube video player" frameborder="1"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                          </div>
+                          <div class="swiper-slide">
+                            <iframe src="https://www.youtube.com/embed/ErawsEXg5uY"
+                            class="exumples__video" title="YouTube video player" frameborder="1"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/e8o4g8bGRhQ"
+                            class="exumples__video" title="YouTube video player" frameborder="1"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                          </div>
+                          <div class="swiper-slide">
+                            <iframe src="https://www.youtube.com/embed/ErawsEXg5uY"
+                            class="exumples__video" title="YouTube video player" frameborder="1"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/e8o4g8bGRhQ"
+                            class="exumples__video" title="YouTube video player" frameborder="1"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                          </div>
+                          <!-- <div class="swiper-slide">Slide 3</div> -->
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                      
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                
                     </div>
+
+                    <!-- <div class="exumples__video-container"></div> -->
                 </div>
             </section>
 
@@ -693,6 +751,30 @@
     <script src="./js/script.js"></script>
     <script src="./js/forms.js"></script>
     <script src="./js/nav-transitions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+                const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
+        });
+    </script>
 </body>
 
 </html>
