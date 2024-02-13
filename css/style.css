@@ -1066,10 +1066,7 @@ img{
     width: 300px;
     height: auto;
 }
-.account__login {
-}
-.login {
-}
+
 .login__heading {
     margin-bottom: 30px;
 }
@@ -1086,8 +1083,7 @@ img{
 .login__email-input {
     margin-bottom: 16px;
 }
-.login__pasword-input {
-}
+
 .login__recover-link-container{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1141,10 +1137,7 @@ img{
 .registration__alternative-text{
     margin-right: 10px;
 }
-.account__registration {
-}
-.registration {
-}
+
 .registration__heading {
     margin-bottom: 10px;
 }
@@ -1158,14 +1151,7 @@ img{
     gap: 16px;
     margin-bottom: 20px;
 }
-.registration__name {
-}
-.registration__surname {
-}
-.registration__email {
-}
-.registration__password {
-}
+
 .registration__personal-check {
     position: relative;
 
@@ -1214,8 +1200,7 @@ img{
 .account__recovery {
     padding-top: 20px;
 }
-.recovery {
-}
+
 .recovery__back {
     position: absolute;
     top: 0;
@@ -1270,8 +1255,7 @@ img{
 .recovrey__form {
     gap: 20px;
 }
-.recovery__email {
-}
+
 .recovrey__submit-btn {
     background-color: #006364;
 }
@@ -1442,7 +1426,7 @@ img{
     border-bottom-right-radius: 40px 40px;
 
     color: #fff;
-    background: url('../img/snow-bg-2.gif') center center no-repeat transparent;
+    background: url('../img/snow-bg-optimize.gif') center center no-repeat transparent;
     background-size: cover;
 }
 
@@ -2363,9 +2347,7 @@ img{
     background: url('../img/tutors-more-vk-icon.png') center center no-repeat transparent;
     background-size: contain;
 }
-.tutors-more__telegram-link {
 
-}
 .tutors-more__telegram-ikon {
     background: url('../img/tutors-more-telegram-icon.png') center center no-repeat transparent;
     background-size: contain;
