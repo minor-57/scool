@@ -1426,7 +1426,7 @@ img{
     border-bottom-right-radius: 40px 40px;
 
     color: #fff;
-    background: url('../img/snow-bg-optimize.gif') center center no-repeat transparent;
+    background: url('../img/winter-vector-bg.jpg') center center no-repeat transparent;
     background-size: cover;
 }
 
@@ -1443,6 +1443,8 @@ img{
 .hero__text{
     max-width: 50%;
     margin-bottom: 50px;
+    background-color: #24649533;
+    border-radius: 10px;
 }
 
 .hero__heading{
@@ -1470,6 +1472,15 @@ img{
 
 .hero__start{
     margin-right: 35px;
+}
+
+.hero__consult{
+    background-color: #484bf2;
+    border: 3px solid #484bf2;
+}
+.hero__consult:hover{
+    background-color: #484bf2dd;
+    border-color: #484bf2dd;
 }
 
 /*--------- ABOUT -----------*/
