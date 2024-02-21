@@ -374,7 +374,6 @@ img{
 
 .login-btn{
     position: relative;
-    display: none;
 
     padding: 18px 13px 18px 60px;
 
@@ -861,6 +860,20 @@ img{
 .acordion-content__link:hover{
     background-color: #396fdb;
 }
+.forse-auth{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2rem;
+    width: 100%;
+
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 600;
+    color: #FF9900;
+}
 /* --------- MODAL =========== */
 /* call-modal */
 
@@ -880,14 +893,31 @@ img{
 }
 .call-back__text-input._error,
 .number-input._error,
-.submit__text-input._error {
+.submit__text-input._error,
+.modal-input._error {
     -webkit-box-shadow: 0 0 15px red;
             box-shadow: 0 0 15px red;
+}
+.input-error-text{
+    display: inline-block;
+    color: red;
+}
+.registration__form .input-error-text{
+    margin-top: 0.5rem;
+    text-align:initial ;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.1;
+}
+.login .input-error-text{
+    margin-top: -1.2rem;
+    margin-bottom: 0.8rem;
+    line-height: 1;
+    font-weight: 600;
 }
 .call-back {
     width: 530px;
     min-height: 600px;
-
 }
 .call-back,
 .account {
@@ -1066,7 +1096,10 @@ img{
     width: 300px;
     height: auto;
 }
-
+.account__login {
+}
+.login {
+}
 .login__heading {
     margin-bottom: 30px;
 }
@@ -1083,7 +1116,8 @@ img{
 .login__email-input {
     margin-bottom: 16px;
 }
-
+.login__pasword-input {
+}
 .login__recover-link-container{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1137,7 +1171,10 @@ img{
 .registration__alternative-text{
     margin-right: 10px;
 }
-
+.account__registration {
+}
+.registration {
+}
 .registration__heading {
     margin-bottom: 10px;
 }
@@ -1151,7 +1188,14 @@ img{
     gap: 16px;
     margin-bottom: 20px;
 }
-
+.registration__name {
+}
+.registration__surname {
+}
+.registration__email {
+}
+.registration__password {
+}
 .registration__personal-check {
     position: relative;
 
@@ -1163,6 +1207,10 @@ img{
     font-weight: 400;
 
     cursor: pointer;
+}
+.registration__personal-check._error{
+    -webkit-box-shadow: 0 0 15px red;
+    box-shadow: 0 0 15px red;
 }
 .registration__checkbox{
     display: none;
@@ -1200,7 +1248,8 @@ img{
 .account__recovery {
     padding-top: 20px;
 }
-
+.recovery {
+}
 .recovery__back {
     position: absolute;
     top: 0;
@@ -1255,7 +1304,8 @@ img{
 .recovrey__form {
     gap: 20px;
 }
-
+.recovery__email {
+}
 .recovrey__submit-btn {
     background-color: #006364;
 }
@@ -1426,7 +1476,7 @@ img{
     border-bottom-right-radius: 40px 40px;
 
     color: #fff;
-    background: url('../img/winter-vector-bg.jpg') center center no-repeat transparent;
+    background: url('../img/snow-bg-2.gif') center center no-repeat transparent;
     background-size: cover;
 }
 
@@ -1443,8 +1493,6 @@ img{
 .hero__text{
     max-width: 50%;
     margin-bottom: 50px;
-    background-color: #24649533;
-    border-radius: 10px;
 }
 
 .hero__heading{
@@ -1472,15 +1520,6 @@ img{
 
 .hero__start{
     margin-right: 35px;
-}
-
-.hero__consult{
-    background-color: #484bf2;
-    border: 3px solid #484bf2;
-}
-.hero__consult:hover{
-    background-color: #484bf2dd;
-    border-color: #484bf2dd;
 }
 
 /*--------- ABOUT -----------*/
@@ -2358,7 +2397,9 @@ img{
     background: url('../img/tutors-more-vk-icon.png') center center no-repeat transparent;
     background-size: contain;
 }
+.tutors-more__telegram-link {
 
+}
 .tutors-more__telegram-ikon {
     background: url('../img/tutors-more-telegram-icon.png') center center no-repeat transparent;
     background-size: contain;
