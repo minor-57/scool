@@ -202,7 +202,6 @@
         </nav>
         <div class="menu-overlay <?php echo (isset($_GET['reg']))?' menu-overlay-active':'' ?>"></div>
 
-
         <div class="_modal-wraper call-back-wraper">
             <div class="call-back">
                 <div class="call-back__content modal-content">
@@ -232,130 +231,9 @@
             <div class="modal-close"></div>
         </div>
 
-        <div class="_modal-wraper account-wraper <?php echo (isset($_GET['reg']))?' active':'' ?>">
-            <div class="modal-close"></div>
-            <div class="account">
-                <div class="account__content modal-content">
-                    <?php if(isset($_SESSION['forse-auth'])):?>
-                            <span class="forse-auth">Пожалуйста авторизуйтесь</span>
-                    <?php endif; ?>
-                    <img src="./img/logo-rus-short.png" alt="icon" class="account__img modal-img">
-
-                    <div class="account__login login account-tab <?php if(isset($_GET['reg'])){echo $_GET['reg']?' active':'';} else{echo 'active';} ?>" data-target_modal="login">
-                        <strong class="login__heading modal-heading">Войти в учетную запись</strong>
-                        <?php if(isset($_SESSION['auth-val']['auth'])):?>
-                            <span class="input-error-text">Неверный логин или пароль</span>
-                        <?php endif; ?>
-                        <form action="php/reg-auth/auth.php" method="POST" class="login__form modal-form">
-                            <label for="login-email-inp">
-                                <input 
-                                    id="login-email-inp"
-                                    type="email"
-                                    name="email" 
-                                    placeholder="Почта" 
-                                    class="login__email-input  modal-input <?php echo (isset($_SESSION['auth-val']['auth']))?' _error': '';?>">
-                            </label>
-                            <label for="login-pass-inp">
-                                <input 
-                                    id="login-pass-inp"
-                                    type="password"
-                                    name="password" 
-                                    placeholder="Пароль" 
-                                    class="login__pasword-input  modal-input <?php echo (isset($_SESSION['auth-val']['auth']))?' _error': '';?>">
-                            </label>
-
-                            <div class="login__recover-link-container"><span href="#"
-                                    class="login__recover-link account-tab-btn" data-path_modal="recovery">Забыли
-                                    пароль?</span></div>
-                            <button type="submit" class="login__submit-btn modal-btn">Войти</button>
-                        </form>
-                        <div class="login__alternative">
-                            <span class="login__alternative-text">Нет аккаунта?</span><span
-                                class="login__reg-btn account-tab-btn"
-                                data-path_modal="registration">Зарегистрироваться</span>
-
-                        </div>
-                    </div>
-                    <div class="account__registration registration account-tab <?php if(isset($_GET['reg'])){echo $_GET['reg']?'':' active';} else{echo '';} ?>" data-target_modal="registration">
-                        <strong class="registration__heading modal-heading">Создать аккаунт</strong>
-                        <span class="registration__warning">Все поля обязательны к заполнению</span>
-                        <form action="php/reg-auth/register.php" method="POST" class="registration__form modal-form">
-                            <label for="reg-name-inp">
-                                <input 
-                                    id="reg-name-inp"
-                                    type="text" 
-                                    name="name" 
-                                    placeholder="Имя" 
-                                    class="registration__name modal-input <?php echo isset($_SESSION['validation']['name']) ? ' _error':''; ?>">
-                                <?php if(isset($_SESSION['validation']['name'])):?>
-                                    <span class="input-error-text"><?php echo $_SESSION['validation']['name']; ?></span>
-                                <?php endif; ?>
-                            </label>
-                            <label for="reg-email-inp">
-                                <input 
-                                    id="reg-email-inp"
-                                    type="email" 
-                                    name="email" 
-                                    placeholder="Почта"
-                                    class="registration__email modal-input <?php echo isset($_SESSION['validation']['email'])? ' _error':'' ?>">
-                                <?php if(isset($_SESSION['validation']['email'])):?>
-                                    <span class="input-error-text"><?php echo $_SESSION['validation']['email']; ?></span>
-                                <?php endif; ?>
-                            </label>
-                            <label for="reg-pass-inp">
-                                <input
-                                    id="reg-pass-inp"
-                                    type="password" 
-                                    name="password"
-                                    class="registration__password modal-input <?php echo isset($_SESSION['validation']['password'])?' _error':'';?>"
-                                    placeholder="Пароль">
-                                <?php if(isset($_SESSION['validation']['password'])):?>
-                                    <span class="input-error-text"><?php echo $_SESSION['validation']['password']; ?></span>
-                                <?php endif; ?>
-                            </label>
-                            <label for="reg-passCh-inp">
-                                <input 
-                                    id="reg-passCh-inp"
-                                    type="password" 
-                                    name="passwordCheck"
-                                    class="registration__password-check modal-input <?php echo isset($_SESSION['validation']['passwordCheck'])?' _error':''; ?>"
-                                    placeholder="Повторите пароль">
-                                <?php if(isset($_SESSION['validation']['passwordCheck'])): ?>
-                                    <span class="input-error-text"><?php echo $_SESSION['validation']['passwordCheck']; ?></span>
-                                <?php endif; ?>
-                            </label>
-                            <label for="personal-check" class="registration__personal-check">
-                                <input 
-                                type="checkbox" 
-                                name="check" 
-                                id="personal-check"
-                                class="registration__checkbox <?php echo isset($_SESSION['validation']['check'])?' _error':'';?>">
-                                <span></span>Согласен на обработку персональных данных
-                            </label>
-                            <button type="submit" class="registration__submit-btn modal-btn">Зарегистрироваться</button>
-                        </form>
-                        <div class="registration__alternative">
-
-                            <span class="registration__alternative-text">Есть аккаунт?</span><span
-                                class="registration__log-btn account-tab-btn" data-path_modal="login">Войти</span>
-
-                        </div>
-                    </div>
-                    <div class="account__recovery recovery account-tab" data-target_modal="recovery">
-                        <span class="recovery__back account-tab-btn" data-path_modal="login">Назад</span>
-                        <strong class="recovery__heading modal-heading">Восстановление пароля</strong>
-                        <p class="recovrey__info">Введите почту и мы вышлем вам письмо для сброса пароля</p>
-                        <form action="#" class="recovrey__form modal-form">
-
-                            <input type="email" name="" id="" placeholder="Ваша почта"
-                                class="recovery__email  modal-input">
-
-                            <button type="submit" class="recovrey__submit-btn modal-btn">Отправить</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php
+            include ('php/reg-auth/render.php'); 
+         ?>
 
         <main class="main">
             <section class="hero">
@@ -367,7 +245,7 @@
                     </div>
                     <div class="hero__buttons">
                         <a href="#courses" class="hero__start btn btn-bright nav-link">Начать обучение</a>
-                        <a href="" class="hero__consult btn btn-border nav-link">Получить консультацию</a>
+                        <a href="" class="hero__consult btn nav-link">Получить консультацию</a>
                     </div>
                     <img src="./img/snow-logo.png" alt="logo" class="hero__logo">
                 </div>
@@ -512,25 +390,6 @@
                                 <a href="./pages/teachers/tutor-1.html" class="tutor-card__btn-more">Подробнее</a>
                             </div>
                         </div>
-                        <!-- <div class="tutor-card tutors__card">
-                            <div class="tutor-card__img-wraper">
-                                <img src="img/anton.png" alt="avatar" class="tutor-card__img">
-                            </div>
-                            <div class="tutor-card__content">
-                                <div class="tutor-card__text">
-                                    <strong class="tutor-card__name">Антонов Семён</strong>
-                                    <ul class="tutors-card__list">
-                                        <li class="tutor-card__item">Основной предмет Информатика</li>
-                                        <li class="tutor-card__item">В 2021 году сдал информатику на 95 баллов</li>
-                                        <li class="tutor-card__item">Являюсь многочисленным участником в олимпиадах ИТМО
-                                            несколько лет подряд</li>
-                                        <li class="tutor-card__item">Учусь на 3 курсе СПбГУ на направлении «механика и
-                                            математическое моделирование»</li>
-                                    </ul>
-                                </div>
-                                <a href="./pages/teachers/tutor-infa-3.html" class="tutor-card__btn-more">Подробнее</a>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </section>

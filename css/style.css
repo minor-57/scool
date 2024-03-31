@@ -383,7 +383,7 @@ img{
 
     border-radius: 10px;
     color: #fff;
-    background-color: #1b6060;
+    background-color: #18579b;
 }
 
 .login-btn::before{
@@ -731,8 +731,7 @@ img{
 }
 
 .left-menu__login-btn{
-    display: none;
-    padding-top: 20px;
+    padding-top: 20px;  
     padding-bottom: 20px;
 }
 
@@ -1476,7 +1475,7 @@ img{
     border-bottom-right-radius: 40px 40px;
 
     color: #fff;
-    background: url('../img/snow-bg-2.gif') center center no-repeat transparent;
+    background: url('../img/winter-vector-bg.jpg') center center no-repeat transparent;
     background-size: cover;
 }
 
@@ -1492,7 +1491,11 @@ img{
 
 .hero__text{
     max-width: 50%;
+    padding: 20px;
+    margin-left: -20px;
     margin-bottom: 50px;
+    background-color: #236bb837;
+    border-radius: 8px;
 }
 
 .hero__heading{
@@ -1520,6 +1523,15 @@ img{
 
 .hero__start{
     margin-right: 35px;
+}
+.hero__consult{
+    background-color: #18579b;
+    color: #FFF;
+    border: 3px solid #18579b;
+}
+.hero__consult:hover{
+    background-color: #2d71ba;
+    border-color: #2d71ba;
 }
 
 /*--------- ABOUT -----------*/
