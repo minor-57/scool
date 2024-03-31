@@ -1,5 +1,5 @@
 <?php
-
+require_once __DIR__ . '/config.php';
 session_start();
 
 $name = trim($_POST['name']);
@@ -32,7 +32,6 @@ if(!empty($_SESSION['validation'])){
     exit();
 }
 else{
-    require_once __DIR__ . '/config.php';
 
     try {
         $conn = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME, DB_USER, DB_PASS);
@@ -69,5 +68,5 @@ function isHtml($string)
 
 function badSymbols($string)
 {
-    return preg_match('/^[А-Яа-я]+$/u', $string) != 0;
+    return preg_match('/^[А-Яа-яA-Za-z]+$/u', $string) != 0;
 } 

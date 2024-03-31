@@ -1,0 +1,112 @@
+ <div class="_modal-wraper account-wraper {{modalClass}}">
+            <div class="modal-close"></div>
+            <div class="account">
+                <div class="account__content modal-content">
+                    {{forceAuth | raw}}
+                    <img src="./img/logo-rus-short.png" alt="icon" class="account__img modal-img">
+
+                    <div class="account__login login account-tab {{loginTabClass}}" data-target_modal="login">
+                        <strong class="login__heading modal-heading">Войти в учетную запись</strong>
+                        {{authErr | raw}}
+                        <form action="php/reg-auth/auth.php" method="POST" class="login__form modal-form">
+                            <label for="login-email-inp">
+                                <input 
+                                    id="login-email-inp"
+                                    type="email"
+                                    name="email" 
+                                    placeholder="Почта" 
+                                    class="login__email-input  modal-input {{authInputErr}}">
+                            </label>
+                            <label for="login-pass-inp">
+                                <input 
+                                    id="login-pass-inp"
+                                    type="password"
+                                    name="password" 
+                                    placeholder="Пароль" 
+                                    class="login__pasword-input  modal-input {{authInputErr}}">
+                            </label>
+
+                            <div class="login__recover-link-container"><span href="#"
+                                    class="login__recover-link account-tab-btn" data-path_modal="recovery">Забыли
+                                    пароль?</span></div>
+                            <button type="submit" class="login__submit-btn modal-btn">Войти</button>
+                        </form>
+                        <div class="login__alternative">
+                            <span class="login__alternative-text">Нет аккаунта?</span><span
+                                class="login__reg-btn account-tab-btn"
+                                data-path_modal="registration">Зарегистрироваться</span>
+
+                        </div>
+                    </div>
+                    <div class="account__registration registration account-tab {{registerTabClass}}" data-target_modal="registration">
+                        <strong class="registration__heading modal-heading">Создать аккаунт</strong>
+                        <span class="registration__warning">Все поля обязательны к заполнению</span>
+                        <form action="php/reg-auth/register.php" method="POST" class="registration__form modal-form">
+                            <label for="reg-name-inp">
+                                <input 
+                                    id="reg-name-inp"
+                                    type="text" 
+                                    name="name" 
+                                    placeholder="Имя" 
+                                    class="registration__name modal-input {{registerErr.name.calss}}">
+                                {{registerErr.name.message | raw}}
+                            </label>
+                            <label for="reg-email-inp">
+                                <input 
+                                    id="reg-email-inp"
+                                    type="email" 
+                                    name="email" 
+                                    placeholder="Почта"
+                                    class="registration__email modal-input {{register.email.class}}">
+                                {{register.email.message | raw}}
+                            </label>
+                            <label for="reg-pass-inp">
+                                <input
+                                    id="reg-pass-inp"
+                                    type="password" 
+                                    name="password"
+                                    class="registration__password modal-input {{register.password.class}}"
+                                    placeholder="Пароль">
+                                {{register.password.message | raw}}
+                            </label>
+                            <label for="reg-passCh-inp">
+                                <input 
+                                    id="reg-passCh-inp"
+                                    type="password" 
+                                    name="passwordCheck"
+                                    class="registration__password-check modal-input {{register.passwordCheck.class}}"
+                                    placeholder="Повторите пароль">
+                                {{register.passwordCheck.message | raw}}
+                            </label>
+                            <label for="personal-check" class="registration__personal-check">
+                                <input 
+                                type="checkbox" 
+                                name="check" 
+                                id="personal-check"
+                                class="registration__checkbox <?php echo isset($_SESSION['validation']['check'])?' _error':'';?>">
+                                <span></span>Согласен на обработку персональных данных
+                            </label>
+                            <button type="submit" class="registration__submit-btn modal-btn">Зарегистрироваться</button>
+                        </form>
+                        <div class="registration__alternative">
+
+                            <span class="registration__alternative-text">Есть аккаунт?</span><span
+                                class="registration__log-btn account-tab-btn" data-path_modal="login">Войти</span>
+
+                        </div>
+                    </div>
+                    <div class="account__recovery recovery account-tab" data-target_modal="recovery">
+                        <span class="recovery__back account-tab-btn" data-path_modal="login">Назад</span>
+                        <strong class="recovery__heading modal-heading">Восстановление пароля</strong>
+                        <p class="recovrey__info">Введите почту и мы вышлем вам письмо для сброса пароля</p>
+                        <form action="#" class="recovrey__form modal-form">
+
+                            <input type="email" name="" id="" placeholder="Ваша почта"
+                                class="recovery__email  modal-input">
+
+                            <button type="submit" class="recovrey__submit-btn modal-btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
