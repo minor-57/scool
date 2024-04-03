@@ -13,12 +13,7 @@
     <title>ЕГЭ - 2024</title>
 </head>
 <?php 
-    session_start();
-    if (!isset($_SESSION['auth'])) {
-        $_SESSION['forse-auth'] = true;
-        header('Location: /index.php?reg=1');
-        exit();
-    }
+    include($_SERVER['DOCUMENT_ROOT'] . '/php/reg-auth/auth-check.php');
 ?>
 <body>
     <div class="wrapper">
