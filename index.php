@@ -52,7 +52,7 @@
                                 <div class="catalog-menu__content" data-target="p2">
                                     <ul class="catalog-menu__subjecst-list">
                                         <li class="catalog-menu__subject"><a
-                                                href="./pages/catalog-ege-math/catalog-ege-math.php"
+                                                href="/pages/catalog-ege-math/catalog-ege-math.php"
                                                 class="catalog-menu__subject-link">Математика</a></li>
                                         <li class="catalog-menu__subject"><a
                                                 href="./pages/catalog-ege-fizika/catalog-ege-fizika.php"
