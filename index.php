@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="rus">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="/img/main-icon.png">
     <title>Olimpus - школа репетиторов</title>
     <?php
-        session_start();
+        require_once __DIR__ . '/php/reg-auth/config.php';
     ?>
 </head>
 
@@ -41,47 +41,47 @@
                                 </ul>
                                 <div class="catalog-menu__content active" data-target="p1">
                                     <ul class="catalog-menu__subjecst-list">
-                                        <li class="catalog-menu__subject"><a href="#"
+                                        <li class="catalog-menu__subject"><a href="./pages/catalog-page.php?page=math&type=oge&sec=vid&lvl=main"
                                                 class="catalog-menu__subject-link">Математика</a></li>
-                                        <li class="catalog-menu__subject"><a href="#"
+                                        <li class="catalog-menu__subject"><a href="./pages/catalog-page.php?page=fiz&type=oge&sec=vid&lvl=main"
                                                 class="catalog-menu__subject-link">Физика</a></li>
-                                        <li class="catalog-menu__subject"><a href="#"
+                                        <li class="catalog-menu__subject"><a href="./pages/catalog-page.php?page=him&type=oge&sec=vid&lvl=main"
                                                 class="catalog-menu__subject-link">Химия</a></li>
                                     </ul>
                                 </div>
                                 <div class="catalog-menu__content" data-target="p2">
                                     <ul class="catalog-menu__subjecst-list">
                                         <li class="catalog-menu__subject"><a
-                                                href="/pages/catalog-ege-math/catalog-ege-math.php"
+                                                href="./pages/catalog-page.php?page=math&type=ege&sec=vid&lvl=main"
                                                 class="catalog-menu__subject-link">Математика</a></li>
                                         <li class="catalog-menu__subject"><a
-                                                href="./pages/catalog-ege-fizika/catalog-ege-fizika.php"
+                                                href="./pages/catalog-page.php?page=fiz&type=ege&sec=vid&lvl=main"
                                                 class="catalog-menu__subject-link">Физика</a></li>
                                         <li class="catalog-menu__subject"><a
-                                                href="./pages/catalog-ege-himiya/catalog-ege-himiya.php"
+                                                href="./pages/catalog-page.php?page=him&type=ege&sec=vid&lvl=main"
                                                 class="catalog-menu__subject-link">Химия</a></li>
                                         <li class="catalog-menu__subject"><a
-                                                href="./pages/catalog-ege-infa/catalog-ege-infa.php"
+                                                href="./pages/catalog-page.php?page=inf&type=ege&sec=vid&lvl=main"
                                                 class="catalog-menu__subject-link">Информатика</a></li>
                                     </ul>
                                 </div>
                                 <div class="catalog-menu__content" data-target="p3">
                                     <ul class="catalog-menu__subjecst-list">
-                                        <li class="catalog-menu__subject"><a href="#"
+                                        <li class="catalog-menu__subject"><a href="./pages/catalog-page.php?page=math&type=dvi&sec=vid&lvl=main"
                                                 class="catalog-menu__subject-link">Математика</a></li>
-                                        <li class="catalog-menu__subject"><a href="#"
+                                        <li class="catalog-menu__subject"><a href="./pages/catalog-page.php?page=fiz&type=dvi&sec=vid&lvl=main"
                                                 class="catalog-menu__subject-link">Физика</a></li>
-                                        <li class="catalog-menu__subject"><a href="#"
+                                        <li class="catalog-menu__subject"><a href="./pages/catalog-page.php?page=him&type=dvi&sec=vid&lvl=main"
                                                 class="catalog-menu__subject-link">Химия</a></li>
                                     </ul>
                                 </div>
                                 <div class="catalog-menu__content" data-target="p4">
                                     <ul class="catalog-menu__subjecst-list">
-                                        <li class="catalog-menu__subject"><a href="#"
+                                        <li class="catalog-menu__subject"><a href="./pages/catalog-page.php?page=math&type=other&sec=vid&lvl=main"
                                                 class="catalog-menu__subject-link">Математика</a></li>
-                                        <li class="catalog-menu__subject"><a href="#"
+                                        <li class="catalog-menu__subject"><a href="./pages/catalog-page.php?page=fiz&type=other&sec=vid&lvl=main"
                                                 class="catalog-menu__subject-link">Физика</a></li>
-                                        <li class="catalog-menu__subject"><a href="#"
+                                        <li class="catalog-menu__subject"><a href="./pages/catalog-page.php?page=him&type=other&sec=vid&lvl=main"
                                                 class="catalog-menu__subject-link">Химия</a></li>
 
                                     </ul>
@@ -134,17 +134,17 @@
                         <div id="acord-ege" class="catalog-acordion__content acordion-content">
                             <ul class="acordion-content__list">
                                 <li class="acordion-content__item"><a
-                                        href="./pages/catalog-ege-math/catalog-ege-math.html"
+                                        href="./pages/catalog-page.php?page=math&type=ege&sec=vid&lvl=main"
                                         class="acordion-content__link">Математика</a></li>
                                 <li class="acordion-content__item"><a
-                                        href="./pages/catalog-ege-fizika/catalog-ege-fizika.html"
+                                        href="./pages/catalog-page.php?page=fiz&type=ege&sec=vid&lvl=main"
                                         class="acordion-content__link">Физика</a></li>
                                 <li class="acordion-content__item"><a
-                                        href="./pages/catalog-ege-himiya/catalog-ege-himiya.html"
+                                        href="./pages/catalog-page.php?page=fim&type=ege&sec=vid&lvl=main"
                                         class="acordion-content__link">Химия</a>
                                 </li>
                                 <li class="acordion-content__item"><a
-                                        href="./pages/catalog-ege-infa/catalog-ege-infa.html"
+                                        href="./pages/catalog-page.php?page=inf&type=ege&sec=vid&lvl=main"
                                         class="acordion-content__link">Информатика</a>
                                 </li>
                             </ul>
@@ -159,11 +159,11 @@
                         </div>
                         <div id="acord-oge" class="catalog-acordion__content acordion-content">
                             <ul class="acordion-content__list">
-                                <li class="acordion-content__item"><a href=""
+                                <li class="acordion-content__item"><a href="./pages/catalog-page.php?page=math&type=oge&sec=vid&lvl=main"
                                         class="acordion-content__link">Математика</a></li>
-                                <li class="acordion-content__item"><a href="" class="acordion-content__link">Физика</a>
+                                <li class="acordion-content__item"><a href="./pages/catalog-page.php?page=fiz&type=oge&sec=vid&lvl=main" class="acordion-content__link">Физика</a>
                                 </li>
-                                <li class="acordion-content__item"><a href="" class="acordion-content__link">Химия</a>
+                                <li class="acordion-content__item"><a href="./pages/catalog-page.php?page=him&type=oge&sec=vid&lvl=main" class="acordion-content__link">Химия</a>
                                 </li>
                             </ul>
                         </div>
@@ -177,11 +177,11 @@
                         </div>
                         <div id="acord-dvi" class="catalog-acordion__content acordion-content">
                             <ul class="acordion-content__list">
-                                <li class="acordion-content__item"><a href=""
+                                <li class="acordion-content__item"><a href="./pages/catalog-page.php?page=math&type=dvi&sec=vid&lvl=main"
                                         class="acordion-content__link">Математика</a></li>
-                                <li class="acordion-content__item"><a href="" class="acordion-content__link">Физика</a>
+                                <li class="acordion-content__item"><a href="./pages/catalog-page.php?page=fiz&type=dvi&sec=vid&lvl=main" class="acordion-content__link">Физика</a>
                                 </li>
-                                <li class="acordion-content__item"><a href="" class="acordion-content__link">Химия</a>
+                                <li class="acordion-content__item"><a href="./pages/catalog-page.php?page=him&type=dvi&sec=vid&lvl=main" class="acordion-content__link">Химия</a>
                                 </li>
 
                             </ul>
