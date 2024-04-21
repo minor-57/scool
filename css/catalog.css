@@ -297,11 +297,11 @@ img{
              align-items: center;
      -webkit-box-pack: end;
          -ms-flex-pack: end;
-             justify-content: flex-end;
+             justify-content: space-between;
 
     min-height: 350px;
     width: 100%;
-    padding-top: 5px;
+    padding-top: 15px;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 12px;
@@ -313,16 +313,9 @@ img{
     background-color: #2fc8b46c;
 }
 .folder-img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -60%);
-        -ms-transform: translate(-50%, -60%);
-            transform: translate(-50%, -60%);
-
     width: 250px;
     height: 250px;
-    height: auto;
+    margin-bottom: 0.5rem;
 }
 
 .folder-name{
@@ -552,8 +545,10 @@ details > summary::-webkit-details-marker {
     -ms-flex-pack: center;
     justify-content: center;
 }
-
-
+.exam,
+.subj::first-letter{
+    text-transform: uppercase;
+}
 /*MEDIA*/
 @media (max-width: 669px) {
     html{
