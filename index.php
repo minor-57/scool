@@ -671,7 +671,6 @@
     <?php
         unset($_SESSION['validation']);
         unset($_SESSION['auth-val']);
-        unset($_SESSION['auth']);
     ?>
     <script src="./js/script.js"></script>
     <script src="./js/forms.js"></script>
