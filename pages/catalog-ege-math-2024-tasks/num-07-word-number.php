@@ -12,8 +12,8 @@
     <link rel="icon" type="image/png" href="../../img/main-icon.png">
     <title>07. Преобразование числовых и буквенных выражений</title>
     <?php
-    require_once __DIR__ . '/../php/reg-auth/config.php';
-    require_once __DIR__ . '/../php/reg-auth/auth-check.php';
+    require_once __DIR__ . '/../../php/reg-auth/config.php';
+    require_once __DIR__ . '/../../php/reg-auth/auth-check.php';
     ?> 
 </head>
 
@@ -28,7 +28,7 @@
                             <a href="../../index.html" class="logo-olimpys"></a>
                         </div>
                         <ul class="side-section__list">
-                            <li class="side-section__item"><a href="../catalog-ege-math/catalog-ege-math.html"
+                            <li class="side-section__item"><a href="../catalog-page.php?page=math&type=ege&sec=vid&lvl=main"
                                     class="side-section__link">Видеоуроки</a>
                             </li>
                             <li class="side-section__item"><a
