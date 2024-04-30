@@ -383,7 +383,7 @@ img{
 
     border-radius: 10px;
     color: #fff;
-    background-color: #18579b;
+    background-color: #FF9900;
 }
 
 .login-btn::before{
@@ -1494,7 +1494,7 @@ img{
     padding: 20px;
     margin-left: -20px;
     margin-bottom: 50px;
-    background-color: #236bb837;
+    background-color: #23b87f37;
     border-radius: 8px;
 }
 
@@ -1525,13 +1525,13 @@ img{
     margin-right: 35px;
 }
 .hero__consult{
-    background-color: #18579b;
+    background-color: #FF9900;
     color: #FFF;
-    border: 3px solid #18579b;
+    border: 3px solid #FF9900;
 }
 .hero__consult:hover{
-    background-color: #2d71ba;
-    border-color: #2d71ba;
+    background-color: #d3902b;
+    border-color: #d3902b;
 }
 
 /*--------- ABOUT -----------*/
@@ -1731,11 +1731,11 @@ img{
     font-weight: 600;
 
     border-radius: 5px;
-    border: 3px solid #484bf2;
+    border: 3px solid #ff9f0e;
 }
 
 .course-card__btn:hover{
-    background-color: #484bf2;
+    background-color: #ff9f0e;
     color: #fff;
 }
 .course-card__btn:active,
@@ -1802,8 +1802,8 @@ img{
     height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
-    -webkit-filter: drop-shadow(0 0 5px #345e90);
-            filter: drop-shadow(0 0 5px #345e90);
+    -webkit-filter: drop-shadow(0 0 5px #ffa217);
+            filter: drop-shadow(0 0 5px #ffa217);
 }
 
 .tutor-card__content{
@@ -1823,9 +1823,9 @@ img{
 
     min-height: 520px;
     height: calc(100% - 250px);
-    border: 3px solid #345e90;
-    -webkit-box-shadow: 0 0 5px #345e90;
-            box-shadow: 0 0 5px #345e90;
+    border: 3px solid #ffa217;
+    -webkit-box-shadow: 0 0 5px #ffa217;
+            box-shadow: 0 0 5px #ffa217;
     border-radius: 20px;
     background-color: #fff;
 }
@@ -1897,7 +1897,7 @@ img{
     font-size: 16px;
     font-weight: 600;
 
-    background-color: #345e90;
+    background-color: #ffa217;
     color: #fff;
 }
 
@@ -2028,9 +2028,9 @@ img{
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    border: 2px solid #345e90;
-    -webkit-filter: drop-shadow(0 0 5px #345e90);
-            filter: drop-shadow(0 0 5px #345e90);
+    border: 2px solid #ffa217;
+    -webkit-filter: drop-shadow(0 0 5px #ffa217);
+            filter: drop-shadow(0 0 5px #ffa217);
 }
 
 .user-card__profile{
@@ -2126,7 +2126,7 @@ img{
 
 /* ---------- FOOTER ------------ */
 .footer{
-    background-color: #18579b;
+    background-color: #ff9900;
 }
 
 .footer__container{
