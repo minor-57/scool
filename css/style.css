@@ -733,6 +733,7 @@ img{
 .left-menu__login-btn{
     padding-top: 20px;  
     padding-bottom: 20px;
+    display: none
 }
 
 .menu-overlay{
@@ -2610,6 +2611,7 @@ background-size: contain;
     .hero__container{
         background-position: right;
     }
+
 }
 
 @media (max-width: 1419px){
@@ -2831,9 +2833,8 @@ background-size: contain;
     .header__login-btn{
         display: none;
     }
-
     .left-menu__login-btn{
-        display: none;
+        display: initial;
     }
 }
 
@@ -2866,7 +2867,15 @@ background-size: contain;
 
     .swiper-button-prev,
     .swiper-button-next{
-        display: none;
+        top: initial;
+        bottom: 2px;
+    }
+    .swiper-slide{
+        padding-bottom: 60px;
+    }
+
+    .exumples__container{
+        padding: 0;
     }
 }
 

@@ -681,6 +681,7 @@
             // Optional parameters
             direction: 'horizontal',
             loop: true,
+            allowTouchMove: true,
 
             // If we need pagination
             pagination: {
