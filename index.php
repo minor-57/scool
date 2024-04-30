@@ -247,7 +247,7 @@
                         <a href="#courses" class="hero__start btn btn-bright nav-link">Начать обучение</a>
                         <a href="" class="hero__consult btn nav-link">Получить консультацию</a>
                     </div>
-                    <img src="./img/snow-logo.png" alt="logo" class="hero__logo">
+                    <img src="./img/logo-icon.png" alt="logo" class="hero__logo">
                 </div>
             </section>
 
