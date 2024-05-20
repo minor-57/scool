@@ -41,11 +41,12 @@ else{
         die('Что-то пошло не так: '. $e->getMessage());
     }
 
-    $query = "INSERT INTO users (name, email, password) VALUES (:name, :email, :password)";
+    $query = "INSERT INTO users (name, email, password, role) VALUES (:name, :email, :password, :role)";
     $params = [
         'name' => $name,
         'email' => $email,
         'password' => password_hash($passwordCheck, PASSWORD_DEFAULT),
+        'role' => 'user',
     ];
     $stmt = $conn->prepare($query);
     

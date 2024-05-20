@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', function(){
                 mode: 'no-cors'
             });
             if (response.ok){
-                alert("Письмо отправлено")
+                alert("Письмо отправлено");
                 form.reset();
             }else{
                 alert('Error!!');
