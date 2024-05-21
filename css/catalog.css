@@ -526,9 +526,12 @@ details > summary::-webkit-details-marker {
 .font-weight__normal{
     font-weight: 400;
 }
-.solve-tasks-item-formyla{
+.math-display{
     display: block;
-    margin: 0 auto;
+    margin: 0 auto;    
+}
+.adaptiv-formyls{
+    font-size: 0.625rem;
 }
 .text-aling__center{
     text-align: center;
@@ -570,5 +573,43 @@ details > summary::-webkit-details-marker {
     .subject-name{
         display: block;
         text-align: center;
+    }
+}
+
+@media (max-width: 1070px){
+    .catalog-tasks-list-content-second{      
+       width: 100%;       
+    }
+    .catalog-tasks-list-content-first{        
+        width: 100%;        
+    }
+    
+}
+@media (max-width: 900px){
+    .catalog-title-tasks-text{
+        font-size: 19px;
+    }
+}
+@media (max-width: 685px){
+    .catalog-title-tasks-text{
+        font-size: 18px;
+    }
+}
+@media (max-width: 800px){
+    .link-left-tasks{
+        font-size: 15px;
+    }
+    .link-right-tasks{
+        font-size: 15px;
+    }
+}
+@media (max-width: 400px){
+    .link-left-tasks{
+        font-size: 12px;
+        padding: 20px 10px;
+    }
+    .link-right-tasks{
+        font-size: 12px;
+        padding: 20px 10px;
     }
 }

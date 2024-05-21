@@ -15,6 +15,54 @@
     require_once __DIR__ . '/../../php/reg-auth/config.php';
     require_once __DIR__ . '/../../php/reg-auth/auth-check.php';
     ?> 
+    <style>@media (max-width: 1400px) {
+    html{
+        font-size: 14px;
+    }
+
+    .wrapper{
+        padding-left: 20px;
+    }
+    .side-section__button-back{
+        display: initial;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+    }
+    .catalog-heading{
+        text-align: center;
+    }
+    .subject-name{
+        display: block;
+        text-align: center;
+    }
+}
+    @media (max-width:550px){
+        .container-solve-tasks{
+            padding: 70px 10px;
+        }
+        .solve-tasks-item-contant-text{
+            font-size: 1rem;
+            padding: 10px;
+        }
+        .container-solve-example-task{
+            font-size: 1rem;
+        }
+}
+@media (max-width:400px){
+        .container-solve-tasks{
+            padding: 60px 5px;
+        }
+        .contant-container-solve-tasks{
+            padding: 20px;
+        }        
+}
+@media (max-width:400px){
+        .acardion-triggers{
+            font-size: 0.80rem;
+        }
+}
+</style>
 </head>
 
 <body>
@@ -243,6 +291,7 @@
     </div>
     <script src="../../js/catalog.js"></script>
     <script src="../../js/acardion-tasks.js"></script>
+    <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 
 </html>
