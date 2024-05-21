@@ -105,7 +105,7 @@
         'fiz-ege-vid-vectors_proections' => array(
             array(
                 'src' => 'https://www.youtube.com/embed/Ws0wwMzH4Qk',
-                'ВЕКТОРЫ. Всё для ЕГЭ и ОГЭ по физике',
+                'title' => 'ВЕКТОРЫ. Всё для ЕГЭ и ОГЭ по физике',
             ),
             array(
                 'src' => 'https://www.youtube.com/embed/2EC_7LUstSc',
@@ -119,7 +119,7 @@
         'fiz-ege-vid-conservation_energy_momentum' => array(
             array(
                 'src' => 'https://www.youtube.com/embed/V46MBiDuno0',
-                'ЗАКОН СОХРАНЕНИЯ ИМПУЛЬСА.  ЕГЭ по физике раз и навсегда!',
+                'title' => 'ЗАКОН СОХРАНЕНИЯ ИМПУЛЬСА.  ЕГЭ по физике раз и навсегда!',
             ),
             array(
                 'src' => 'https://www.youtube.com/embed/Js1-H2_a_nU',

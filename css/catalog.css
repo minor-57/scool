@@ -300,6 +300,7 @@ img{
              justify-content: space-between;
 
     min-height: 350px;
+    height: 100%;
     width: 100%;
     padding-top: 15px;
     padding-left: 25px;
@@ -323,6 +324,7 @@ img{
     font-weight: 600;
     line-height: 1.2;
     text-align: center;
+    margin: auto 0;
 }
 
 .subject-name{

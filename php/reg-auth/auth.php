@@ -43,6 +43,8 @@ if(!empty($_SESSION['auth-val'])){
     }
 
     $_SESSION['auth'] = true;
+    $_SESSION['user-name'] = $user['name'];
+    $_SESSION['user-role'] = $user['role'];
     header('Location: /index.php');
 }
 

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крнструктор</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .full-screen-container{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: none;
+
+            width: 100%;
+            height: 100%;
+             
+        }
+        .full-screen-container.active{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .full-screen{
+            width: 200px;
+            height: 200px;
+        }
+        .dark-overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 500;
+            display: none;
+            width: 100vw;
+            height: 100vh;
+
+            background-color: #afacac6b;
+        }
+        .dark-overlay.active{
+            display: initial;
+        }
+        .modal.active{
+            display: initial;
+        }
+        .modal-dialog{
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container justify-content-center pt-5" style="position: relative;">
+        <div class="row mb-3">
+            <h2 class="">Конструктор редактирования структуры каталога</h2>
+        </div>
+        <div class="row mb-3">
+            <p class="">В Данном конструкторе вы можете создавать новые разделы и наполнять их контентом.</p>
+        </div>
+        <div class="row mb-5">
+            <p class="">Предел длины названий ресурсов и ссылок: 255 символов<br>
+            <!--  -->
+        </p>
+        </div>
+        <form id="form">
+            <div class="form-floating mb-3 row">
+            <select name="section" id="section-select" class="form-select">
+                <option value="0" selected>Выбрать</option>
+                <option value="fiz-oge">ОГЭ Физика</option>
+                <option value="inf-oge">ОГЭ Информатика</option>
+                <option value="math-oge">ОГЭ Математика</option>
+                <option value="him-oge">ОГЭ Химия</option>
+                <option value="math-ege">ЕГЭ Математика</option>
+                <option value="fiz-ege">ЕГЭ Физика</option>
+                <option value="inf-ege">ЕГЭ Информатика</option>
+                <option value="him-ege">ЕГЭ Химия</option>
+            </select>
+            <label for="section-select">Выберете раздел, в котором будет добавлена секция</label>
+        </div>
+        <div class="form-floating mb-3 row">
+            <select name="home" id="sub-section-select" class="form-select">
+                <option value="0" selected>Выбрать</option>
+                <option value="main">Главная</option>
+                {% for page in pages %}
+                    <option class="folder-option" value="{{page.link}}">{{page.name}}</option>
+                {% endfor %}
+            </select>
+            <label for="sub-section-select">Выберете подраздел</label>
+        </div>    
+        <div class="row mb-3">
+            <div class="form-check form-switch mb-2">
+                <input name="vid" id="video-check" class="form-check-input" type="checkbox" role="switch">
+                <label class="form-check-label" for="video-check">Видео</label>
+            </div>
+            <div class="form-check form-switch">
+                <input name="fold" id="folders-check" class="form-check-input" type="checkbox" role="switch">
+                <label class="form-check-label" for="folders-check">Подраздел</label>
+            </div>
+        </div>
+        <div class="row mb-5 justify-content-between">
+            <div class="col-md-5">
+                <label for="video-name" class="form-label col-md-3">Название ролика</label>
+                <input disabled name="video-name" id="video-name" type="text" class="form-control col-md-8"  placeholder="Название">
+            </div>
+            <div class="col-md-5">
+                <label for="video-link"  class="form-label col-md-3">Ссылка на ролик</label>
+                <input disabled name="video-link" id="video-link" type="text" class="form-control col-md-8"  placeholder="Ссылка">
+            </div>
+        </div>
+        <div class="row mb-5 justify-content-between">
+            <div class="col-md-5">
+                <label for="folder-name" class="form-label col-md-8">Название папки </label>
+                <input disabled name="folder-name" id="folder-name" type="text" class="form-control col-md-8"  placeholder="Название">
+            </div>
+            <div class="col-md-5">
+                <label for="folder-link" class="form-label col-md-8">Название секции, на которую ссылается папка</label>
+                <input disabled name="folder-link" id="folder-link" type="text" class="form-control col-md-8" placeholder="Например: num12_vecturs">
+            </div>
+        </div>
+        <div class="mb-5 row justify-content-center">
+            <button disabled type="submit" id="submit" class="btn btn-success col-md-3">Добавить</button>
+        </div>
+        </form>
+        <div class="full-screen-container">
+            <div class="spinner-border text-primary full-screen" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal done" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-success">Успешно!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">Изменения внесены</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success col-md-2 close-mod" data-bs-dismiss="modal">Ок</button>
+      </div>
+    </div>
+  </div>
+
+    <div class="modal error" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-danger">Ошибка</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">Что-то пошло не так. Проверьте корректность внесенных данных.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger col-md-2 close-mod" data-bs-dismiss="modal">Ок</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+    <div class="dark-overlay"></div>
+    
+    <script src="../js/constructor/catalog.js"></script>
+</body>
+</html>
