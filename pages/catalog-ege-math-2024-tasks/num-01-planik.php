@@ -15,6 +15,54 @@
     require_once __DIR__ . '/../../php/reg-auth/config.php';
     require_once __DIR__ . '/../../php/reg-auth/auth-check.php';
     ?> 
+    <style>@media (max-width: 1400px) {
+    html{
+        font-size: 14px;
+    }
+
+    .wrapper{
+        padding-left: 20px;
+    }
+    .side-section__button-back{
+        display: initial;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+    }
+    .catalog-heading{
+        text-align: center;
+    }
+    .subject-name{
+        display: block;
+        text-align: center;
+    }
+}
+    @media (max-width:550px){
+        .container-solve-tasks{
+            padding: 70px 10px;
+        }
+        .solve-tasks-item-contant-text{
+            font-size: 1rem;
+            padding: 10px;
+        }
+        .container-solve-example-task{
+            font-size: 1rem;
+        }
+}
+@media (max-width:400px){
+        .container-solve-tasks{
+            padding: 60px 5px;
+        }
+        .contant-container-solve-tasks{
+            padding: 20px;
+        }        
+}
+@media (max-width:400px){
+        .acardion-triggers{
+            font-size: 0.80rem;
+        }
+}
+</style>
 </head>
 
 <body>
@@ -126,14 +174,14 @@
                                                 class="font-weight__normal">
                                                 формуле</strong>:
                                         </p>
-                                        <img src="../../img-tasks/Задача 1.2 формула 1.png" alt=""
-                                            class="solve-tasks-item-formyla">
+                                        <p><span class="math-display">\[S = {\frac{1}{2}}\cdot d_1\cdot d_2\]</span></p>
                                         <p class="solve-tasks-item-contant-text">
                                             Зная площадь ромба и одну из его диагоналей,<strong
                                                 class="font-weight__normal">найдём
                                                 другую диагональ</strong>:</p>
-                                        <img src="../../img-tasks/Задача 1.2 формула 2.png" alt=""
-                                            class="solve-tasks-item-formyla">
+                                                <p><span class="math-display">\[10 = {\frac{1}{2}}\cdot 8\cdot d_2\]</span></p>
+                                                <p><span class="math-display">\[10 = 4\cdot d_2\]</span></p>
+                                                <p><span class="math-display">\[d_2 = \frac {10}{4}=2,5\]</span></p>
                                         <p class="solve-tasks-item-contant-text"><strong class="font-weight__normal">
                                                 Ответ:
                                                 2,5.</strong></p>
@@ -172,8 +220,11 @@
                                             <strong class="font-weight__normal">половине произведения его
                                                 диагоналей</strong>:
                                         </p>
-                                        <img src="../../img-tasks/Задача 1.3 формула 1.png" alt=""
-                                            class="solve-tasks-item-formyla">
+                                        <p><span class="math-display">\[S_\diamond = \frac {1}{2}\cdot d_1\cdot d_2\]</span></p>
+                                        <p><span class="math-display">\[9= \frac {1}{2}\cdot d\cdot 8d\]</span></p>
+                                        <p><span class="math-display">\[9= 4d^2\]</span></p>
+                                        <p><span class="math-display">\[d^2=\frac{9}{4}\]</span></p>
+                                        <p><span class="math-display">\[d=\sqrt\frac{9}{4}=\frac{3}{2}=1,5\]</span></p>
                                         <p class="solve-tasks-item-contant-text"><strong
                                                 class="font-weight__normal">Ответ: 1,5.</strong></p>
                                     </div>
@@ -205,15 +256,13 @@
                                         <p class="solve-tasks-item-contant-text">
                                             Найдём<strong class="font-weight__normal"> градусную величину дуги
                                                 ADC</strong>:</p>
-                                        <img src="../../img-tasks/Задача 1.4 формула 1.png" alt=""
-                                            class="solve-tasks-item-formyla">
+                                                <p><span class="math-display adaptiv-formyls">\[\smile ADC=\smile AD+ \smile CD= 77^\circ+122^\circ=199^\circ\]</span></p>
                                         <p class="solve-tasks-item-contant-text">Вписанный
                                             ∠АВС</strong> равен
                                             <strong class="font-weight__normal">половине дуги</strong> на которую
                                             <strong class="font-weight__normal">опирается</strong>:
                                         </p>
-                                        <img src="../../img-tasks/Задача 1.4 формула 2.png" alt=""
-                                            class="solve-tasks-item-formyla">
+                                        <p><span class="math-display adaptiv-formyls">\[\angle ABC=\frac{\smile ADC}{2}= \frac{199^\circ}{2}=99,5^\circ\]</span></p>
                                         <p class="solve-tasks-item-contant-text"><strong
                                                 class="font-weight__normal">Ответ:
                                                 99,5.</strong></p>
@@ -261,14 +310,8 @@
                                                 ‿ВСD</strong> на которую <strong
                                                 class="font-weight__normal">опирается</strong>:
                                         </p>
-                                        <p class="solve-tasks-item-contant-text text-aling__center"><strong
-                                                class="font-weight__normal">‿ВСD
-                                                =</strong> 10°·(<strong class="font-weight__normal">4</strong> + <strong
-                                                class="font-weight__normal">7</strong>)<strong
-                                                class="font-weight__normal"> =
-                                                110°</strong><br><strong class="font-weight__normal">∠BAD =</strong>
-                                            ‿ВСD/2 = 110°/2
-                                            <strong class="font-weight__normal">= 55°</strong>
+                                        <p><span class="math-display">\[\smile BCD=10^\circ\cdot(4+7)=110^\circ\]</span></p>
+                                        <p><span class="math-display">\[\angle BAD=\frac{\smile BCD}{2}= \frac{110^\circ}{2}=55^\circ\]</span></p>
                                         </p>
                                         <p class="solve-tasks-item-contant-text"><strong
                                                 class="font-weight__normal">Ответ: 55.</strong></p>
@@ -283,6 +326,7 @@
     </div>
     <script src="../../js/catalog.js"></script>
     <script src="../../js/acardion-tasks.js"></script>
+    <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 
 </html>

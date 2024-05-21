@@ -32,7 +32,7 @@
                                     class="side-section__link">Видеоуроки</a>
                             </li>
                             <li class="side-section__item"><a
-                                    href="../catalog-ege-math-2024-tasks/catalog-ege-math-tasks.html"
+                                    href="/catalog-ege-math-2024-tasks/catalog-ege-math-tasks.php"
                                     class="side-section__link active">Каталог заданий</a>
                             </li>
                         </ul>
@@ -61,7 +61,7 @@
             </div>
             <div class="row justify-content-center folders-row">
                 <div class="col-xxl-4 col-xl-6 col-lg-8 col-md-12 folder-col">
-                    <a href="../catalog-ege-math-2024-tasks/ege-math-tasks-2024.html">
+                    <a href="../catalog-ege-math-2024-tasks/ege-math-tasks-2024.php">
                         <div class="folder-card">
                             <img src="../../img/folder.png" alt="folder" class="folder-img">
                             <strong class="folder-name">Каталог заданий ЕГЭ 2024</strong>

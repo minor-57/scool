@@ -15,6 +15,54 @@
     require_once __DIR__ . '/../../php/reg-auth/config.php';
     require_once __DIR__ . '/../../php/reg-auth/auth-check.php';
     ?> 
+    <style>@media (max-width: 1400px) {
+    html{
+        font-size: 14px;
+    }
+
+    .wrapper{
+        padding-left: 20px;
+    }
+    .side-section__button-back{
+        display: initial;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+    }
+    .catalog-heading{
+        text-align: center;
+    }
+    .subject-name{
+        display: block;
+        text-align: center;
+    }
+}
+    @media (max-width:550px){
+        .container-solve-tasks{
+            padding: 70px 10px;
+        }
+        .solve-tasks-item-contant-text{
+            font-size: 1rem;
+            padding: 10px;
+        }
+        .container-solve-example-task{
+            font-size: 1rem;
+        }
+}
+@media (max-width:400px){
+        .container-solve-tasks{
+            padding: 60px 5px;
+        }
+        .contant-container-solve-tasks{
+            padding: 20px;
+        }        
+}
+@media (max-width:400px){
+        .acardion-triggers{
+            font-size: 0.80rem;
+        }
+}
+</style>
 </head>
 
 <body>
@@ -188,11 +236,7 @@
                                     <div class="solve-tasks-item-contant-text">
                                         <p class="solve-tasks-item-contant-text">Площадь боковой поверхности конуса
                                             находится по формуле:</p>
-                                        <p class="solve-tasks-item-formyls">
-                                            <strong class="font-weight__normal">S<sub
-                                                    class="font-weight__normal">бок</sub>
-                                                = π<em class="font-weight__normal">rl</em></strong>
-                                        </p>
+                                            <p><span class="math-display">\[S_{бок}=\pi rl\]</span></p>
                                         <p class="solve-tasks-item-contant-text">Из <strong
                                                 class="font-weight__normal">формулы длины
                                                 окружности</strong> равной
@@ -200,16 +244,15 @@
                                                 class="font-weight__normal">выразим π<em
                                                     class="font-weight__normal">r</em></strong>:
                                         </p>
-                                        <img src="../../img-tasks/Задача 3.3 формула 1.png" alt=""
-                                            class="solve-tasks-item-formyla">
+                                        <p><span class="math-display">\[C =2\pi r\]</span></p>
+                                        <p><span class="math-display">\[6 =2\pi r\]</span></p>
+                                        <p><span class="math-display">\[\pi r =\frac{6}{2}\]</span></p>
+                                        <p><span class="math-display">\[\pi r =3\]</span></p>
                                         <p class="solve-tasks-item-contant-text">Найдём <strong
                                                 class="font-weight__normal">площадь боковой
                                                 поверхности
                                                 конуса</strong>:</p>
-                                        <p class="solve-tasks-item-formyls"><strong
-                                                class="font-weight__normal">S<sub>бок</sub>
-                                                =</strong> π<em>rl</em> = 3·4 <strong class="font-weight__normal">=
-                                                12</strong></p>
+                                        <p><span class="math-display">\[S_{бок}=\pi rl=3\cdot4=12\]</span></p>
                                         <p class="solve-tasks-item-contant-text"><strong
                                                 class="font-weight__normal">Ответ: 12.</strong></p>
                                     </div>
@@ -259,21 +302,18 @@
                                                 class="font-weight__normal"> из
                                             прямоугольного треугольника:
                                         </p>
-                                        <img src="../../img-tasks/Задача 3.4 формула 1.png" alt=""
-                                            class="solve-tasks-item-formyla">
+                                        <p><span class="math-display">\[x^2=30^2-18^2\]</span></p>
+                                        <p><span class="math-display">\[x^2=900-324\]</span></p>
+                                        <p><span class="math-display">\[x^2=576\]</span></p>
+                                        <p><span class="math-display">\[S_{бок}=\pi rl\]</span></p>
                                         <p class="solve-tasks-item-contant-text">
                                             Тогда всё основания равно:
                                         </p>
-                                        <p class="solve-tasks-item-formyls">
-                                            <strong class="font-weight__normal">2<em class="font-weight__normal">х</em>
-                                            </strong class="font-weight__normal">= 2·24
-                                            =<strong class="font-weight__normal"> 48</strong>
-                                        </p>
+                                        <p><span class="math-display">\[2x=2\cdot 24=48\]</span></p>                                        
                                         <p class="solve-tasks-item-contant-text">
                                             Найдём площадь сечения по формуле площади треугольника:
                                         </p>
-                                        <img src="../../img-tasks/Задача 3.4 формула 2.png" alt=""
-                                            class="solve-tasks-item-formyla">
+                                        <p><span class="math-display">\[S_\bigtriangleup=\frac{1}{2}\cdot 48\cdot 18=24\cdot 18=432\]</span></p>
                                         <p class="solve-tasks-item-contant-text"><strong
                                                 class="font-weight__normal">Ответ:
                                                 432.</strong></p>
@@ -322,6 +362,7 @@
     </div>
     <script src="../../js/catalog.js"></script>
     <script src="../../js/acardion-tasks.js"></script>
+    <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 
 </html>

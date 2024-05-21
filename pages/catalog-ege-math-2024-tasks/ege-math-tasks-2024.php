@@ -25,14 +25,14 @@
                     <div class="side-section__button-back"></div>
                     <div class="side-section__main-text">
                         <div class="menu-logo">
-                            <a href="../../index.html" class="logo-olimpys"></a>
+                            <a href="../../index.php" class="logo-olimpys"></a>
                         </div>
                         <ul class="side-section__list">
                             <li class="side-section__item"><a href="../catalog-page.php?page=math&type=ege&sec=vid&lvl=main"
                                     class="side-section__link">Видеоуроки</a>
                             </li>
                             <li class="side-section__item"><a
-                                    href="../catalog-ege-math-2024-tasks/catalog-ege-math-tasks.html"
+                                    href="../catalog-ege-math-2024-tasks/catalog-ege-math-tasks.php"
                                     class="side-section__link active">Каталог заданий</a>
                             </li>
                         </ul>
@@ -67,62 +67,62 @@
                     <div class="catalog-tasks-list-content-first">
                         <div class="catalog-tasks-list-left">
                             <div class="catalog-tasks-list-left-title"><a
-                                    href="../catalog-ege-math-2024-tasks/num-01-planik.html" class="link-left-tasks">01.
+                                    href="../catalog-ege-math-2024-tasks/num-01-planik.php" class="link-left-tasks">01.
                                     Геометрия на плоскости (планиметрия)</a></div>
                         </div>
                         <div class="catalog-tasks-list-left">
                             <div class="catalog-tasks-list-left-title"><a
-                                    href="../catalog-ege-math-2024-tasks/num-02-vectors.html"
+                                    href="../catalog-ege-math-2024-tasks/num-02-vectors.php"
                                     class="link-left-tasks">02. Задачи на
                                     векторы</a></div>
                         </div>
                         <div class="catalog-tasks-list-left">
                             <div class="catalog-tasks-list-left-title"><a
-                                    href="../catalog-ege-math-2024-tasks/num-03-cterioma.html"
+                                    href="../catalog-ege-math-2024-tasks/num-03-cterioma.php"
                                     class="link-left-tasks">03. Геометрия
                                     в
                                     пространстве (стереометрия)</a></div>
                         </div>
                         <div class="catalog-tasks-list-left">
                             <div class="catalog-tasks-list-left-title"><a
-                                    href="../catalog-ege-math-2024-tasks/num-04-teori-veroatnoct.html"
+                                    href="../catalog-ege-math-2024-tasks/num-04-teori-veroatnoct.php"
                                     class="link-left-tasks">04. Введение в
                                     теорию вероятностей</a></div>
                         </div>
                         <div class="catalog-tasks-list-left">
                             <div class="catalog-tasks-list-left-title"><a
-                                    href="../catalog-ege-math-2024-tasks/num-05-teori-veroatnoct.html"
+                                    href="../catalog-ege-math-2024-tasks/num-05-teori-veroatnoct.php"
                                     class="link-left-tasks">05. Задачи на
                                     теорию вероятностей</a></div>
                         </div>
                         <div class="catalog-tasks-list-left">
                             <div class="catalog-tasks-list-left-title"><a
-                                    href="../catalog-ege-math-2024-tasks/num-06-yravneni.html"
+                                    href="../catalog-ege-math-2024-tasks/num-06-yravneni.php"
                                     class="link-left-tasks">06. Решение
                                     уравнений</a></div>
                         </div>
                         <div class="catalog-tasks-list-left">
                             <div class="catalog-tasks-list-left-title"><a
-                                    href="../catalog-ege-math-2024-tasks/num-07-word-number.html"
+                                    href="../catalog-ege-math-2024-tasks/num-07-word-number.php"
                                     class="link-left-tasks">07.
                                     Преобразование числовых и буквенных выражений</a></div>
                         </div>
                         <div class="catalog-tasks-list-left">
                             <div class="catalog-tasks-list-left-title"><a
-                                    href="../catalog-ege-math-2024-tasks/num-08-proizvodna.html"
+                                    href="../catalog-ege-math-2024-tasks/num-08-proizvodna.php"
                                     class="link-left-tasks">08.
                                     Взаимосвязь
                                     функции и ее производной</a></div>
                         </div>
                         <div class="catalog-tasks-list-left">
                             <div class="catalog-tasks-list-left-title"><a
-                                    href="../catalog-ege-math-2024-tasks/num-09-priklad-xarakter.html"
+                                    href="../catalog-ege-math-2024-tasks/num-09-priklad-xarakter.php"
                                     class="link-left-tasks">09. Задачи
                                     прикладного характера</a></div>
                         </div>
                         <div class="catalog-tasks-list-left">
                             <div class="catalog-tasks-list-left-title"><a
-                                    href="../catalog-ege-math-2024-tasks/num-10-cizet-zadacha.html"
+                                    href="../catalog-ege-math-2024-tasks/num-10-cizet-zadacha.php"
                                     class="link-left-tasks">10. Сюжетные
                                     текстовые задачи</a></div>
                         </div>
@@ -130,55 +130,55 @@
                     <div class="catalog-tasks-list-content-second">
                         <div class="catalog-tasks-list-right">
                             <div class="catalog-tasks-list-right-title"><a
-                                    href="../catalog-ege-math-2024-tasks/num-11-grafik-fynksi.html"
+                                    href="../catalog-ege-math-2024-tasks/num-11-grafik-fynksi.php"
                                     class="link-right-tasks">11. Задачи
                                     на свойства графиков функций</a></div>
                         </div>
                         <div class="catalog-tasks-list-right">
                             <div class="catalog-tasks-list-right-title"><a
-                                    href="../catalog-ege-math-2024-tasks/num-12-ucledovanie-fynksi.html"
+                                    href="../catalog-ege-math-2024-tasks/num-12-ucledovanie-fynksi.php"
                                     class="link-right-tasks">12.
                                     Исследование функций с помощью производной</a></div>
                         </div>
                         <div class="catalog-tasks-list-right">
                             <div class="catalog-tasks-list-right-title"><a
-                                    href="../catalog-ege-math-2024-tasks/num-13-reshenie-yravneni.html"
+                                    href="../catalog-ege-math-2024-tasks/num-13-reshenie-yravneni.php"
                                     class="link-right-tasks">13. Решение
                                     уравнений</a></div>
                         </div>
                         <div class="catalog-tasks-list-right">
                             <div class="catalog-tasks-list-right-title"><a
-                                    href="../catalog-ege-math-2024-tasks/num-14-ctereoma.html"
+                                    href="../catalog-ege-math-2024-tasks/num-14-ctereoma.php"
                                     class="link-right-tasks">14. Задачи
                                     по стереометрии</a></div>
                         </div>
                         <div class="catalog-tasks-list-right">
                             <div class="catalog-tasks-list-right-title"><a
-                                    href="../catalog-ege-math-2024-tasks/num-15-neravenctva.html"
+                                    href="../catalog-ege-math-2024-tasks/num-15-neravenctva.php"
                                     class="link-right-tasks">15. Решение
                                     неравенств</a></div>
                         </div>
                         <div class="catalog-tasks-list-right">
                             <div class="catalog-tasks-list-right-title"><a
-                                    href="../catalog-ege-math-2024-tasks/num-16-priklad-xarakter.html"
+                                    href="../catalog-ege-math-2024-tasks/num-16-priklad-xarakter.php"
                                     class="link-right-tasks">16. Сложные
                                     задачи прикладного характера</a></div>
                         </div>
                         <div class="catalog-tasks-list-right">
                             <div class="catalog-tasks-list-right-title"><a
-                                    href="../catalog-ege-math-2024-tasks/num-17-planik-hard.html"
+                                    href="../catalog-ege-math-2024-tasks/num-17-planik-hard.php"
                                     class="link-right-tasks">17. Задачи
                                     по планиметрии</a></div>
                         </div>
                         <div class="catalog-tasks-list-right">
                             <div class="catalog-tasks-list-right-title"><a
-                                    href="../catalog-ege-math-2024-tasks/num-18-parametr.html"
+                                    href="../catalog-ege-math-2024-tasks/num-18-parametr.php"
                                     class="link-right-tasks">18. Задачи с
                                     параметром</a></div>
                         </div>
                         <div class="catalog-tasks-list-right">
                             <div class="catalog-tasks-list-right-title"><a
-                                    href="../catalog-ege-math-2024-tasks/num-19-teori-chicel.html"
+                                    href="../catalog-ege-math-2024-tasks/num-19-teori-chicel.php"
                                     class="link-right-tasks">19. Задачи
                                     на теорию чисел</a></div>
                         </div>

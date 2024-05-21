@@ -239,9 +239,9 @@
             <section class="hero">
                 <div class="_container hero__container">
                     <div class="hero__text">
-                        <h2 class="hero__heading">Начинай обучаться с нами</h2>
+                        <h2 class="hero__heading">Начинай обучаться с нами</h2> 
                         <p class="hero__description">Подготовим вас на желаемый балл и оценку в кратчайшие сроки в
-                            удобном для вас формате обучения.</p>
+                            удобном для вас формате обучения.</p>                            
                     </div>
                     <div class="hero__buttons">
                         <a href="#courses" class="hero__start btn btn-bright nav-link">Начать обучение</a>
@@ -699,7 +699,7 @@
             //     el: '.swiper-scrollbar',
             // },
         });
-    </script>
+    </script>    
 </body>
 
 </html>
