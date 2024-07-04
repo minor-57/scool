@@ -116,8 +116,7 @@
                                     class="contant-container-solve-tasks-title-text">Задача №1</span></div>
                             <div class="contant-container-solve-tasks-text">
                                 <div class="container-solve-tasks-text">
-                                    <p class="container-solve-example-task">Найдите корень уравнения <img
-                                            src="../../img-tasks/Задача 6.1 Дано .png" alt="" class="example-dano"></p>
+                                    <p class="container-solve-example-task">Найдите корень уравнения <span class="example-dano">\[3^{log_{27}(8_{x}+4)}=4\]</span></p>
                                 </div>
                             </div>
                         </div>
@@ -127,8 +126,16 @@
                             <div class="acardion-content-solve">
                                 <div class="container-solve-tasks-item-contant-text">
                                     <div class="solve-tasks-item-contant-text">
-                                        <img src="../../img-tasks/Задача 6.1 формула 1.png" alt=""
-                                            class="solve-tasks-item-formyla">
+                                    <p><span class="math-display">\[3^{log_{27}(8_{x}+4)}=4\]</span></p>
+                                    <p><span class="math-display">\[3^{log_{3}3(8_{x}+4)}=4\]</span></p>
+                                    <p><span class="math-display">\[3^{\frac{1}{3}\cdot log_{3}(8_{x}+4)}=4\]</span></p>
+                                    <p><span class="math-display">\[3^{log_{3}(8_{x}+4)^{\frac{1}{3}}}=4\]]</span></p>
+                                    <p><span class="math-display">\[(8_{x}+4)^{\frac{1}{3}}=4\mid^3\]</span></p>
+                                    <p><span class="math-display">\[(8_{x}+4)^{\frac{1}{3}\cdot3}=4^3\]</span></p>
+                                    <p><span class="math-display">\[8x+4=64\]</span></p>
+                                    <p><span class="math-display">\[8x=64-4\]</span></p>
+                                    <p><span class="math-display">\[8x=60\]</span></p>
+                                    <p><span class="math-display">\[x=\frac{60}{8}=7,5\]</span></p>
                                         <p class="solve-tasks-item-contant-text"><strong class="font-weight__normal">
                                                 Ответ:
                                                 7,5.</strong></p>
@@ -156,8 +163,14 @@
                             <div class="acardion-content-solve">
                                 <div class="container-solve-tasks-item-contant-text">
                                     <div class="solve-tasks-item-contant-text">
-                                        <img src="../../img-tasks/Задача 6.2 формула 1.png" alt=""
-                                            class="solve-tasks-item-formyla">
+                                    <p><span class="math-display">\[log_3(5-2x)=log_3(1-4x)+1\]</span></p>
+                                    <p><span class="math-display">\[log_3(5-2x)=log_3(1-4x)+log_33\]</span></p>
+                                    <p><span class="math-display">\[log_3(5-2x)=log_3((1-4x)\cdot3)\]</span></p>
+                                    <p><span class="math-display">\[log_3(5-2x)=log_3(3-12x)\]</span></p>
+                                    <p><span class="math-display">\[5-2x=3-12x\]</span></p>
+                                    <p><span class="math-display">\[5-2x=-12x+2x\]</span></p>
+                                    <p><span class="math-display">\[2=-10x\]</span></p>
+                                    <p><span class="math-display">\[x=\frac{2}{-10}=-0,2\]</span></p>
                                         <p class="solve-tasks-item-contant-text"><strong class="font-weight__normal">
                                                 Ответ:
                                                 -0,2.</strong></p>
@@ -183,8 +196,15 @@
                             <div class="acardion-content-solve">
                                 <div class="container-solve-tasks-item-contant-text">
                                     <div class="solve-tasks-item-contant-text">
-                                        <img src="../../img-tasks/Задача 6.3 формула 1.png" alt=""
-                                            class="solve-tasks-item-formyla">
+                                    <p><span class="math-display">\[log_{27}3^{5-4x}=9\]</span></p>
+                                    <p><span class="math-display">\[3^{5-4x}=27^9\]</span></p>
+                                    <p><span class="math-display">\[3^{5-4x}=(3^3)^{9}\]</span></p>
+                                    <p><span class="math-display">\[3^{5-4x}=3^{3\cdot9}\]</span></p>
+                                    <p><span class="math-display">\[3^{5-4x}=3^{27}\]</span></p>
+                                    <p><span class="math-display">\[{5-4x}={27}\]</span></p>
+                                    <p><span class="math-display">\[-4x=27-5\]</span></p>
+                                    <p><span class="math-display">\[-4x=22\]</span></p>
+                                    <p><span class="math-display">\[x=\frac{22}{(-4)}=-5,5\]</span></p>                                    
                                         <p class="solve-tasks-item-contant-text"><strong
                                                 class="font-weight__normal">Ответ: -5,5.</strong></p>
                                     </div>
@@ -198,8 +218,7 @@
                                     class="contant-container-solve-tasks-title-text">Задача №4</span></div>
                             <div class="contant-container-solve-tasks-text">
                                 <div class="container-solve-tasks-text">
-                                    <p class="container-solve-example-task">Найдите корень уравнения <img
-                                            src="../../img-tasks/Задача 6.4 Дано .png" alt="" class="example-dano"> Если
+                                    <p class="container-solve-example-task">Найдите корень уравнения<span class="example-dano">\[\sqrt{9-8x}=-x\]</span> Если
                                         уравнение имеет более одного корня, в ответе запишите больший из корней.</p>
                                     </p>
                                 </div>
@@ -211,16 +230,17 @@
                             <div class="acardion-content-solve">
                                 <div class="container-solve-tasks-item-contant-text">
                                     <div class="solve-tasks-item-contant-text">
-                                        <img src="../../img-tasks/Задача 6.4 формула 1.png" alt=""
-                                            class="solve-tasks-item-formyla">
-                                        <img src="../../img-tasks/Задача 6.4 Дано .png" alt=""
-                                            class="solve-tasks-item-formyla">
+                                    <p><span class="math-display">\[ОДЗ:-x\geq0\]</span></p> 
+                                    <p><span class="math-display">\[x\leq0\]</span></p> 
+                                    <p><span class="math-display">\[\sqrt{9-8x}=-x\]</span></p> 
                                         <p class="container-solve-example-task">Возведём обе части части уравнения в
                                             квадрат:</p>
-                                        <img src="../../img-tasks/Задача 6.4 формула 2.png" alt=""
-                                            class="solve-tasks-item-formyla">
-                                        <img src="../../img-tasks/Задача 6.4 формула 3.png" alt=""
-                                            class="solve-tasks-item-formyla">
+                                            <p><span class="math-display">\[(\sqrt{9-8x})^2=(-x)^2\]</span></p> 
+                                            <p><span class="math-display">\[9-8x=x^2\]</span></p> 
+                                            <p><span class="math-display">\[x^2+8x-9=0\]</span></p> 
+                                            <p><span class="math-display">\[D=8^2-4\cdot1\cdot(-9)=64-(-36)=100=10^2\]</span></p> 
+                                            <p><span class="math-display">\[x_1=\frac{-8+10}{2\cdot1}=\frac{2}{2}=1\]</span></p> 
+                                            <p><span class="math-display">\[x_2=\frac{-8-10}{2\cdot1}=\frac{-18}{2}=-9\]</span></p> 
                                         <p class="container-solve-example-task">ОДЗ принадлежит только 2-й корень -9,
                                             т.к. он меньше 0, его и запишем в
                                             ответ. (х = 1 не является корнем исходного уравнения)</p>
@@ -238,8 +258,7 @@
                                     class="contant-container-solve-tasks-title-text">Задача №5</span></div>
                             <div class="contant-container-solve-tasks-text">
                                 <div class="container-solve-tasks-text">
-                                    <p class="container-solve-example-task">Найдите корень уравнения <img
-                                            src="../../img-tasks/Задача 6.5 Дано .png" alt="" class="example-dano">
+                                    <p class="container-solve-example-task">Найдите корень уравнения <span class="example-dano">\[tg\frac{\pi(x+6)}{3}=\sqrt3\]</span>
                                     </p>
                                     <p class="container-solve-example-task">В ответе запишите наименьший положительный
                                         корень.
@@ -253,12 +272,14 @@
                             <div class="acardion-content-solve">
                                 <div class="container-solve-tasks-item-contant-text">
                                     <div class="solve-tasks-item-contant-text">
-                                        <img src="../../img-tasks/Задача 6.5 формула 1.png" alt=""
-                                            class="solve-tasks-item-formyla">
+                                    <p><span class="math-display">\[\frac{\pi(x+6)}{3}=\frac{\pi}{3}+\pi  n,n\in  Z\mid:\pi\]</span></p> 
+                                    <p><span class="math-display">\[\frac{x+6}{3}=\frac{1}{3}+  n\mid\cdot3\]</span></p> 
+                                    <p><span class="math-display">\[x+6=1+3n\]</span></p> 
+                                    <p><span class="math-display">\[x=1-6+3n\]</span></p> 
+                                    <p><span class="math-display">\[x=-5+3n\]</span></p> 
                                         <p class="container-solve-example-task">Подберём такое n, что бы х был
                                             наименьший положительный:</p>
-                                        <img src="../../img-tasks/Задача 6.5 формула 2.png" alt=""
-                                            class="solve-tasks-item-formyla">
+                                            <p><span class="math-display">\[n=2,x=-5+3\cdot2=-5+6=1\]</span></p> 
                                         <p class="solve-tasks-item-contant-text"><strong
                                                 class="font-weight__normal">Ответ: 1.</strong></p>
                                     </div>
