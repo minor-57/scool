@@ -116,8 +116,7 @@
                                     class="contant-container-solve-tasks-title-text">Задача №1</span></div>
                             <div class="contant-container-solve-tasks-text">
                                 <div class="container-solve-tasks-text">
-                                    <p class="container-solve-example-task">Найдите значение выражения <img
-                                            src="../../img-tasks/Задача 7.1 Дано .png" alt="" class="example-dano"></p>
+                                    <p class="container-solve-example-task">Найдите значение выражения  <span class="example-dano">\[\frac{sin126^\circ}{4sin63^\circ sin27^\circ}\]</span></p>
                                 </div>
                             </div>
                         </div>
@@ -127,8 +126,12 @@
                             <div class="acardion-content-solve">
                                 <div class="container-solve-tasks-item-contant-text">
                                     <div class="solve-tasks-item-contant-text">
-                                        <img src="../../img-tasks/Задача 7.1 формула 1.png" alt=""
-                                            class="solve-tasks-item-formyla">
+                                    <p><span class="math-display">\[\frac{sin126^\circ}{4sin63^\circ sin27^\circ}=\frac{sin(2\cdot63^\circ)}{4sin63^\circ sin27^\circ}\]</span></p> 
+                                    <p><span class="math-display">\[\frac{2sin63^\circ\cdot cos63^\circ}{4sin63^\circ sin27^\circ}=\frac{cos63^\circ}{2sin27^\circ}\]</span></p> 
+                                    <p><span class="math-display">\[x=-5+3n\]</span></p> 
+                                    <p><span class="math-display">\[x=-5+3n\]</span></p> 
+                                    <p><span class="math-display">\[x=-5+3n\]</span></p> 
+                                    <p><span class="math-display">\[x=-5+3n\]</span></p> 
                                         <p class="solve-tasks-item-contant-text"><strong class="font-weight__normal">
                                                 Ответ:
                                                 0,5.</strong></p>
@@ -254,6 +257,7 @@
     </div>
     <script src="../../js/catalog.js"></script>
     <script src="../../js/acardion-tasks.js"></script>
+    <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 
 </html>
