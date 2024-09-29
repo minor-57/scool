@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/../php/reg-auth/config.php';
-// require_once __DIR__ . '/../php/reg-auth/auth-check.php';
+require_once __DIR__ . '/../php/reg-auth/auth-check.php';
 
 
 if(!(isset($_GET['page']) && isset($_GET['type']) && isset($_GET['sec']) && isset($_GET['lvl']))){

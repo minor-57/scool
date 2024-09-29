@@ -235,161 +235,21 @@
             include ('php/reg-auth/render.php'); 
          ?>
 
-        <main class="main">
+        <div class="main">
             <section class="hero">
                 <div class="_container hero__container">
-                    <div class="hero__text">
-                        <h2 class="hero__heading">Начинай обучаться с нами</h2> 
-                        <p class="hero__description">Подготовим вас на желаемый балл и оценку в кратчайшие сроки в
-                            удобном для вас формате обучения.</p>                            
-                    </div>
-                    <div class="hero__buttons">
-                        <a href="#courses" class="hero__start btn btn-bright nav-link">Начать обучение</a>
-                        <a href="" class="hero__consult btn nav-link">Получить консультацию</a>
-                    </div>
-                    <img src="./img/logo-icon.png" alt="logo" class="hero__logo">
-                </div>
-            </section>
-
-            <section class="about" id="about">
-                <div class="_container about__container">
-                    <div class="about__content">
-                        <h2 class="about__heading section-heading">О нас</h2>
-                        <p class="about__description">Мы молодая онлайн школа по подготовке к ЕГЭ, ОГЭ и олимпиадам,
-                            которая только начинает свой путь. Несмотря на это, мы собрали преподавателей, имеющие опыт
-                            в подготоке к экзаменам и олимпиадам как онлайн, так и офлайн, а также успешные результаты
-                            свох учеников, которые ответсвенно подходят ко всему процессу вашего образования.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="courses" id="courses">
-                <div class="_container courses__container">
-                    <h2 class="courses__heading section-heading">Наши курсы</h2>
-                    <ul class="courses__list">
-                        <li class="courses__item course-card">
-                            <div class="course-card__img-container">
-                                <img src="./img/base-course.jpg" alt="img" class="course-card__img">
-                            </div>
-                            <div class="course-card__content">
-                                <div class="course-card__text">
-                                    <strong class="course-card__heding">Базовый курс</strong>
-                                    <ul class="course-card__list">
-                                        <li class="course-card__item">Онлайн-занятия с преподавателем</li>
-                                        <li class="course-card__item">От 3 до 5 вебинаров в неделю по 1.5 - 2 часа</li>
-                                        <li class="course-card__item">Домашние задания после вебинара <br> (без проверки
-                                            преподавателем)</li>
-                                        <li class="course-card__item">Получение теоретического материала</li>
-                                        <li class="course-card__item">"Созвоны раз в две недели с преподавателем в мини
-                                            группах в приложении «Discord»"</li>
-                                    </ul>
-                                </div>
-                                <div class="course-card__btn-container">
-
-                                    <a href="./pages/course/base-course-1.html" class="course-card__btn">Взять курс</a>
-
-                                </div>
-                            </div>
-                        </li>
-                        <li class="courses__item course-card">
-                            <div class="course-card__img-container">
-                                <img src="./img/advansed-course.jpg" alt="img" class="course-card__img object-top">
-                            </div>
-                            <div class="course-card__content">
-                                <div class="course-card__text">
-                                    <strong class="course-card__heding">Продвинутый курс</strong>
-                                    <ul class="course-card__list">
-                                        <li class="course-card__item">Онлайн-занятия с преподавателем</li>
-                                        <li class="course-card__item">От 3 до 5 вебинаров в неделю по 1.5 - 2 часа</li>
-                                        <li class="course-card__item">Домашние задания после вебинара <br> (с проверкой
-                                            лично преподавателем по критериям ЕГЭ)</li>
-                                        <li class="course-card__item">Получение теоретического материала</li>
-                                        <li class="course-card__item">"Созвоны раз в две недели с преподавателем в мини
-                                            группах в приложении «Discord»"</li>
-                                    </ul>
-                                </div>
-                                <div class="course-card__btn-container">
-
-                                    <a href="./pages/course/advansed-course-2.html" class="course-card__btn">Взять
-                                        курс</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="courses__item course-card">
-                            <div class="course-card__img-container">
-
-                                <img src="./img/individ-course.avif" alt="img" class="course-card__img object-center">
-
-                            </div>
-                            <div class="course-card__content">
-                                <div class="course-card__text">
-                                    <strong class="course-card__heding">Индивидуальные занятия</strong>
-                                    <ul class="course-card__list">
-                                        <li class="course-card__item">Онлайн-занятия с преподавателем</li>
-                                        <li class="course-card__item">График занятий обсуждаемый</li>
-                                        <li class="course-card__item">Домашние задания проверяются лично преподавателем
-                                        </li>
-                                        <li class="course-card__item">Получение теоретического материала</li>
-                                        <li class="course-card__item">Подготовка к ОГЭ, ЕГЭ, ДВИ, Олимпиадам</li>
-                                    </ul>
-                                </div>
-                                <div class="course-card__btn-container">
-
-                                    <a href="./pages/course/personal-lessons-3.html" class="course-card__btn">Взять
-                                        курс</a>
-
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="tutors" id="tutors">
-                <div class="_container tutors__container">
-                    <h2 class="section-heading tutors__heading">Наши преподаватели</h2>
-                    <div class="tutors__cards-container">
-                        <div class="tutor-card tutors__card">
-                            <div class="tutor-card__img-wraper">
-                                <img src="img/fedor.png" alt="avatar" class="tutor-card__img">
-                            </div>
-                            <div class="tutor-card__content">
-                                <div class="tutor-card__text">
-                                    <strong class="tutor-card__name">Федор Ушков</strong>
-                                    <ul class="tutors-card__list">
-                                        <li class="tutor-card__item">Основные предметы Физика и Математика</li>
-                                        <li class="tutor-card__item">Руководитель онлайн-школы Олимпус</li>
-                                        <li class="tutor-card__item">3 курс СПБГУ направления «Фундаментальная механика»
-                                        </li>
-                                        <li class="tutor-card__item">Третий год готовлю учеников к ЕГЭ. Подготовил 50+
-                                            учеников к ЕГЭ по математике и физике</li>
-                                        <li class="tutor-card__item">Сдал ЕГЭ на 99 баллов в 2021 году по физике и на 92
-                                            балла по математике</li>
-                                    </ul>
-                                </div>
-                                <a href="./pages/teachers/tutor-2.html" class="tutor-card__btn-more">Подробнее</a>
-                            </div>
+                    <div class="hero__left hero-left hero__card">
+                        <div class="hero-left__text">Мы готовим школьников к ЕГЭ и ОГЭ. Наша цель - помочь вам достичь высоких баллов и поступить в сильные вузы.</div>
+                        <div class="hero-left__buttons">
+                            <a href="#courses" class="hero-left__btn nav-link">Начать обучение</a>
+                            <button class="hero-left__btn hero__consult">Задать вопрос</button>
                         </div>
-                        <div class="tutor-card tutors__card">
-                            <div class="tutor-card__img-wraper">
-                                <img src="img/Maxim.png" alt="avatar" class="tutor-card__img">
-                            </div>
-                            <div class="tutor-card__content">
-                                <div class="tutor-card__text">
-                                    <strong class="tutor-card__name">Максим Моисеев</strong>
-                                    <ul class="tutors-card__list">
-                                        <li class="tutor-card__item">Основной предмет Химия</li>
-                                        <li class="tutor-card__item">В сфере образования и репетиторства уже более 3
-                                            лет. Многочисленный опыт работы с учениками разного возраста, как в решении
-                                            задач, так и в подготовке к экзамену.</li>
-                                        <li class="tutor-card__item">Сдал ЕГЭ по химии в 2021 году на 100 баллов.</li>
-                                        <li class="tutor-card__item">Являюсь многочисленным участником различных
-                                            олимпиад и первенств по химии(ВсОш, Высшая проба, Газпром)</li>
-                                    </ul>
-                                </div>
-                                <a href="./pages/teachers/tutor-1.html" class="tutor-card__btn-more">Подробнее</a>
-                            </div>
+                    </div>
+                    <div class="hero__right hero-right hero__card">
+                        <div class="hero-right__img-container">
+                            <img src="img/logo-icon.png" alt="logo" class="hero-right__img">
                         </div>
+                        <div class="hero-right__slogan">Покоряйте экзамены <br class="hero-right__slogan-break"> с Олимпус!</div>
                     </div>
                 </div>
             </section>
@@ -404,76 +264,245 @@
                         актуальные уроки из наших курсов.
                     </p>
 
-                    <div class="swiper">
+                    <div class="swiper swiper_1 swiper-horizontal swiper-grid swiper-grid-column swiper-backface-hidden">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <iframe src="https://www.youtube.com/embed/ErawsEXg5uY" class="exumples__video"
-                                    title="YouTube video player" frameborder="1"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
+                            <div class="swiper-slide exumples__sw">
+                            <iframe src="https://www.youtube.com/embed/ErawsEXg5uY" class="exumples__video"
+                                        title="YouTube video player" frameborder="1"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                            </div>
+                            <div class="swiper-slide exumples__sw">
                                 <iframe src="https://www.youtube.com/embed/e8o4g8bGRhQ" class="exumples__video"
-                                    title="YouTube video player" frameborder="1"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
+                                            title="YouTube video player" frameborder="1"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen
+                                            loading="lazy"></iframe>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide exumples__sw">
                                 <iframe src="https://www.youtube.com/embed/1_pPtipSAlw" class="exumples__video"
-                                    title="Секретная формула для решения самых сложных задач первой части ЕГЭ по математике"
-                                    frameborder="1"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
+                                            title="Секретная формула для решения самых сложных задач первой части ЕГЭ по математике"
+                                            frameborder="1"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen
+                                            loading="lazy"></iframe>
+                            </div>
+                            <div class="swiper-slide exumples__sw">
                                 <iframe src="https://www.youtube.com/embed/7BP7VTSaytE" class="exumples__video"
-                                    title="Алгоритм решения 12 номеров на ЕГЭ по профильной математике" frameborder="1"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
+                                            title="Алгоритм решения 12 номеров на ЕГЭ по профильной математике" frameborder="1"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen
+                                            loading="lazy"></iframe>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide exumples__sw">
                                 <iframe src="https://www.youtube.com/embed/IVMpEeo1ks0" class="exumples__video"
-                                    title="Гроб в номере 10 на ЕГЭ по профильной математике?!" frameborder="1"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
+                                        title="Гроб в номере 10 на ЕГЭ по профильной математике?!" frameborder="1"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                        loading="lazy"></iframe>
+                            </div>
+                            <div class="swiper-slide exumples__sw">
                                 <iframe src="https://www.youtube.com/embed/YF9eI_TJ2X8" class="exumples__video"
-                                    title="Самая сложная тема в 10 номере ЕГЭ по математике! Проценты" frameborder="1"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
+                                        title="Самая сложная тема в 10 номере ЕГЭ по математике! Проценты" frameborder="1"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                        loading="lazy"></iframe>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide exumples__sw">
                                 <iframe src="https://www.youtube.com/embed/zykfF42sSiI" class="exumples__video"
-                                    title="Всё про логарифмы за 15 минут!" frameborder="1"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
+                                        title="Всё про логарифмы за 15 минут!" frameborder="1"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                        loading="lazy"></iframe>
+                            </div>
+                            <div class="swiper-slide exumples__sw">
                                 <iframe src="https://www.youtube.com/embed/8XD3Bgz3S-Y" class="exumples__video"
-                                    title="Основы МКТ для ЕГЭ по физике за один вебинар!" frameborder="1"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
+                                        title="Основы МКТ для ЕГЭ по физике за один вебинар!" frameborder="1"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide exumples__sw">
                                 <iframe src="https://www.youtube.com/embed/rPrFb-Aa7cw" class="exumples__video"
-                                    title="19 номер на ЕГЭ по профильной математике. Составление уравнений"
-                                    frameborder="1"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                                <iframe src="https://www.youtube.com/embed/JgXrpIlRlw4" class="exumples__video"
-                                    title="Разбор 5 варианта из сборника ЕГЭ Демидовой по физике" frameborder="1"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
+                                        title="19 номер на ЕГЭ по профильной математике. Составление уравнений"
+                                        frameborder="1"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                        loading="lazy"></iframe>
                             </div>
-                            <!-- <div class="swiper-slide">Slide 3</div> -->
+                            <div class="swiper-slide exumples__sw">
+                                <iframe src="https://www.youtube.com/embed/JgXrpIlRlw4" class="exumples__video"
+                                        title="Разбор 5 варианта из сборника ЕГЭ Демидовой по физике" frameborder="1"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                        loading="lazy"></iframe>
+                            </div>
                         </div>
                         <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
+                        <div class="swiper-pagination exumples__sw"></div>
 
                         <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev exumples__sw"></div>
+                        <div class="swiper-button-next exumples__sw"></div>
 
                     </div>
 
                     <!-- <div class="exumples__video-container"></div> -->
                 </div>
             </section>
+
+            <section class="about" id="about">
+                <div class="_container about__container">
+                    <div class="about__content">
+                        <h2 class="about__heading section-heading">О нас</h2>
+                        <p class="about__description">Мы молодая онлайн школа по подготовке к ЕГЭ, ОГЭ и олимпиадам,
+                            которая только начинает свой путь. Несмотря на это, мы собрали преподавателей, имеющих опыт
+                            в подготоке к экзаменам и олимпиадам как онлайн, так и офлайн, а также успешные результаты
+                            своих учеников, которые ответсвенно подходят ко всему процессу вашего образования.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="courses" id="courses">
+                <div class="_container courses__container">
+                    <h2 class="courses__heading section-heading">Наши курсы</h2>
+                    <div class="swiper swiper_2  swiper-horizontal swiper-backface-hidden">
+                        <div class="swiper-wrapper coutses__swiper-wrapper">
+                            <div class="swiper-slide courses__swiper-slide">
+                                <div class=" courses__item course-card base">
+                                    <div class="course-card__img-container">
+                                        <img src="./img/base-course.png" alt="img" class="course-card__img">
+                                    </div>
+                                    <div class="course-card__content">
+                                        <div class="course-card__text">
+                                            <strong class="course-card__heding">Базовый курс <br> <span class="course-card__subjects">(математика, физика, химия)</span> </strong>
+                                            <ul class="course-card__list">
+                                                <li class="course-card__item">Онлайн-занятия с преподавателем;</li>
+                                                <li class="course-card__item">От 3 до 5 вебинаров в неделю по 1.5 - 2 часа;</li>
+                                                <li class="course-card__item">Домашние задания после вебинара <br> (без проверки
+                                                    преподавателем);</li>
+                                                <li class="course-card__item">Получение теоретического материала;</li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="course-card__btn-container">
+
+                                            <a href="./pages/course/base-course-1.html" class="course-card__btn base">Взять курс</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide courses__swiper-slide">
+                                <div class=" courses__item course-card advansed">
+                                    <div class="course-card__img-container">
+                                        <img src="./img/advansed-course.png" alt="img" class="course-card__img object-top">
+                                    </div>
+                                    <div class="course-card__content">
+                                        <div class="course-card__text">
+                                            <strong class="course-card__heding">Продвинутый курс <br> <span class="course-card__subjects">(математика, физика, химия)</span> </strong>
+                                            <ul class="course-card__list">
+                                                <li class="course-card__item ">Все, что есть в базовом курсе;</li>
+                                                <li class="course-card__item text-ind plus"><img src="./img/purple-plus.png" alt="+" class="course-card__plus"></li>
+                                                <li class="course-card__item">Созвоны раз в две недели с преподавателем в мини
+                                                группах в приложении Discord.</li>
+                                                <li class="course-card__item ">Домашние задания после вебинара <br> (с проверкой
+                                                    лично преподавателем по критериям ЕГЭ).</li>
+                                            </ul>
+                                        </div>
+                                        <a href="./pages/course/advansed-course-2.html" class="course-card__btn advansed">Взять курс</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide courses__swiper-slide">
+                                <div class=" courses__item course-card individ">
+                                    <div class="course-card__img-container">
+
+                                        <img src="./img/individ-course.png" alt="img" class="course-card__img object-center">
+
+                                    </div>
+                                    <div class="course-card__content">
+                                        <div class="course-card__text">
+                                            <strong class="course-card__heding">Индивидуальные занятия <br> <span class="course-card__subjects">(математика, физика, химия)</span> </strong>
+                                            <ul class="course-card__list">
+                                                <li class="course-card__item">Онлайн-занятия с преподавателем;</li>
+                                                <li class="course-card__item">График занятий обсуждаемый;</li>
+                                                <li class="course-card__item">Домашние задания проверяются лично преподавателем;
+                                                </li>
+                                                <li class="course-card__item">Получение теоретического материала;</li>
+                                                <li class="course-card__item">Подготовка к ОГЭ, ЕГЭ, ДВИ, Олимпиадам.</li>
+                                            </ul>
+                                        </div>
+                                            <a href="./pages/course/personal-lessons-3.html" class="course-card__btn individ">Взять
+                                                курс</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tutors" id="tutors">
+                <div class="_container tutors__container">
+                    <h2 class="section-heading tutors__heading">Наши преподаватели</h2>
+                    <div class="swiper swiper_3 swiper-horizontal swiper-backface-hidden">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide tutors__swiper-slide">
+                                <div class="tutor-card tutors__card">
+                                    <div class="tutor-card__img-wraper">
+                                        <img src="img/fedor.png" alt="avatar" class="tutor-card__img">
+                                    </div>
+                                    <div class="tutor-card__content">
+                                        <div class="tutor-card__text">
+                                            <strong class="tutor-card__name">Федор Ушков</strong>
+                                            <ul class="tutors-card__list">
+                                                <li class="tutor-card__item">Преподаватель по Математике и Физике;</li>
+                                                <li class="tutor-card__item">Руководитель онлайн-школы Олимпус</li>
+                                                <li class="tutor-card__item">Опыт преподавателя по математике и физике более 4-х лет;</li>
+                                                <li class="tutor-card__item"> Подготовил к ЕГЭ по математике и физике более 50 учеников;</li>
+                                                <li class="tutor-card__item">Сдал ЕГЭ на 99 баллов в 2021 году по физике и на 92 балла по математике;</li>
+                                                <li class="tutor-card__item">Студент 4 курса СПБГУ направления «Фундаментальная механика».</li>
+                                            </ul>
+                                        </div>
+                                        <a href="./pages/teachers/tutor-2.html" class="tutor-card__btn-more">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide tutors__swiper-slide">
+                                <div class="tutor-card tutors__card">
+                                    <div class="tutor-card__img-wraper">
+                                        <img src="img/Maxim.png" alt="avatar" class="tutor-card__img">
+                                    </div>
+                                    <div class="tutor-card__content">
+                                        <div class="tutor-card__text">
+                                            <strong class="tutor-card__name">Максим Моисеев</strong>
+                                            <ul class="tutors-card__list">
+                                                <li class="tutor-card__item">Преподаватель по Химии</li>
+                                                <li class="tutor-card__item">В сфере образования и репетиторства уже более 4-х
+                                                    лет. </li>
+                                                <li class="tutor-card__item">Обширный опыт работы с учениками разного возраста, как в решении
+                                                задач, так и в подготовке к экзамену.</li>
+                                                <li class="tutor-card__item">Сдал ЕГЭ по химии в 2021 году на 100 баллов.</li>
+                                                <li class="tutor-card__item">Многочисленный участник олимпиад и первенств по химии (ВсОш, Высшая проба, Газпром)</li>
+                                            </ul>
+                                        </div>
+                                        <a href="./pages/teachers/tutor-1.html" class="tutor-card__btn-more">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </section>
+
+            
 
             <section class="clients">
                 <div class="clients__container _container">
@@ -520,7 +549,7 @@
                                         уровень)</span>
                                 </div>
                             </div>
-                            <p class="user-card__testimonial-text">Нету никаких минусов, Фёдор Андреевич вполне хорошо
+                            <p class="user-card__testimonial-text">Нет никаких минусов, Фёдор Андреевич вполне хорошо
                                 преподносит материал и вместе мы хорошо всё отработываем, сейчас за короткие сроки, мы
                                 быстро отработываем каждый номер. Жалко только, что не наткнулся на него раньше, а
                                 только в марте. Из рекомендаций, можно посоветовать создать стабильное расписание, а так
@@ -634,7 +663,7 @@
                     <button class="clients__btn-more btn btn-border">Показать больше отзывов</button>
                 </div>
             </section>
-        </main>
+        </вшм>
         <footer class="footer">
             <div class="footer__container _container">
                 <a href="" class="footer__logo">
@@ -676,29 +705,8 @@
     <script src="./js/forms.js"></script>
     <script src="./js/nav-transitions.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
-            allowTouchMove: true,
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            },
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            // And if we need scrollbar
-            // scrollbar: {
-            //     el: '.swiper-scrollbar',
-            // },
-        });
+    <script src="./js/swipers.js">
+        
     </script>    
 </body>
 
